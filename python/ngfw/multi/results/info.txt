@@ -1,0 +1,36 @@
+log_m1_1.csv 
+Model Loading on Demand Approach 
+multi_results1.py
+
+log_m1_2.csv
+Model Loading on Demand Approach results
+multi_results2.py
+
+log_m2_1.csv 
+Model Preloading Approach 
+
+Model Preloading Approach results
+log_m2_2.csv 
+
+multi_results_run1.txt
+Classification Metrics:
+Accuracy: 0.9565
+Precision: 0.9661
+Recall: 0.9437
+F1-score: 0.9548
+
+multi_results_run2.txt
+Ondemand loading
+Classification Metrics:
+Accuracy: 0.9576
+Precision: 0.9687
+Recall: 0.9458
+F1-score: 0.9571
+
+multi_results_run2_1.txt
+Pre loading
+Classification Metrics:
+Accuracy: 0.9589
+Precision: 0.9719
+Recall: 0.9453
+F1-score: 0.9584
