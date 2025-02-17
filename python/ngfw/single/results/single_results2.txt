@@ -1,0 +1,19 @@
+(env378) D:\miniconda\UNSW-NB15\ngfw\results>python single_results2.py
+    unix_time    model  rec_no  speed  testing_time
+0  1739638146  deep_40       0      1      0.147809
+1  1739638151  deep_40       1      1      0.052800
+2  1739638156  deep_40       2      1      0.057191
+3  1739638161  deep_40       3      1      0.062382
+4  1739638166  deep_40       4      1      0.052068
+
+Summary Statistics:
+          unix_time       rec_no        speed  testing_time
+count  2.001000e+03  2001.000000  2001.000000   2001.000000
+mean   1.739643e+09   498.253373     2.513743      0.080201
+std    3.006218e+03   288.885703     1.109476      0.086621
+min    1.739638e+09     0.000000     1.000000      0.044800
+25%    1.739641e+09   248.000000     2.000000      0.056825
+50%    1.739643e+09   498.000000     2.000000      0.064787
+75%    1.739646e+09   748.000000     4.000000      0.081689
+max    1.739649e+09   998.000000     4.000000      1.930593
+Figures saved as 'single_testing_time_distribution.png' and 'single_testing_time_boxplot.png'

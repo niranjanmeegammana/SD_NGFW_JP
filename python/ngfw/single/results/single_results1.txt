@@ -1,0 +1,35 @@
+(env378) D:\miniconda\UNSW-NB15\ngfw\results>python single_results1.py
+            count       model  speed  loading_time
+1739638146      1     deep_40      1      0.203365
+1739638176      2  shallow_40      2      0.071800
+1739638181      3  shallow_20      4      0.052523
+1739638256      4  shallow_40      2      0.046167
+1739638266      5  shallow_20      4      0.065425
+--------------------
+            count       speed  loading_time
+count  346.000000  346.000000    346.000000
+mean   172.502890    2.511561      0.125731
+std    100.020846    1.140117      0.171597
+min      1.000000    1.000000      0.037876
+25%     86.250000    1.000000      0.053475
+50%    172.500000    3.000000      0.130908
+75%    258.750000    4.000000      0.154368
+max    345.000000    4.000000      2.746552
+--------------------
+           speed         loading_time
+            mean min max         mean       min       max
+model
+deep_20        3   3   3     0.173425  0.130822  0.988089
+deep_40        1   1   1     0.209730  0.127128  2.746552
+shallow_20     4   4   4     0.057960  0.039875  0.184217
+shallow_40     2   2   2     0.057647  0.037876  0.084726
+Fastest Model (Lowest Avg Loading Time): shallow_40
+Model with Highest Avg Speed: shallow_20
+                 count     speed  loading_time
+count         1.000000 -0.001703     -0.174722
+speed        -0.001703  1.000000     -0.234683
+loading_time -0.174722 -0.234683      1.000000
+Deep Models Avg Loading Time: 0.19209586960928782
+Shallow Models Avg Loading Time: 0.05781373503612492
+
+(env378) D:\miniconda\UNSW-NB15\ngfw\results>

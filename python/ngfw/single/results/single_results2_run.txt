@@ -1,0 +1,5095 @@
+(env378) D:\miniconda\UNSW-NB15\ngfw\done>python ngfw_single_model_load_live.py
+22:19:05.604793 Initializing .....
+22:19:05.968783 Running
+initialize() ---------yyyyy
+22:19:05.968783 Loading model deep_40
+22:19:05.968783 Loading scaler data for deep_40
+2025-02-15 22:19:05.983676: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+{'count': 1, 'model': 'deep_40', 'speed': 1, 'time': 0.20336508750915527}
+22:19:06.179071 Loaded deep_40
+40 0
+40 1
+40 2
+40 3
+22:19:26.280216 Speed changed to 1 =============
+22:19:26.280216 Switching to model 1: deep_40 ------
+22:19:26.280216 Running deep_40
+40 4
+40 5
+22:19:36.314109 Speed changed to 2 =============
+22:19:36.314109 Switching to model 2: shallow_40 ------
+22:19:36.314109 Running deep_40
+change_inference_rate() ---------yyyyy
+22:19:36.315111 Loading model shallow_40
+22:19:36.315111 Skipping scalar data 40
+{'count': 2, 'model': 'shallow_40', 'speed': 2, 'time': 0.07180023193359375}
+22:19:36.387908 Loaded shallow_40
+40 6
+22:19:41.403205 Speed changed to 4 =============
+22:19:41.403205 Switching to model 4: shallow_20 ------
+22:19:41.404201 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:19:41.404201 Loading model shallow_20
+22:19:41.404201 Loading scaler data for shallow_20
+{'count': 3, 'model': 'shallow_20', 'speed': 4, 'time': 0.05252265930175781}
+22:19:41.458599 Loaded shallow_20
+20 0
+20 1
+20 2
+20 3
+20 4
+20 5
+20 6
+20 7
+20 8
+20 9
+20 10
+20 11
+20 12
+20 13
+20 14
+22:20:56.768968 Speed changed to 2 =============
+22:20:56.768968 Switching to model 2: shallow_40 ------
+22:20:56.768968 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:20:56.769880 Loading model shallow_40
+22:20:56.769880 Loading scaler data for shallow_40
+{'count': 4, 'model': 'shallow_40', 'speed': 2, 'time': 0.04616689682006836}
+22:20:56.817087 Loaded shallow_40
+40 7
+40 8
+22:21:06.846111 Speed changed to 4 =============
+22:21:06.846111 Switching to model 4: shallow_20 ------
+22:21:06.847090 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:21:06.847090 Loading model shallow_20
+22:21:06.848029 Loading scaler data for shallow_20
+{'count': 5, 'model': 'shallow_20', 'speed': 4, 'time': 0.06542515754699707}
+22:21:06.914454 Loaded shallow_20
+20 15
+22:21:11.943774 Speed changed to 3 =============
+22:21:11.943774 Switching to model 3: deep_20 ------
+22:21:11.944327 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:21:11.944327 Loading model deep_20
+22:21:11.945408 Skipping scalar data 20
+{'count': 6, 'model': 'deep_20', 'speed': 3, 'time': 0.14253973960876465}
+22:21:12.087948 Loaded deep_20
+20 16
+22:21:17.101390 Speed changed to 2 =============
+22:21:17.101390 Switching to model 2: shallow_40 ------
+22:21:17.101390 Running deep_20
+change_inference_rate() ---------yyyyy
+22:21:17.102465 Loading model shallow_40
+22:21:17.102560 Loading scaler data for shallow_40
+{'count': 7, 'model': 'shallow_40', 'speed': 2, 'time': 0.04362320899963379}
+22:21:17.147176 Loaded shallow_40
+40 9
+WARNING:tensorflow:5 out of the last 20 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001BEBA893288> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+40 10
+40 11
+40 12
+22:21:37.222432 Speed changed to 3 =============
+22:21:37.222432 Switching to model 3: deep_20 ------
+22:21:37.222432 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:21:37.223422 Loading model deep_20
+22:21:37.223422 Loading scaler data for deep_20
+{'count': 8, 'model': 'deep_20', 'speed': 3, 'time': 0.17486238479614258}
+22:21:37.399248 Loaded deep_20
+20 17
+WARNING:tensorflow:6 out of the last 24 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001BEBBA87558> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+22:21:42.426056 Speed changed to 4 =============
+22:21:42.426056 Switching to model 4: shallow_20 ------
+22:21:42.426056 Running deep_20
+change_inference_rate() ---------yyyyy
+22:21:42.427099 Loading model shallow_20
+22:21:42.427099 Skipping scalar data 20
+{'count': 9, 'model': 'shallow_20', 'speed': 4, 'time': 0.05152153968811035}
+22:21:42.479588 Loaded shallow_20
+20 18
+20 19
+20 20
+20 21
+20 22
+20 23
+20 24
+22:22:17.612221 Speed changed to 4 =============
+22:22:17.612221 Switching to model 4: shallow_20 ------
+22:22:17.612221 Running shallow_20
+20 25
+20 26
+20 27
+20 28
+20 29
+20 30
+22:22:47.743180 Speed changed to 3 =============
+22:22:47.743180 Switching to model 3: deep_20 ------
+22:22:47.743180 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:22:47.743180 Loading model deep_20
+22:22:47.744165 Skipping scalar data 20
+{'count': 10, 'model': 'deep_20', 'speed': 3, 'time': 0.22013258934020996}
+22:22:47.964297 Loaded deep_20
+20 31
+20 32
+20 33
+20 34
+20 35
+20 36
+20 37
+20 38
+20 39
+20 40
+20 41
+22:23:43.231676 Speed changed to 3 =============
+22:23:43.231676 Switching to model 3: deep_20 ------
+22:23:43.232602 Running deep_20
+20 42
+20 43
+22:23:53.273446 Speed changed to 1 =============
+22:23:53.273446 Switching to model 1: deep_40 ------
+22:23:53.273446 Running deep_20
+change_inference_rate() ---------yyyyy
+22:23:53.274439 Loading model deep_40
+22:23:53.274439 Loading scaler data for deep_40
+{'count': 11, 'model': 'deep_40', 'speed': 1, 'time': 0.17184686660766602}
+22:23:53.447285 Loaded deep_40
+40 13
+40 14
+22:24:03.492543 Speed changed to 4 =============
+22:24:03.492543 Switching to model 4: shallow_20 ------
+22:24:03.492543 Running deep_40
+change_inference_rate() ---------yyyyy
+22:24:03.493539 Loading model shallow_20
+22:24:03.493539 Loading scaler data for shallow_20
+{'count': 12, 'model': 'shallow_20', 'speed': 4, 'time': 0.053284406661987305}
+22:24:03.548777 Loaded shallow_20
+20 44
+20 45
+20 46
+20 47
+20 48
+20 49
+20 50
+20 51
+20 52
+20 53
+22:24:53.788750 Speed changed to 1 =============
+22:24:53.788750 Switching to model 1: deep_40 ------
+22:24:53.788750 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:24:53.789679 Loading model deep_40
+22:24:53.789679 Loading scaler data for deep_40
+{'count': 13, 'model': 'deep_40', 'speed': 1, 'time': 0.16892218589782715}
+22:24:53.959638 Loaded deep_40
+40 15
+40 16
+40 17
+40 18
+40 19
+40 20
+40 21
+40 22
+22:25:34.131428 Speed changed to 2 =============
+22:25:34.131428 Switching to model 2: shallow_40 ------
+22:25:34.131428 Running deep_40
+change_inference_rate() ---------yyyyy
+22:25:34.132419 Loading model shallow_40
+22:25:34.132419 Skipping scalar data 40
+{'count': 14, 'model': 'shallow_40', 'speed': 2, 'time': 0.05878853797912598}
+22:25:34.192227 Loaded shallow_40
+40 23
+40 24
+40 25
+40 26
+40 27
+40 28
+40 29
+40 30
+40 31
+40 32
+40 33
+40 34
+40 35
+22:26:39.441497 Speed changed to 3 =============
+22:26:39.441497 Switching to model 3: deep_20 ------
+22:26:39.442440 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:26:39.442440 Loading model deep_20
+22:26:39.443427 Loading scaler data for deep_20
+{'count': 15, 'model': 'deep_20', 'speed': 3, 'time': 0.15274739265441895}
+22:26:39.596175 Loaded deep_20
+20 54
+20 55
+20 56
+22:26:54.654037 Speed changed to 1 =============
+22:26:54.654037 Switching to model 1: deep_40 ------
+22:26:54.654037 Running deep_20
+change_inference_rate() ---------yyyyy
+22:26:54.654037 Loading model deep_40
+22:26:54.654037 Loading scaler data for deep_40
+{'count': 16, 'model': 'deep_40', 'speed': 1, 'time': 0.21669840812683105}
+22:26:54.872730 Loaded deep_40
+40 36
+40 37
+40 38
+40 39
+22:27:14.961587 Speed changed to 2 =============
+22:27:14.961587 Switching to model 2: shallow_40 ------
+22:27:14.961587 Running deep_40
+change_inference_rate() ---------yyyyy
+22:27:14.961587 Loading model shallow_40
+22:27:14.962584 Skipping scalar data 40
+{'count': 17, 'model': 'shallow_40', 'speed': 2, 'time': 0.06987547874450684}
+22:27:15.033457 Loaded shallow_40
+40 40
+40 41
+40 42
+22:27:30.103031 Speed changed to 1 =============
+22:27:30.103031 Switching to model 1: deep_40 ------
+22:27:30.103031 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:27:30.103031 Loading model deep_40
+22:27:30.104029 Skipping scalar data 40
+{'count': 18, 'model': 'deep_40', 'speed': 1, 'time': 2.7465524673461914}
+22:27:33.035649 Loaded deep_40
+40 43
+40 44
+40 45
+40 46
+40 47
+40 48
+40 49
+22:28:08.244027 Speed changed to 3 =============
+22:28:08.244027 Switching to model 3: deep_20 ------
+22:28:08.244027 Running deep_40
+change_inference_rate() ---------yyyyy
+22:28:08.244027 Loading model deep_20
+22:28:08.244027 Loading scaler data for deep_20
+{'count': 19, 'model': 'deep_20', 'speed': 3, 'time': 0.9880893230438232}
+22:28:09.235420 Loaded deep_20
+20 57
+20 58
+20 59
+20 60
+20 61
+20 62
+20 63
+20 64
+20 65
+20 66
+20 67
+20 68
+20 69
+22:29:14.836262 Speed changed to 3 =============
+22:29:14.836262 Switching to model 3: deep_20 ------
+22:29:14.838255 Running deep_20
+20 70
+22:29:19.874270 Speed changed to 1 =============
+22:29:19.874270 Switching to model 1: deep_40 ------
+22:29:19.875265 Running deep_20
+change_inference_rate() ---------yyyyy
+22:29:19.875265 Loading model deep_40
+22:29:19.877776 Loading scaler data for deep_40
+{'count': 20, 'model': 'deep_40', 'speed': 1, 'time': 1.2236835956573486}
+22:29:21.103772 Loaded deep_40
+40 50
+40 51
+40 52
+22:29:36.148170 Speed changed to 3 =============
+22:29:36.148170 Switching to model 3: deep_20 ------
+22:29:36.148170 Running deep_40
+change_inference_rate() ---------yyyyy
+22:29:36.149188 Loading model deep_20
+22:29:36.149188 Loading scaler data for deep_20
+{'count': 21, 'model': 'deep_20', 'speed': 3, 'time': 0.1638624668121338}
+22:29:36.313050 Loaded deep_20
+20 71
+20 72
+20 73
+22:29:51.363230 Speed changed to 3 =============
+22:29:51.363230 Switching to model 3: deep_20 ------
+22:29:51.363230 Running deep_20
+20 74
+20 75
+20 76
+20 77
+20 78
+20 79
+22:30:21.505869 Speed changed to 4 =============
+22:30:21.505869 Switching to model 4: shallow_20 ------
+22:30:21.506864 Running deep_20
+change_inference_rate() ---------yyyyy
+22:30:21.506864 Loading model shallow_20
+22:30:21.506864 Skipping scalar data 20
+{'count': 22, 'model': 'shallow_20', 'speed': 4, 'time': 0.040914058685302734}
+22:30:21.547778 Loaded shallow_20
+20 80
+20 81
+22:30:31.596510 Speed changed to 4 =============
+22:30:31.596510 Switching to model 4: shallow_20 ------
+22:30:31.597432 Running shallow_20
+20 82
+20 83
+20 84
+20 85
+22:30:51.690605 Speed changed to 2 =============
+22:30:51.690605 Switching to model 2: shallow_40 ------
+22:30:51.691612 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:30:51.691612 Loading model shallow_40
+22:30:51.691612 Loading scaler data for shallow_40
+{'count': 23, 'model': 'shallow_40', 'speed': 2, 'time': 0.048795461654663086}
+22:30:51.741372 Loaded shallow_40
+40 53
+40 54
+40 55
+40 56
+40 57
+22:31:16.818673 Speed changed to 4 =============
+22:31:16.818673 Switching to model 4: shallow_20 ------
+22:31:16.819662 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:31:16.819662 Loading model shallow_20
+22:31:16.819662 Loading scaler data for shallow_20
+{'count': 24, 'model': 'shallow_20', 'speed': 4, 'time': 0.0777883529663086}
+22:31:16.898383 Loaded shallow_20
+20 86
+20 87
+20 88
+20 89
+20 90
+20 91
+22:31:47.036952 Speed changed to 2 =============
+22:31:47.036952 Switching to model 2: shallow_40 ------
+22:31:47.036952 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:31:47.036952 Loading model shallow_40
+22:31:47.037949 Loading scaler data for shallow_40
+{'count': 25, 'model': 'shallow_40', 'speed': 2, 'time': 0.0702371597290039}
+22:31:47.109184 Loaded shallow_40
+40 58
+40 59
+40 60
+22:32:02.159729 Speed changed to 2 =============
+22:32:02.159729 Switching to model 2: shallow_40 ------
+22:32:02.160659 Running shallow_40
+40 61
+40 62
+40 63
+40 64
+40 65
+40 66
+40 67
+22:32:37.308590 Speed changed to 2 =============
+22:32:37.308590 Switching to model 2: shallow_40 ------
+22:32:37.308590 Running shallow_40
+40 68
+40 69
+40 70
+40 71
+40 72
+40 73
+40 74
+40 75
+40 76
+40 77
+40 78
+40 79
+22:33:37.547517 Speed changed to 3 =============
+22:33:37.547517 Switching to model 3: deep_20 ------
+22:33:37.547517 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:33:37.547517 Loading model deep_20
+22:33:37.548468 Loading scaler data for deep_20
+{'count': 26, 'model': 'deep_20', 'speed': 3, 'time': 0.22130346298217773}
+22:33:37.769771 Loaded deep_20
+20 92
+20 93
+20 94
+20 95
+20 96
+22:34:02.860510 Speed changed to 2 =============
+22:34:02.860510 Switching to model 2: shallow_40 ------
+22:34:02.861444 Running deep_20
+change_inference_rate() ---------yyyyy
+22:34:02.861444 Loading model shallow_40
+22:34:02.861444 Loading scaler data for shallow_40
+{'count': 27, 'model': 'shallow_40', 'speed': 2, 'time': 0.06280517578125}
+22:34:02.925287 Loaded shallow_40
+40 80
+40 81
+40 82
+40 83
+40 84
+40 85
+40 86
+22:34:38.097351 Speed changed to 3 =============
+22:34:38.097351 Switching to model 3: deep_20 ------
+22:34:38.098289 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:34:38.098289 Loading model deep_20
+22:34:38.099285 Loading scaler data for deep_20
+{'count': 28, 'model': 'deep_20', 'speed': 3, 'time': 0.18047785758972168}
+22:34:38.279764 Loaded deep_20
+20 97
+20 98
+20 99
+22:34:53.342993 Speed changed to 4 =============
+22:34:53.342993 Switching to model 4: shallow_20 ------
+22:34:53.342993 Running deep_20
+change_inference_rate() ---------yyyyy
+22:34:53.343957 Loading model shallow_20
+22:34:53.343957 Skipping scalar data 20
+{'count': 29, 'model': 'shallow_20', 'speed': 4, 'time': 0.07177042961120605}
+22:34:53.416729 Loaded shallow_20
+20 100
+20 101
+20 102
+22:35:08.467446 Speed changed to 1 =============
+22:35:08.467446 Switching to model 1: deep_40 ------
+22:35:08.468402 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:35:08.468402 Loading model deep_40
+22:35:08.468402 Loading scaler data for deep_40
+{'count': 30, 'model': 'deep_40', 'speed': 1, 'time': 0.35588765144348145}
+22:35:08.824289 Loaded deep_40
+40 87
+40 88
+40 89
+40 90
+40 91
+40 92
+22:35:38.981065 Speed changed to 1 =============
+22:35:38.981065 Switching to model 1: deep_40 ------
+22:35:38.981065 Running deep_40
+40 93
+40 94
+40 95
+40 96
+40 97
+40 98
+40 99
+40 100
+40 101
+22:36:24.179888 Speed changed to 4 =============
+22:36:24.179888 Switching to model 4: shallow_20 ------
+22:36:24.180824 Running deep_40
+change_inference_rate() ---------yyyyy
+22:36:24.180824 Loading model shallow_20
+22:36:24.181818 Loading scaler data for shallow_20
+{'count': 31, 'model': 'shallow_20', 'speed': 4, 'time': 0.09569478034973145}
+22:36:24.278510 Loaded shallow_20
+20 103
+20 104
+20 105
+22:36:39.339347 Speed changed to 1 =============
+22:36:39.339347 Switching to model 1: deep_40 ------
+22:36:39.339347 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:36:39.340369 Loading model deep_40
+22:36:39.340369 Loading scaler data for deep_40
+{'count': 32, 'model': 'deep_40', 'speed': 1, 'time': 0.2513597011566162}
+22:36:39.592737 Loaded deep_40
+40 102
+22:36:44.611830 Speed changed to 3 =============
+22:36:44.611830 Switching to model 3: deep_20 ------
+22:36:44.612831 Running deep_40
+change_inference_rate() ---------yyyyy
+22:36:44.612831 Loading model deep_20
+22:36:44.612831 Loading scaler data for deep_20
+{'count': 33, 'model': 'deep_20', 'speed': 3, 'time': 0.22034144401550293}
+22:36:44.834104 Loaded deep_20
+20 106
+22:36:49.868967 Speed changed to 1 =============
+22:36:49.868967 Switching to model 1: deep_40 ------
+22:36:49.869938 Running deep_20
+change_inference_rate() ---------yyyyy
+22:36:49.869938 Loading model deep_40
+22:36:49.869938 Loading scaler data for deep_40
+{'count': 34, 'model': 'deep_40', 'speed': 1, 'time': 0.25301146507263184}
+22:36:50.124944 Loaded deep_40
+40 103
+22:36:55.153531 Speed changed to 2 =============
+22:36:55.153531 Switching to model 2: shallow_40 ------
+22:36:55.154447 Running deep_40
+change_inference_rate() ---------yyyyy
+22:36:55.154447 Loading model shallow_40
+22:36:55.155442 Skipping scalar data 40
+{'count': 35, 'model': 'shallow_40', 'speed': 2, 'time': 0.07980871200561523}
+22:36:55.235250 Loaded shallow_40
+40 104
+40 105
+40 106
+22:37:10.295291 Speed changed to 2 =============
+22:37:10.295291 Switching to model 2: shallow_40 ------
+22:37:10.296219 Running shallow_40
+40 107
+40 108
+40 109
+40 110
+22:37:30.393052 Speed changed to 4 =============
+22:37:30.393052 Switching to model 4: shallow_20 ------
+22:37:30.394049 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:37:30.394049 Loading model shallow_20
+22:37:30.394984 Loading scaler data for shallow_20
+{'count': 36, 'model': 'shallow_20', 'speed': 4, 'time': 0.06588339805603027}
+22:37:30.460867 Loaded shallow_20
+20 107
+20 108
+20 109
+20 110
+20 111
+20 112
+20 113
+20 114
+22:38:10.626399 Speed changed to 1 =============
+22:38:10.626399 Switching to model 1: deep_40 ------
+22:38:10.627392 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:38:10.627392 Loading model deep_40
+22:38:10.627392 Loading scaler data for deep_40
+{'count': 37, 'model': 'deep_40', 'speed': 1, 'time': 0.2196826934814453}
+22:38:10.848099 Loaded deep_40
+40 111
+40 112
+40 113
+40 114
+40 115
+40 116
+40 117
+40 118
+40 119
+40 120
+40 121
+40 122
+40 123
+40 124
+22:39:21.171073 Speed changed to 3 =============
+22:39:21.171073 Switching to model 3: deep_20 ------
+22:39:21.171073 Running deep_40
+change_inference_rate() ---------yyyyy
+22:39:21.172055 Loading model deep_20
+22:39:21.172055 Loading scaler data for deep_20
+{'count': 38, 'model': 'deep_20', 'speed': 3, 'time': 0.1969759464263916}
+22:39:21.369031 Loaded deep_20
+20 115
+20 116
+22:39:31.417372 Speed changed to 3 =============
+22:39:31.417372 Switching to model 3: deep_20 ------
+22:39:31.417372 Running deep_20
+20 117
+20 118
+20 119
+22:39:46.453255 Speed changed to 3 =============
+22:39:46.453255 Switching to model 3: deep_20 ------
+22:39:46.453255 Running deep_20
+20 120
+20 121
+20 122
+20 123
+20 124
+20 125
+22:40:16.627619 Speed changed to 4 =============
+22:40:16.627619 Switching to model 4: shallow_20 ------
+22:40:16.627619 Running deep_20
+change_inference_rate() ---------yyyyy
+22:40:16.628542 Loading model shallow_20
+22:40:16.628542 Skipping scalar data 20
+{'count': 39, 'model': 'shallow_20', 'speed': 4, 'time': 0.05186891555786133}
+22:40:16.681368 Loaded shallow_20
+20 126
+20 127
+20 128
+20 129
+20 130
+20 131
+22:40:46.778168 Speed changed to 4 =============
+22:40:46.778168 Switching to model 4: shallow_20 ------
+22:40:46.778168 Running shallow_20
+20 132
+22:40:51.784050 Speed changed to 4 =============
+22:40:51.784050 Switching to model 4: shallow_20 ------
+22:40:51.784050 Running shallow_20
+20 133
+20 134
+20 135
+20 136
+20 137
+20 138
+20 139
+20 140
+20 141
+20 142
+20 143
+20 144
+20 145
+20 146
+20 147
+22:42:07.114381 Speed changed to 2 =============
+22:42:07.114381 Switching to model 2: shallow_40 ------
+22:42:07.115436 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:42:07.115436 Loading model shallow_40
+22:42:07.115436 Loading scaler data for shallow_40
+{'count': 40, 'model': 'shallow_40', 'speed': 2, 'time': 0.08145642280578613}
+22:42:07.198790 Loaded shallow_40
+40 125
+40 126
+40 127
+40 128
+22:42:27.257530 Speed changed to 4 =============
+22:42:27.257530 Switching to model 4: shallow_20 ------
+22:42:27.258487 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:42:27.258487 Loading model shallow_20
+22:42:27.258487 Loading scaler data for shallow_20
+{'count': 41, 'model': 'shallow_20', 'speed': 4, 'time': 0.08563065528869629}
+22:42:27.345093 Loaded shallow_20
+20 148
+20 149
+20 150
+20 151
+20 152
+20 153
+20 154
+20 155
+20 156
+20 157
+22:43:17.571248 Speed changed to 1 =============
+22:43:17.571248 Switching to model 1: deep_40 ------
+22:43:17.571248 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:43:17.571248 Loading model deep_40
+22:43:17.572183 Loading scaler data for deep_40
+{'count': 42, 'model': 'deep_40', 'speed': 1, 'time': 0.22328782081604004}
+22:43:17.796467 Loaded deep_40
+40 129
+22:43:22.824325 Speed changed to 1 =============
+22:43:22.824325 Switching to model 1: deep_40 ------
+22:43:22.825263 Running deep_40
+40 130
+40 131
+40 132
+22:43:37.884207 Speed changed to 2 =============
+22:43:37.884207 Switching to model 2: shallow_40 ------
+22:43:37.884207 Running deep_40
+change_inference_rate() ---------yyyyy
+22:43:37.884207 Loading model shallow_40
+22:43:37.885162 Skipping scalar data 40
+{'count': 43, 'model': 'shallow_40', 'speed': 2, 'time': 0.08366203308105469}
+22:43:37.969393 Loaded shallow_40
+40 133
+22:43:42.992909 Speed changed to 4 =============
+22:43:42.992909 Switching to model 4: shallow_20 ------
+22:43:42.992909 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:43:42.993899 Loading model shallow_20
+22:43:42.994515 Loading scaler data for shallow_20
+{'count': 44, 'model': 'shallow_20', 'speed': 4, 'time': 0.06301331520080566}
+22:43:43.058525 Loaded shallow_20
+20 158
+20 159
+20 160
+20 161
+20 162
+22:44:08.176027 Speed changed to 1 =============
+22:44:08.176027 Switching to model 1: deep_40 ------
+22:44:08.176967 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:44:08.176967 Loading model deep_40
+22:44:08.176967 Loading scaler data for deep_40
+{'count': 45, 'model': 'deep_40', 'speed': 1, 'time': 0.21859502792358398}
+22:44:08.396769 Loaded deep_40
+40 134
+40 135
+40 136
+40 137
+40 138
+40 139
+40 140
+40 141
+40 142
+40 143
+40 144
+40 145
+40 146
+22:45:13.674593 Speed changed to 1 =============
+22:45:13.674593 Switching to model 1: deep_40 ------
+22:45:13.674593 Running deep_40
+40 147
+22:45:18.687429 Speed changed to 2 =============
+22:45:18.687429 Switching to model 2: shallow_40 ------
+22:45:18.688350 Running deep_40
+change_inference_rate() ---------yyyyy
+22:45:18.688350 Loading model shallow_40
+22:45:18.688350 Skipping scalar data 40
+{'count': 46, 'model': 'shallow_40', 'speed': 2, 'time': 0.07675576210021973}
+22:45:18.766102 Loaded shallow_40
+40 148
+40 149
+22:45:28.783140 Speed changed to 3 =============
+22:45:28.783140 Switching to model 3: deep_20 ------
+22:45:28.783140 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:45:28.783140 Loading model deep_20
+22:45:28.784094 Loading scaler data for deep_20
+{'count': 47, 'model': 'deep_20', 'speed': 3, 'time': 0.1854996681213379}
+22:45:28.969593 Loaded deep_20
+20 163
+20 164
+20 165
+20 166
+20 167
+20 168
+20 169
+20 170
+20 171
+20 172
+22:46:19.197687 Speed changed to 3 =============
+22:46:19.197687 Switching to model 3: deep_20 ------
+22:46:19.197687 Running deep_20
+20 173
+22:46:24.231870 Speed changed to 3 =============
+22:46:24.231870 Switching to model 3: deep_20 ------
+22:46:24.231870 Running deep_20
+20 174
+20 175
+20 176
+20 177
+20 178
+20 179
+22:46:54.331187 Speed changed to 3 =============
+22:46:54.331187 Switching to model 3: deep_20 ------
+22:46:54.332174 Running deep_20
+20 180
+20 181
+20 182
+20 183
+20 184
+20 185
+20 186
+20 187
+20 188
+20 189
+20 190
+20 191
+20 192
+22:47:59.549912 Speed changed to 2 =============
+22:47:59.549912 Switching to model 2: shallow_40 ------
+22:47:59.550855 Running deep_20
+change_inference_rate() ---------yyyyy
+22:47:59.550855 Loading model shallow_40
+22:47:59.550855 Loading scaler data for shallow_40
+{'count': 48, 'model': 'shallow_40', 'speed': 2, 'time': 0.07343363761901855}
+22:47:59.624289 Loaded shallow_40
+40 150
+40 151
+40 152
+40 153
+40 154
+22:48:24.700630 Speed changed to 2 =============
+22:48:24.700630 Switching to model 2: shallow_40 ------
+22:48:24.701551 Running shallow_40
+40 155
+22:48:29.729079 Speed changed to 1 =============
+22:48:29.729079 Switching to model 1: deep_40 ------
+22:48:29.729079 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:48:29.730011 Loading model deep_40
+22:48:29.730011 Skipping scalar data 40
+{'count': 49, 'model': 'deep_40', 'speed': 1, 'time': 0.15056920051574707}
+22:48:29.880580 Loaded deep_40
+40 156
+40 157
+40 158
+40 159
+22:48:49.959045 Speed changed to 3 =============
+22:48:49.959045 Switching to model 3: deep_20 ------
+22:48:49.959045 Running deep_40
+change_inference_rate() ---------yyyyy
+22:48:49.959981 Loading model deep_20
+22:48:49.959981 Loading scaler data for deep_20
+{'count': 50, 'model': 'deep_20', 'speed': 3, 'time': 0.14390277862548828}
+22:48:50.103883 Loaded deep_20
+20 193
+20 194
+20 195
+20 196
+20 197
+22:49:15.174633 Speed changed to 1 =============
+22:49:15.174633 Switching to model 1: deep_40 ------
+22:49:15.174633 Running deep_20
+change_inference_rate() ---------yyyyy
+22:49:15.175610 Loading model deep_40
+22:49:15.175610 Loading scaler data for deep_40
+{'count': 51, 'model': 'deep_40', 'speed': 1, 'time': 0.16243481636047363}
+22:49:15.338044 Loaded deep_40
+40 160
+40 161
+22:49:25.381382 Speed changed to 4 =============
+22:49:25.381382 Switching to model 4: shallow_20 ------
+22:49:25.381382 Running deep_40
+change_inference_rate() ---------yyyyy
+22:49:25.382337 Loading model shallow_20
+22:49:25.382337 Loading scaler data for shallow_20
+{'count': 52, 'model': 'shallow_20', 'speed': 4, 'time': 0.05850481986999512}
+22:49:25.440841 Loaded shallow_20
+20 198
+20 199
+22:49:35.478148 Speed changed to 4 =============
+22:49:35.478148 Switching to model 4: shallow_20 ------
+22:49:35.478148 Running shallow_20
+20 200
+20 201
+22:49:45.538688 Speed changed to 3 =============
+22:49:45.538688 Switching to model 3: deep_20 ------
+22:49:45.538688 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:49:45.539625 Loading model deep_20
+22:49:45.539625 Skipping scalar data 20
+{'count': 53, 'model': 'deep_20', 'speed': 3, 'time': 0.13230609893798828}
+22:49:45.672886 Loaded deep_20
+20 202
+20 203
+20 204
+22:50:00.742192 Speed changed to 1 =============
+22:50:00.742192 Switching to model 1: deep_40 ------
+22:50:00.742192 Running deep_20
+change_inference_rate() ---------yyyyy
+22:50:00.743186 Loading model deep_40
+22:50:00.743186 Loading scaler data for deep_40
+{'count': 54, 'model': 'deep_40', 'speed': 1, 'time': 0.15350770950317383}
+22:50:00.896694 Loaded deep_40
+40 162
+22:50:05.927507 Speed changed to 2 =============
+22:50:05.927507 Switching to model 2: shallow_40 ------
+22:50:05.927507 Running deep_40
+change_inference_rate() ---------yyyyy
+22:50:05.928440 Loading model shallow_40
+22:50:05.928440 Skipping scalar data 40
+{'count': 55, 'model': 'shallow_40', 'speed': 2, 'time': 0.0538632869720459}
+22:50:05.983274 Loaded shallow_40
+40 163
+40 164
+22:50:16.009064 Speed changed to 1 =============
+22:50:16.009064 Switching to model 1: deep_40 ------
+22:50:16.009064 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:50:16.009064 Loading model deep_40
+22:50:16.010066 Skipping scalar data 40
+{'count': 56, 'model': 'deep_40', 'speed': 1, 'time': 0.13560891151428223}
+22:50:16.145675 Loaded deep_40
+40 165
+40 166
+22:50:26.166835 Speed changed to 2 =============
+22:50:26.166835 Switching to model 2: shallow_40 ------
+22:50:26.166835 Running deep_40
+change_inference_rate() ---------yyyyy
+22:50:26.167808 Loading model shallow_40
+22:50:26.167808 Skipping scalar data 40
+{'count': 57, 'model': 'shallow_40', 'speed': 2, 'time': 0.061751604080200195}
+22:50:26.229559 Loaded shallow_40
+40 167
+40 168
+40 169
+40 170
+40 171
+40 172
+40 173
+40 174
+40 175
+22:51:11.372705 Speed changed to 2 =============
+22:51:11.372705 Switching to model 2: shallow_40 ------
+22:51:11.372705 Running shallow_40
+40 176
+40 177
+40 178
+22:51:26.425919 Speed changed to 1 =============
+22:51:26.425919 Switching to model 1: deep_40 ------
+22:51:26.426911 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:51:26.426911 Loading model deep_40
+22:51:26.426911 Skipping scalar data 40
+{'count': 58, 'model': 'deep_40', 'speed': 1, 'time': 0.15453219413757324}
+22:51:26.582466 Loaded deep_40
+40 179
+22:51:31.602907 Speed changed to 4 =============
+22:51:31.602907 Switching to model 4: shallow_20 ------
+22:51:31.602907 Running deep_40
+change_inference_rate() ---------yyyyy
+22:51:31.603844 Loading model shallow_20
+22:51:31.603844 Loading scaler data for shallow_20
+{'count': 59, 'model': 'shallow_20', 'speed': 4, 'time': 0.05928540229797363}
+22:51:31.664126 Loaded shallow_20
+20 205
+20 206
+20 207
+20 208
+20 209
+20 210
+22:52:01.787531 Speed changed to 4 =============
+22:52:01.787531 Switching to model 4: shallow_20 ------
+22:52:01.788485 Running shallow_20
+20 211
+20 212
+20 213
+20 214
+22:52:21.864211 Speed changed to 1 =============
+22:52:21.864211 Switching to model 1: deep_40 ------
+22:52:21.864211 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:52:21.865142 Loading model deep_40
+22:52:21.865142 Loading scaler data for deep_40
+{'count': 60, 'model': 'deep_40', 'speed': 1, 'time': 0.14820146560668945}
+22:52:22.014341 Loaded deep_40
+40 180
+40 181
+22:52:32.030277 Speed changed to 4 =============
+22:52:32.030277 Switching to model 4: shallow_20 ------
+22:52:32.031252 Running deep_40
+change_inference_rate() ---------yyyyy
+22:52:32.031252 Loading model shallow_20
+22:52:32.032208 Loading scaler data for shallow_20
+{'count': 61, 'model': 'shallow_20', 'speed': 4, 'time': 0.04882955551147461}
+22:52:32.082034 Loaded shallow_20
+20 215
+20 216
+20 217
+20 218
+20 219
+22:52:57.167919 Speed changed to 3 =============
+22:52:57.167919 Switching to model 3: deep_20 ------
+22:52:57.167919 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:52:57.167919 Loading model deep_20
+22:52:57.167919 Skipping scalar data 20
+{'count': 62, 'model': 'deep_20', 'speed': 3, 'time': 0.1308891773223877}
+22:52:57.298808 Loaded deep_20
+20 220
+20 221
+20 222
+20 223
+20 224
+20 225
+22:53:27.395320 Speed changed to 4 =============
+22:53:27.395320 Switching to model 4: shallow_20 ------
+22:53:27.395320 Running deep_20
+change_inference_rate() ---------yyyyy
+22:53:27.396273 Loading model shallow_20
+22:53:27.396273 Skipping scalar data 20
+{'count': 63, 'model': 'shallow_20', 'speed': 4, 'time': 0.06890678405761719}
+22:53:27.465179 Loaded shallow_20
+20 226
+22:53:32.485353 Speed changed to 4 =============
+22:53:32.485353 Switching to model 4: shallow_20 ------
+22:53:32.486283 Running shallow_20
+20 227
+20 228
+20 229
+20 230
+20 231
+20 232
+22:54:02.593190 Speed changed to 3 =============
+22:54:02.593190 Switching to model 3: deep_20 ------
+22:54:02.593190 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:54:02.594162 Loading model deep_20
+22:54:02.594162 Skipping scalar data 20
+{'count': 64, 'model': 'deep_20', 'speed': 3, 'time': 0.1831369400024414}
+22:54:02.778244 Loaded deep_20
+20 233
+20 234
+20 235
+20 236
+22:54:22.855648 Speed changed to 3 =============
+22:54:22.855648 Switching to model 3: deep_20 ------
+22:54:22.856605 Running deep_20
+20 237
+20 238
+20 239
+20 240
+22:54:42.932575 Speed changed to 3 =============
+22:54:42.932575 Switching to model 3: deep_20 ------
+22:54:42.933471 Running deep_20
+20 241
+22:54:47.946643 Speed changed to 2 =============
+22:54:47.946643 Switching to model 2: shallow_40 ------
+22:54:47.946643 Running deep_20
+change_inference_rate() ---------yyyyy
+22:54:47.946643 Loading model shallow_40
+22:54:47.947581 Loading scaler data for shallow_40
+{'count': 65, 'model': 'shallow_40', 'speed': 2, 'time': 0.0745704174041748}
+22:54:48.022151 Loaded shallow_40
+40 182
+40 183
+40 184
+40 185
+40 186
+40 187
+40 188
+40 189
+22:55:28.208337 Speed changed to 1 =============
+22:55:28.208337 Switching to model 1: deep_40 ------
+22:55:28.208337 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:55:28.208337 Loading model deep_40
+22:55:28.208337 Skipping scalar data 40
+{'count': 66, 'model': 'deep_40', 'speed': 1, 'time': 0.19925713539123535}
+22:55:28.408590 Loaded deep_40
+40 190
+40 191
+40 192
+22:55:43.468644 Speed changed to 3 =============
+22:55:43.468644 Switching to model 3: deep_20 ------
+22:55:43.469648 Running deep_40
+change_inference_rate() ---------yyyyy
+22:55:43.469648 Loading model deep_20
+22:55:43.469648 Loading scaler data for deep_20
+{'count': 67, 'model': 'deep_20', 'speed': 3, 'time': 0.16906309127807617}
+22:55:43.639694 Loaded deep_20
+20 242
+20 243
+20 244
+22:55:58.699639 Speed changed to 2 =============
+22:55:58.699639 Switching to model 2: shallow_40 ------
+22:55:58.700576 Running deep_20
+change_inference_rate() ---------yyyyy
+22:55:58.700576 Loading model shallow_40
+22:55:58.701576 Loading scaler data for shallow_40
+{'count': 68, 'model': 'shallow_40', 'speed': 2, 'time': 0.08072996139526367}
+22:55:58.786322 Loaded shallow_40
+40 193
+22:56:03.800460 Speed changed to 4 =============
+22:56:03.800460 Switching to model 4: shallow_20 ------
+22:56:03.800460 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:56:03.801434 Loading model shallow_20
+22:56:03.802376 Loading scaler data for shallow_20
+{'count': 69, 'model': 'shallow_20', 'speed': 4, 'time': 0.08173990249633789}
+22:56:03.885111 Loaded shallow_20
+20 245
+20 246
+20 247
+22:56:18.926578 Speed changed to 2 =============
+22:56:18.926578 Switching to model 2: shallow_40 ------
+22:56:18.927598 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:56:18.927598 Loading model shallow_40
+22:56:18.927598 Loading scaler data for shallow_40
+{'count': 70, 'model': 'shallow_40', 'speed': 2, 'time': 0.08147621154785156}
+22:56:19.010015 Loaded shallow_40
+40 194
+40 195
+40 196
+40 197
+40 198
+40 199
+40 200
+40 201
+22:56:59.150598 Speed changed to 3 =============
+22:56:59.150598 Switching to model 3: deep_20 ------
+22:56:59.151529 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:56:59.151529 Loading model deep_20
+22:56:59.152529 Loading scaler data for deep_20
+{'count': 71, 'model': 'deep_20', 'speed': 3, 'time': 0.20436787605285645}
+22:56:59.356896 Loaded deep_20
+20 248
+22:57:04.373861 Speed changed to 1 =============
+22:57:04.373861 Switching to model 1: deep_40 ------
+22:57:04.373861 Running deep_20
+change_inference_rate() ---------yyyyy
+22:57:04.374780 Loading model deep_40
+22:57:04.374780 Loading scaler data for deep_40
+{'count': 72, 'model': 'deep_40', 'speed': 1, 'time': 0.1814587116241455}
+22:57:04.556239 Loaded deep_40
+40 202
+40 203
+40 204
+22:57:19.579195 Speed changed to 1 =============
+22:57:19.579195 Switching to model 1: deep_40 ------
+22:57:19.579195 Running deep_40
+40 205
+40 206
+22:57:29.630150 Speed changed to 2 =============
+22:57:29.630150 Switching to model 2: shallow_40 ------
+22:57:29.631156 Running deep_40
+change_inference_rate() ---------yyyyy
+22:57:29.631156 Loading model shallow_40
+22:57:29.631156 Skipping scalar data 40
+{'count': 73, 'model': 'shallow_40', 'speed': 2, 'time': 0.06787490844726562}
+22:57:29.701029 Loaded shallow_40
+40 207
+40 208
+40 209
+22:57:44.779470 Speed changed to 4 =============
+22:57:44.779470 Switching to model 4: shallow_20 ------
+22:57:44.779470 Running shallow_40
+change_inference_rate() ---------yyyyy
+22:57:44.780428 Loading model shallow_20
+22:57:44.780428 Loading scaler data for shallow_20
+{'count': 74, 'model': 'shallow_20', 'speed': 4, 'time': 0.07380104064941406}
+22:57:44.854230 Loaded shallow_20
+20 249
+20 250
+20 251
+20 252
+20 253
+20 254
+20 255
+22:58:19.972463 Speed changed to 1 =============
+22:58:19.972463 Switching to model 1: deep_40 ------
+22:58:19.972463 Running shallow_20
+change_inference_rate() ---------yyyyy
+22:58:19.973453 Loading model deep_40
+22:58:19.973453 Loading scaler data for deep_40
+{'count': 75, 'model': 'deep_40', 'speed': 1, 'time': 0.1668086051940918}
+22:58:20.141197 Loaded deep_40
+40 210
+40 211
+40 212
+40 213
+40 214
+40 215
+40 216
+40 217
+40 218
+22:59:05.287614 Speed changed to 3 =============
+22:59:05.287614 Switching to model 3: deep_20 ------
+22:59:05.288540 Running deep_40
+change_inference_rate() ---------yyyyy
+22:59:05.288540 Loading model deep_20
+22:59:05.288540 Loading scaler data for deep_20
+{'count': 76, 'model': 'deep_20', 'speed': 3, 'time': 0.262251615524292}
+22:59:05.552786 Loaded deep_20
+20 256
+20 257
+22:59:15.587392 Speed changed to 4 =============
+22:59:15.587392 Switching to model 4: shallow_20 ------
+22:59:15.588297 Running deep_20
+change_inference_rate() ---------yyyyy
+22:59:15.588297 Loading model shallow_20
+22:59:15.588297 Skipping scalar data 20
+{'count': 77, 'model': 'shallow_20', 'speed': 4, 'time': 0.0563349723815918}
+22:59:15.646666 Loaded shallow_20
+20 258
+20 259
+20 260
+20 261
+20 262
+20 263
+20 264
+20 265
+20 266
+20 267
+23:00:05.802378 Speed changed to 1 =============
+23:00:05.802378 Switching to model 1: deep_40 ------
+23:00:05.802378 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:00:05.803384 Loading model deep_40
+23:00:05.803384 Loading scaler data for deep_40
+{'count': 78, 'model': 'deep_40', 'speed': 1, 'time': 0.2124168872833252}
+23:00:06.017775 Loaded deep_40
+40 219
+40 220
+40 221
+23:00:21.069673 Speed changed to 4 =============
+23:00:21.069673 Switching to model 4: shallow_20 ------
+23:00:21.070655 Running deep_40
+change_inference_rate() ---------yyyyy
+23:00:21.070655 Loading model shallow_20
+23:00:21.071620 Loading scaler data for shallow_20
+{'count': 79, 'model': 'shallow_20', 'speed': 4, 'time': 0.06478643417358398}
+23:00:21.804712 Loaded shallow_20
+20 268
+20 269
+20 270
+20 271
+23:00:41.871946 Speed changed to 4 =============
+23:00:41.871946 Switching to model 4: shallow_20 ------
+23:00:41.872933 Running shallow_20
+20 272
+20 273
+20 274
+20 275
+20 276
+20 277
+20 278
+20 279
+20 280
+20 281
+20 282
+20 283
+20 284
+20 285
+20 286
+20 287
+23:02:02.107375 Speed changed to 4 =============
+23:02:02.107375 Switching to model 4: shallow_20 ------
+23:02:02.107375 Running shallow_20
+20 288
+23:02:07.114866 Speed changed to 4 =============
+23:02:07.114866 Switching to model 4: shallow_20 ------
+23:02:07.114866 Running shallow_20
+20 289
+20 290
+20 291
+20 292
+23:02:27.173336 Speed changed to 4 =============
+23:02:27.173336 Switching to model 4: shallow_20 ------
+23:02:27.174342 Running shallow_20
+20 293
+20 294
+20 295
+23:02:42.204514 Speed changed to 1 =============
+23:02:42.204514 Switching to model 1: deep_40 ------
+23:02:42.205455 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:02:42.205455 Loading model deep_40
+23:02:42.205455 Loading scaler data for deep_40
+{'count': 80, 'model': 'deep_40', 'speed': 1, 'time': 0.28012752532958984}
+23:02:42.485583 Loaded deep_40
+40 222
+40 223
+40 224
+40 225
+40 226
+40 227
+40 228
+40 229
+40 230
+40 231
+40 232
+40 233
+40 234
+40 235
+40 236
+40 237
+40 238
+40 239
+40 240
+40 241
+40 242
+40 243
+40 244
+40 245
+40 246
+23:04:47.947654 Speed changed to 2 =============
+23:04:47.947654 Switching to model 2: shallow_40 ------
+23:04:47.947654 Running deep_40
+change_inference_rate() ---------yyyyy
+23:04:47.948640 Loading model shallow_40
+23:04:47.948640 Skipping scalar data 40
+{'count': 81, 'model': 'shallow_40', 'speed': 2, 'time': 0.05416440963745117}
+23:04:48.003789 Loaded shallow_40
+40 247
+40 248
+23:04:58.035197 Speed changed to 4 =============
+23:04:58.035197 Switching to model 4: shallow_20 ------
+23:04:58.036124 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:04:58.036124 Loading model shallow_20
+23:04:58.036124 Loading scaler data for shallow_20
+{'count': 82, 'model': 'shallow_20', 'speed': 4, 'time': 0.0867605209350586}
+23:04:58.123880 Loaded shallow_20
+20 296
+20 297
+20 298
+20 299
+20 300
+20 301
+20 302
+23:05:33.252874 Speed changed to 2 =============
+23:05:33.252874 Switching to model 2: shallow_40 ------
+23:05:33.252874 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:05:33.252874 Loading model shallow_40
+23:05:33.253826 Loading scaler data for shallow_40
+{'count': 83, 'model': 'shallow_40', 'speed': 2, 'time': 0.06183457374572754}
+23:05:33.315661 Loaded shallow_40
+40 249
+40 250
+40 251
+40 252
+23:05:53.370257 Speed changed to 4 =============
+23:05:53.370257 Switching to model 4: shallow_20 ------
+23:05:53.371193 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:05:53.371193 Loading model shallow_20
+23:05:53.371193 Loading scaler data for shallow_20
+{'count': 84, 'model': 'shallow_20', 'speed': 4, 'time': 0.06340360641479492}
+23:05:53.435593 Loaded shallow_20
+20 303
+20 304
+20 305
+20 306
+20 307
+20 308
+20 309
+20 310
+23:06:33.583228 Speed changed to 4 =============
+23:06:33.583228 Switching to model 4: shallow_20 ------
+23:06:33.584211 Running shallow_20
+20 311
+20 312
+23:06:43.638857 Speed changed to 2 =============
+23:06:43.638857 Switching to model 2: shallow_40 ------
+23:06:43.638857 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:06:43.638857 Loading model shallow_40
+23:06:43.639811 Loading scaler data for shallow_40
+{'count': 85, 'model': 'shallow_40', 'speed': 2, 'time': 0.08230233192443848}
+23:06:43.722113 Loaded shallow_40
+40 253
+40 254
+40 255
+23:06:58.777572 Speed changed to 4 =============
+23:06:58.777572 Switching to model 4: shallow_20 ------
+23:06:58.777572 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:06:58.777572 Loading model shallow_20
+23:06:58.778523 Loading scaler data for shallow_20
+{'count': 86, 'model': 'shallow_20', 'speed': 4, 'time': 0.04987835884094238}
+23:06:58.828401 Loaded shallow_20
+20 313
+20 314
+20 315
+20 316
+20 317
+20 318
+20 319
+20 320
+20 321
+23:07:44.008910 Speed changed to 4 =============
+23:07:44.008910 Switching to model 4: shallow_20 ------
+23:07:44.009420 Running shallow_20
+20 322
+20 323
+20 324
+23:07:59.065327 Speed changed to 4 =============
+23:07:59.065327 Switching to model 4: shallow_20 ------
+23:07:59.065327 Running shallow_20
+20 325
+20 326
+20 327
+20 328
+20 329
+20 330
+20 331
+23:08:34.180032 Speed changed to 3 =============
+23:08:34.180032 Switching to model 3: deep_20 ------
+23:08:34.180994 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:08:34.180994 Loading model deep_20
+23:08:34.180994 Skipping scalar data 20
+{'count': 87, 'model': 'deep_20', 'speed': 3, 'time': 0.20936250686645508}
+23:08:34.392316 Loaded deep_20
+20 332
+23:08:39.417161 Speed changed to 3 =============
+23:08:39.417161 Switching to model 3: deep_20 ------
+23:08:39.418088 Running deep_20
+20 333
+20 334
+23:08:49.449940 Speed changed to 1 =============
+23:08:49.449940 Switching to model 1: deep_40 ------
+23:08:49.450922 Running deep_20
+change_inference_rate() ---------yyyyy
+23:08:49.450922 Loading model deep_40
+23:08:49.450922 Loading scaler data for deep_40
+{'count': 88, 'model': 'deep_40', 'speed': 1, 'time': 0.1587834358215332}
+23:08:49.611627 Loaded deep_40
+40 256
+23:08:54.636931 Speed changed to 2 =============
+23:08:54.636931 Switching to model 2: shallow_40 ------
+23:08:54.637858 Running deep_40
+change_inference_rate() ---------yyyyy
+23:08:54.637858 Loading model shallow_40
+23:08:54.638866 Skipping scalar data 40
+{'count': 89, 'model': 'shallow_40', 'speed': 2, 'time': 0.06486392021179199}
+23:08:54.704744 Loaded shallow_40
+40 257
+40 258
+40 259
+40 260
+40 261
+40 262
+23:09:24.812742 Speed changed to 3 =============
+23:09:24.812742 Switching to model 3: deep_20 ------
+23:09:24.812742 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:09:24.812742 Loading model deep_20
+23:09:24.812742 Loading scaler data for deep_20
+{'count': 90, 'model': 'deep_20', 'speed': 3, 'time': 0.1933610439300537}
+23:09:25.006103 Loaded deep_20
+20 335
+23:09:30.029811 Speed changed to 4 =============
+23:09:30.029811 Switching to model 4: shallow_20 ------
+23:09:30.030759 Running deep_20
+change_inference_rate() ---------yyyyy
+23:09:30.030759 Loading model shallow_20
+23:09:30.030759 Skipping scalar data 20
+{'count': 91, 'model': 'shallow_20', 'speed': 4, 'time': 0.05289506912231445}
+23:09:30.083653 Loaded shallow_20
+20 336
+20 337
+20 338
+23:09:45.141135 Speed changed to 1 =============
+23:09:45.141135 Switching to model 1: deep_40 ------
+23:09:45.141135 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:09:45.141135 Loading model deep_40
+23:09:45.142092 Loading scaler data for deep_40
+{'count': 92, 'model': 'deep_40', 'speed': 1, 'time': 0.18839311599731445}
+23:09:45.330485 Loaded deep_40
+40 263
+40 264
+40 265
+40 266
+23:10:05.395278 Speed changed to 3 =============
+23:10:05.395278 Switching to model 3: deep_20 ------
+23:10:05.395278 Running deep_40
+change_inference_rate() ---------yyyyy
+23:10:05.396273 Loading model deep_20
+23:10:05.396273 Loading scaler data for deep_20
+{'count': 93, 'model': 'deep_20', 'speed': 3, 'time': 0.18711090087890625}
+23:10:05.584903 Loaded deep_20
+20 339
+20 340
+23:10:15.645182 Speed changed to 3 =============
+23:10:15.645182 Switching to model 3: deep_20 ------
+23:10:15.645182 Running deep_20
+20 341
+23:10:20.655209 Speed changed to 2 =============
+23:10:20.655209 Switching to model 2: shallow_40 ------
+23:10:20.655209 Running deep_20
+change_inference_rate() ---------yyyyy
+23:10:20.656182 Loading model shallow_40
+23:10:20.656182 Loading scaler data for shallow_40
+{'count': 94, 'model': 'shallow_40', 'speed': 2, 'time': 0.05083751678466797}
+23:10:20.707020 Loaded shallow_40
+40 267
+40 268
+40 269
+40 270
+23:10:40.767414 Speed changed to 4 =============
+23:10:40.767414 Switching to model 4: shallow_20 ------
+23:10:40.767414 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:10:40.767414 Loading model shallow_20
+23:10:40.768463 Loading scaler data for shallow_20
+{'count': 95, 'model': 'shallow_20', 'speed': 4, 'time': 0.04974102973937988}
+23:10:40.818204 Loaded shallow_20
+20 342
+20 343
+20 344
+23:10:55.884037 Speed changed to 3 =============
+23:10:55.884037 Switching to model 3: deep_20 ------
+23:10:55.884037 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:10:55.884037 Loading model deep_20
+23:10:55.884986 Skipping scalar data 20
+{'count': 96, 'model': 'deep_20', 'speed': 3, 'time': 0.18775558471679688}
+23:10:56.073738 Loaded deep_20
+20 345
+20 346
+20 347
+20 348
+20 349
+20 350
+23:11:26.212686 Speed changed to 4 =============
+23:11:26.212686 Switching to model 4: shallow_20 ------
+23:11:26.212686 Running deep_20
+change_inference_rate() ---------yyyyy
+23:11:26.212686 Loading model shallow_20
+23:11:26.213678 Skipping scalar data 20
+{'count': 97, 'model': 'shallow_20', 'speed': 4, 'time': 0.060851097106933594}
+23:11:26.274529 Loaded shallow_20
+20 351
+23:11:31.289820 Speed changed to 4 =============
+23:11:31.289820 Switching to model 4: shallow_20 ------
+23:11:31.289820 Running shallow_20
+20 352
+20 353
+23:11:41.311757 Speed changed to 2 =============
+23:11:41.311757 Switching to model 2: shallow_40 ------
+23:11:41.311757 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:11:41.311757 Loading model shallow_40
+23:11:41.312712 Loading scaler data for shallow_40
+{'count': 98, 'model': 'shallow_40', 'speed': 2, 'time': 0.06029486656188965}
+23:11:41.373007 Loaded shallow_40
+40 271
+40 272
+40 273
+40 274
+40 275
+40 276
+40 277
+23:12:16.499244 Speed changed to 4 =============
+23:12:16.499244 Switching to model 4: shallow_20 ------
+23:12:16.499244 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:12:16.499244 Loading model shallow_20
+23:12:16.500205 Loading scaler data for shallow_20
+{'count': 99, 'model': 'shallow_20', 'speed': 4, 'time': 0.051633358001708984}
+23:12:16.552835 Loaded shallow_20
+20 354
+20 355
+20 356
+20 357
+23:12:36.633402 Speed changed to 1 =============
+23:12:36.633402 Switching to model 1: deep_40 ------
+23:12:36.633402 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:12:36.633402 Loading model deep_40
+23:12:36.634351 Loading scaler data for deep_40
+{'count': 100, 'model': 'deep_40', 'speed': 1, 'time': 0.204681396484375}
+23:12:36.839032 Loaded deep_40
+40 278
+40 279
+23:12:46.893285 Speed changed to 4 =============
+23:12:46.893285 Switching to model 4: shallow_20 ------
+23:12:46.893285 Running deep_40
+change_inference_rate() ---------yyyyy
+23:12:46.893285 Loading model shallow_20
+23:12:46.894280 Loading scaler data for shallow_20
+{'count': 101, 'model': 'shallow_20', 'speed': 4, 'time': 0.18421721458435059}
+23:12:47.078497 Loaded shallow_20
+20 358
+20 359
+20 360
+23:13:02.127916 Speed changed to 4 =============
+23:13:02.127916 Switching to model 4: shallow_20 ------
+23:13:02.128864 Running shallow_20
+20 361
+20 362
+20 363
+20 364
+20 365
+20 366
+20 367
+20 368
+20 369
+20 370
+20 371
+23:13:57.313255 Speed changed to 4 =============
+23:13:57.313255 Switching to model 4: shallow_20 ------
+23:13:57.314251 Running shallow_20
+20 372
+20 373
+23:14:07.358403 Speed changed to 2 =============
+23:14:07.358403 Switching to model 2: shallow_40 ------
+23:14:07.358403 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:14:07.358403 Loading model shallow_40
+23:14:07.359399 Loading scaler data for shallow_40
+{'count': 102, 'model': 'shallow_40', 'speed': 2, 'time': 0.050103187561035156}
+23:14:07.410499 Loaded shallow_40
+40 280
+40 281
+40 282
+40 283
+40 284
+40 285
+40 286
+40 287
+40 288
+40 289
+40 290
+40 291
+23:15:07.676018 Speed changed to 4 =============
+23:15:07.676018 Switching to model 4: shallow_20 ------
+23:15:07.676018 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:15:07.676018 Loading model shallow_20
+23:15:07.676018 Loading scaler data for shallow_20
+{'count': 103, 'model': 'shallow_20', 'speed': 4, 'time': 0.041327714920043945}
+23:15:07.719173 Loaded shallow_20
+20 374
+23:15:12.754041 Speed changed to 3 =============
+23:15:12.754041 Switching to model 3: deep_20 ------
+23:15:12.755038 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:15:12.755038 Loading model deep_20
+23:15:12.755038 Skipping scalar data 20
+{'count': 104, 'model': 'deep_20', 'speed': 3, 'time': 0.15952205657958984}
+23:15:12.915524 Loaded deep_20
+20 375
+23:15:17.941298 Speed changed to 1 =============
+23:15:17.941298 Switching to model 1: deep_40 ------
+23:15:17.941298 Running deep_20
+change_inference_rate() ---------yyyyy
+23:15:17.941811 Loading model deep_40
+23:15:17.941811 Loading scaler data for deep_40
+{'count': 105, 'model': 'deep_40', 'speed': 1, 'time': 0.1697084903717041}
+23:15:18.112464 Loaded deep_40
+40 292
+40 293
+40 294
+40 295
+40 296
+40 297
+40 298
+40 299
+23:15:58.254955 Speed changed to 1 =============
+23:15:58.254955 Switching to model 1: deep_40 ------
+23:15:58.254955 Running deep_40
+40 300
+40 301
+40 302
+23:16:13.321685 Speed changed to 3 =============
+23:16:13.321685 Switching to model 3: deep_20 ------
+23:16:13.322625 Running deep_40
+change_inference_rate() ---------yyyyy
+23:16:13.322625 Loading model deep_20
+23:16:13.322625 Loading scaler data for deep_20
+{'count': 106, 'model': 'deep_20', 'speed': 3, 'time': 0.14581632614135742}
+23:16:13.470443 Loaded deep_20
+20 376
+20 377
+20 378
+20 379
+20 380
+20 381
+20 382
+23:16:48.609322 Speed changed to 2 =============
+23:16:48.609322 Switching to model 2: shallow_40 ------
+23:16:48.609322 Running deep_20
+change_inference_rate() ---------yyyyy
+23:16:48.609322 Loading model shallow_40
+23:16:48.610264 Loading scaler data for shallow_40
+{'count': 107, 'model': 'shallow_40', 'speed': 2, 'time': 0.05937075614929199}
+23:16:48.669634 Loaded shallow_40
+40 303
+40 304
+40 305
+40 306
+40 307
+40 308
+40 309
+23:17:23.762393 Speed changed to 4 =============
+23:17:23.762393 Switching to model 4: shallow_20 ------
+23:17:23.762936 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:17:23.762936 Loading model shallow_20
+23:17:23.762936 Loading scaler data for shallow_20
+{'count': 108, 'model': 'shallow_20', 'speed': 4, 'time': 0.09668803215026855}
+23:17:23.860620 Loaded shallow_20
+20 383
+20 384
+23:17:33.917404 Speed changed to 1 =============
+23:17:33.917404 Switching to model 1: deep_40 ------
+23:17:33.917404 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:17:33.917404 Loading model deep_40
+23:17:33.918346 Loading scaler data for deep_40
+{'count': 109, 'model': 'deep_40', 'speed': 1, 'time': 0.23857855796813965}
+23:17:34.157921 Loaded deep_40
+40 310
+40 311
+40 312
+40 313
+40 314
+23:17:59.238925 Speed changed to 4 =============
+23:17:59.238925 Switching to model 4: shallow_20 ------
+23:17:59.239884 Running deep_40
+change_inference_rate() ---------yyyyy
+23:17:59.239884 Loading model shallow_20
+23:17:59.240828 Loading scaler data for shallow_20
+{'count': 110, 'model': 'shallow_20', 'speed': 4, 'time': 0.06969928741455078}
+23:17:59.314460 Loaded shallow_20
+20 385
+20 386
+23:18:09.341782 Speed changed to 1 =============
+23:18:09.341782 Switching to model 1: deep_40 ------
+23:18:09.342730 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:18:09.342730 Loading model deep_40
+23:18:09.343979 Loading scaler data for deep_40
+{'count': 111, 'model': 'deep_40', 'speed': 1, 'time': 0.18748259544372559}
+23:18:09.532487 Loaded deep_40
+40 315
+40 316
+40 317
+23:18:24.573448 Speed changed to 2 =============
+23:18:24.573448 Switching to model 2: shallow_40 ------
+23:18:24.573448 Running deep_40
+change_inference_rate() ---------yyyyy
+23:18:24.574443 Loading model shallow_40
+23:18:24.574443 Skipping scalar data 40
+{'count': 112, 'model': 'shallow_40', 'speed': 2, 'time': 0.06982851028442383}
+23:18:24.644272 Loaded shallow_40
+40 318
+23:18:29.659633 Speed changed to 4 =============
+23:18:29.659633 Switching to model 4: shallow_20 ------
+23:18:29.659633 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:18:29.659633 Loading model shallow_20
+23:18:29.660576 Loading scaler data for shallow_20
+{'count': 113, 'model': 'shallow_20', 'speed': 4, 'time': 0.07176375389099121}
+23:18:29.732340 Loaded shallow_20
+20 387
+20 388
+20 389
+20 390
+23:18:49.810427 Speed changed to 3 =============
+23:18:49.810427 Switching to model 3: deep_20 ------
+23:18:49.810427 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:18:49.810427 Loading model deep_20
+23:18:49.811388 Skipping scalar data 20
+{'count': 114, 'model': 'deep_20', 'speed': 3, 'time': 0.21662569046020508}
+23:18:50.029011 Loaded deep_20
+20 391
+23:18:55.032972 Speed changed to 2 =============
+23:18:55.032972 Switching to model 2: shallow_40 ------
+23:18:55.033906 Running deep_20
+change_inference_rate() ---------yyyyy
+23:18:55.033906 Loading model shallow_40
+23:18:55.033906 Loading scaler data for shallow_40
+{'count': 115, 'model': 'shallow_40', 'speed': 2, 'time': 0.0836641788482666}
+23:18:55.119627 Loaded shallow_40
+40 319
+40 320
+23:19:05.173871 Speed changed to 4 =============
+23:19:05.173871 Switching to model 4: shallow_20 ------
+23:19:05.173871 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:19:05.174803 Loading model shallow_20
+23:19:05.174803 Loading scaler data for shallow_20
+{'count': 116, 'model': 'shallow_20', 'speed': 4, 'time': 0.08078956604003906}
+23:19:05.255593 Loaded shallow_20
+20 392
+20 393
+20 394
+23:19:20.310110 Speed changed to 1 =============
+23:19:20.310110 Switching to model 1: deep_40 ------
+23:19:20.311039 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:19:20.311039 Loading model deep_40
+23:19:20.311039 Loading scaler data for deep_40
+{'count': 117, 'model': 'deep_40', 'speed': 1, 'time': 0.2091825008392334}
+23:19:20.521223 Loaded deep_40
+40 321
+40 322
+23:19:30.543001 Speed changed to 3 =============
+23:19:30.543001 Switching to model 3: deep_20 ------
+23:19:30.543936 Running deep_40
+change_inference_rate() ---------yyyyy
+23:19:30.543936 Loading model deep_20
+23:19:30.543936 Loading scaler data for deep_20
+{'count': 118, 'model': 'deep_20', 'speed': 3, 'time': 0.22992324829101562}
+23:19:30.774858 Loaded deep_20
+20 395
+20 396
+23:19:40.817737 Speed changed to 2 =============
+23:19:40.817737 Switching to model 2: shallow_40 ------
+23:19:40.818683 Running deep_20
+change_inference_rate() ---------yyyyy
+23:19:40.818683 Loading model shallow_40
+23:19:40.818683 Loading scaler data for shallow_40
+{'count': 119, 'model': 'shallow_40', 'speed': 2, 'time': 0.07773113250732422}
+23:19:40.897410 Loaded shallow_40
+40 323
+23:19:45.931278 Speed changed to 3 =============
+23:19:45.931278 Switching to model 3: deep_20 ------
+23:19:45.931278 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:19:45.932233 Loading model deep_20
+23:19:45.932233 Loading scaler data for deep_20
+{'count': 120, 'model': 'deep_20', 'speed': 3, 'time': 0.1825716495513916}
+23:19:46.114805 Loaded deep_20
+20 397
+20 398
+20 399
+20 400
+23:20:06.194116 Speed changed to 4 =============
+23:20:06.194116 Switching to model 4: shallow_20 ------
+23:20:06.194116 Running deep_20
+change_inference_rate() ---------yyyyy
+23:20:06.194116 Loading model shallow_20
+23:20:06.195113 Skipping scalar data 20
+{'count': 121, 'model': 'shallow_20', 'speed': 4, 'time': 0.04684734344482422}
+23:20:06.242957 Loaded shallow_20
+20 401
+20 402
+20 403
+20 404
+20 405
+20 406
+20 407
+23:20:41.389182 Speed changed to 2 =============
+23:20:41.389182 Switching to model 2: shallow_40 ------
+23:20:41.389182 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:20:41.390179 Loading model shallow_40
+23:20:41.390179 Loading scaler data for shallow_40
+{'count': 122, 'model': 'shallow_40', 'speed': 2, 'time': 0.08472585678100586}
+23:20:41.475902 Loaded shallow_40
+40 324
+40 325
+40 326
+40 327
+40 328
+23:21:06.593543 Speed changed to 1 =============
+23:21:06.593543 Switching to model 1: deep_40 ------
+23:21:06.593543 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:21:06.593543 Loading model deep_40
+23:21:06.594539 Skipping scalar data 40
+{'count': 123, 'model': 'deep_40', 'speed': 1, 'time': 0.2265007495880127}
+23:21:06.821040 Loaded deep_40
+40 329
+40 330
+40 331
+40 332
+40 333
+40 334
+23:21:36.895971 Speed changed to 3 =============
+23:21:36.895971 Switching to model 3: deep_20 ------
+23:21:36.895971 Running deep_40
+change_inference_rate() ---------yyyyy
+23:21:36.895971 Loading model deep_20
+23:21:36.896968 Loading scaler data for deep_20
+{'count': 124, 'model': 'deep_20', 'speed': 3, 'time': 0.2236027717590332}
+23:21:37.120571 Loaded deep_20
+20 408
+20 409
+20 410
+20 411
+20 412
+20 413
+20 414
+20 415
+20 416
+20 417
+20 418
+20 419
+20 420
+20 421
+20 422
+20 423
+20 424
+20 425
+20 426
+20 427
+23:23:17.521966 Speed changed to 4 =============
+23:23:17.521966 Switching to model 4: shallow_20 ------
+23:23:17.522898 Running deep_20
+change_inference_rate() ---------yyyyy
+23:23:17.522898 Loading model shallow_20
+23:23:17.522898 Skipping scalar data 20
+{'count': 125, 'model': 'shallow_20', 'speed': 4, 'time': 0.06378531455993652}
+23:23:17.588683 Loaded shallow_20
+20 428
+20 429
+20 430
+20 431
+20 432
+20 433
+20 434
+20 435
+20 436
+23:24:06.282136 Speed changed to 1 =============
+23:24:06.282136 Switching to model 1: deep_40 ------
+23:24:06.283067 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:24:06.283067 Loading model deep_40
+23:24:06.284064 Loading scaler data for deep_40
+{'count': 126, 'model': 'deep_40', 'speed': 1, 'time': 0.2641932964324951}
+23:24:06.549254 Loaded deep_40
+40 335
+23:24:11.576809 Speed changed to 3 =============
+23:24:11.576809 Switching to model 3: deep_20 ------
+23:24:11.576809 Running deep_40
+change_inference_rate() ---------yyyyy
+23:24:11.577808 Loading model deep_20
+23:24:11.577808 Loading scaler data for deep_20
+{'count': 127, 'model': 'deep_20', 'speed': 3, 'time': 0.24470067024230957}
+23:24:11.824443 Loaded deep_20
+20 437
+20 438
+20 439
+20 440
+20 441
+23:24:36.940012 Speed changed to 4 =============
+23:24:36.940012 Switching to model 4: shallow_20 ------
+23:24:36.940999 Running deep_20
+change_inference_rate() ---------yyyyy
+23:24:36.940999 Loading model shallow_20
+23:24:36.940999 Skipping scalar data 20
+{'count': 128, 'model': 'shallow_20', 'speed': 4, 'time': 0.08503413200378418}
+23:24:37.027911 Loaded shallow_20
+20 442
+20 443
+20 444
+20 445
+20 446
+23:25:02.116959 Speed changed to 4 =============
+23:25:02.116959 Switching to model 4: shallow_20 ------
+23:25:02.117930 Running shallow_20
+20 447
+23:25:07.117857 Speed changed to 4 =============
+23:25:07.117857 Switching to model 4: shallow_20 ------
+23:25:07.118827 Running shallow_20
+20 448
+20 449
+20 450
+20 451
+20 452
+20 453
+20 454
+20 455
+20 456
+23:25:52.297372 Speed changed to 1 =============
+23:25:52.297372 Switching to model 1: deep_40 ------
+23:25:52.298307 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:25:52.298307 Loading model deep_40
+23:25:52.298307 Loading scaler data for deep_40
+{'count': 129, 'model': 'deep_40', 'speed': 1, 'time': 0.13858532905578613}
+23:25:52.436893 Loaded deep_40
+40 336
+40 337
+40 338
+23:26:07.467609 Speed changed to 3 =============
+23:26:07.467609 Switching to model 3: deep_20 ------
+23:26:07.467609 Running deep_40
+change_inference_rate() ---------yyyyy
+23:26:07.467609 Loading model deep_20
+23:26:07.468554 Loading scaler data for deep_20
+{'count': 130, 'model': 'deep_20', 'speed': 3, 'time': 0.14490938186645508}
+23:26:07.614460 Loaded deep_20
+20 457
+23:26:12.638602 Speed changed to 2 =============
+23:26:12.638602 Switching to model 2: shallow_40 ------
+23:26:12.639549 Running deep_20
+change_inference_rate() ---------yyyyy
+23:26:12.639549 Loading model shallow_40
+23:26:12.639549 Loading scaler data for shallow_40
+{'count': 131, 'model': 'shallow_40', 'speed': 2, 'time': 0.047930002212524414}
+23:26:12.688426 Loaded shallow_40
+40 339
+40 340
+40 341
+23:26:27.686994 Speed changed to 1 =============
+23:26:27.686994 Switching to model 1: deep_40 ------
+23:26:27.686994 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:26:27.686994 Loading model deep_40
+23:26:27.686994 Skipping scalar data 40
+{'count': 132, 'model': 'deep_40', 'speed': 1, 'time': 0.1490192413330078}
+23:26:27.838008 Loaded deep_40
+40 342
+40 343
+23:26:37.870265 Speed changed to 4 =============
+23:26:37.870265 Switching to model 4: shallow_20 ------
+23:26:37.870265 Running deep_40
+change_inference_rate() ---------yyyyy
+23:26:37.871213 Loading model shallow_20
+23:26:37.871213 Loading scaler data for shallow_20
+{'count': 133, 'model': 'shallow_20', 'speed': 4, 'time': 0.04883885383605957}
+23:26:37.921049 Loaded shallow_20
+20 458
+23:26:42.939349 Speed changed to 2 =============
+23:26:42.939349 Switching to model 2: shallow_40 ------
+23:26:42.940330 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:26:42.940330 Loading model shallow_40
+23:26:42.940330 Loading scaler data for shallow_40
+{'count': 134, 'model': 'shallow_40', 'speed': 2, 'time': 0.0418095588684082}
+23:26:42.983134 Loaded shallow_40
+40 344
+40 345
+40 346
+40 347
+40 348
+40 349
+40 350
+40 351
+40 352
+40 353
+40 354
+40 355
+40 356
+40 357
+23:27:53.242423 Speed changed to 3 =============
+23:27:53.242423 Switching to model 3: deep_20 ------
+23:27:53.243353 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:27:53.243353 Loading model deep_20
+23:27:53.243353 Loading scaler data for deep_20
+{'count': 135, 'model': 'deep_20', 'speed': 3, 'time': 0.1316070556640625}
+23:27:53.375916 Loaded deep_20
+20 459
+23:27:58.383672 Speed changed to 3 =============
+23:27:58.383672 Switching to model 3: deep_20 ------
+23:27:58.383672 Running deep_20
+20 460
+20 461
+20 462
+23:28:13.422409 Speed changed to 2 =============
+23:28:13.422409 Switching to model 2: shallow_40 ------
+23:28:13.423339 Running deep_20
+change_inference_rate() ---------yyyyy
+23:28:13.423339 Loading model shallow_40
+23:28:13.423339 Loading scaler data for shallow_40
+{'count': 136, 'model': 'shallow_40', 'speed': 2, 'time': 0.045893192291259766}
+23:28:13.470238 Loaded shallow_40
+40 358
+40 359
+40 360
+40 361
+40 362
+40 363
+40 364
+40 365
+40 366
+23:28:58.608802 Speed changed to 3 =============
+23:28:58.608802 Switching to model 3: deep_20 ------
+23:28:58.608802 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:28:58.609761 Loading model deep_20
+23:28:58.609761 Loading scaler data for deep_20
+{'count': 137, 'model': 'deep_20', 'speed': 3, 'time': 0.14594697952270508}
+23:28:58.756652 Loaded deep_20
+20 463
+20 464
+20 465
+20 466
+20 467
+20 468
+20 469
+20 470
+20 471
+20 472
+23:29:48.896753 Speed changed to 3 =============
+23:29:48.896753 Switching to model 3: deep_20 ------
+23:29:48.897711 Running deep_20
+20 473
+23:29:53.926507 Speed changed to 4 =============
+23:29:53.926507 Switching to model 4: shallow_20 ------
+23:29:53.927435 Running deep_20
+change_inference_rate() ---------yyyyy
+23:29:53.927435 Loading model shallow_20
+23:29:53.927435 Skipping scalar data 20
+{'count': 138, 'model': 'shallow_20', 'speed': 4, 'time': 0.0449521541595459}
+23:29:53.972387 Loaded shallow_20
+20 474
+20 475
+20 476
+20 477
+20 478
+20 479
+20 480
+20 481
+20 482
+20 483
+20 484
+23:30:49.161047 Speed changed to 3 =============
+23:30:49.161047 Switching to model 3: deep_20 ------
+23:30:49.162011 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:30:49.162011 Loading model deep_20
+23:30:49.162011 Skipping scalar data 20
+{'count': 139, 'model': 'deep_20', 'speed': 3, 'time': 0.14950108528137207}
+23:30:49.312509 Loaded deep_20
+20 485
+20 486
+20 487
+20 488
+20 489
+20 490
+20 491
+20 492
+20 493
+20 494
+20 495
+20 496
+23:31:49.490680 Speed changed to 4 =============
+23:31:49.490680 Switching to model 4: shallow_20 ------
+23:31:49.491653 Running deep_20
+change_inference_rate() ---------yyyyy
+23:31:49.491653 Loading model shallow_20
+23:31:49.491653 Skipping scalar data 20
+{'count': 140, 'model': 'shallow_20', 'speed': 4, 'time': 0.050832271575927734}
+23:31:49.543435 Loaded shallow_20
+20 497
+20 498
+20 499
+20 500
+20 501
+23:32:14.617158 Speed changed to 4 =============
+23:32:14.617158 Switching to model 4: shallow_20 ------
+23:32:14.617158 Running shallow_20
+20 502
+20 503
+20 504
+20 505
+23:32:34.711848 Speed changed to 1 =============
+23:32:34.711848 Switching to model 1: deep_40 ------
+23:32:34.712843 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:32:34.712843 Loading model deep_40
+23:32:34.712843 Loading scaler data for deep_40
+{'count': 141, 'model': 'deep_40', 'speed': 1, 'time': 0.16509556770324707}
+23:32:34.878936 Loaded deep_40
+40 367
+23:32:39.886704 Speed changed to 1 =============
+23:32:39.886704 Switching to model 1: deep_40 ------
+23:32:39.887637 Running deep_40
+40 368
+40 369
+40 370
+40 371
+40 372
+40 373
+40 374
+40 375
+40 376
+40 377
+40 378
+40 379
+40 380
+23:33:45.117748 Speed changed to 1 =============
+23:33:45.117748 Switching to model 1: deep_40 ------
+23:33:45.117748 Running deep_40
+40 381
+40 382
+40 383
+40 384
+23:34:05.195204 Speed changed to 4 =============
+23:34:05.195204 Switching to model 4: shallow_20 ------
+23:34:05.195204 Running deep_40
+change_inference_rate() ---------yyyyy
+23:34:05.196139 Loading model shallow_20
+23:34:05.196139 Loading scaler data for shallow_20
+{'count': 142, 'model': 'shallow_20', 'speed': 4, 'time': 0.04655337333679199}
+23:34:05.243647 Loaded shallow_20
+20 506
+23:34:10.272318 Speed changed to 4 =============
+23:34:10.272318 Switching to model 4: shallow_20 ------
+23:34:10.272318 Running shallow_20
+20 507
+20 508
+23:34:20.339453 Speed changed to 1 =============
+23:34:20.339453 Switching to model 1: deep_40 ------
+23:34:20.339453 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:34:20.340441 Loading model deep_40
+23:34:20.340441 Loading scaler data for deep_40
+{'count': 143, 'model': 'deep_40', 'speed': 1, 'time': 0.1355290412902832}
+23:34:20.476968 Loaded deep_40
+40 385
+40 386
+40 387
+40 388
+40 389
+40 390
+23:34:50.562000 Speed changed to 2 =============
+23:34:50.562000 Switching to model 2: shallow_40 ------
+23:34:50.562927 Running deep_40
+change_inference_rate() ---------yyyyy
+23:34:50.562927 Loading model shallow_40
+23:34:50.562927 Skipping scalar data 40
+{'count': 144, 'model': 'shallow_40', 'speed': 2, 'time': 0.061795711517333984}
+23:34:50.624722 Loaded shallow_40
+40 391
+40 392
+40 393
+40 394
+40 395
+40 396
+23:35:20.713536 Speed changed to 3 =============
+23:35:20.713536 Switching to model 3: deep_20 ------
+23:35:20.714469 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:35:20.714469 Loading model deep_20
+23:35:20.714469 Loading scaler data for deep_20
+{'count': 145, 'model': 'deep_20', 'speed': 3, 'time': 0.14777469635009766}
+23:35:20.863245 Loaded deep_20
+20 509
+20 510
+20 511
+23:35:35.934037 Speed changed to 2 =============
+23:35:35.934037 Switching to model 2: shallow_40 ------
+23:35:35.934037 Running deep_20
+change_inference_rate() ---------yyyyy
+23:35:35.935010 Loading model shallow_40
+23:35:35.935010 Loading scaler data for shallow_40
+{'count': 146, 'model': 'shallow_40', 'speed': 2, 'time': 0.05785560607910156}
+23:35:35.993862 Loaded shallow_40
+40 397
+40 398
+40 399
+23:35:51.087362 Speed changed to 2 =============
+23:35:51.087362 Switching to model 2: shallow_40 ------
+23:35:51.087362 Running shallow_40
+40 400
+40 401
+40 402
+40 403
+40 404
+40 405
+40 406
+40 407
+40 408
+23:36:36.312546 Speed changed to 1 =============
+23:36:36.312546 Switching to model 1: deep_40 ------
+23:36:36.312546 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:36:36.313471 Loading model deep_40
+23:36:36.313471 Skipping scalar data 40
+{'count': 147, 'model': 'deep_40', 'speed': 1, 'time': 0.15050530433654785}
+23:36:36.464973 Loaded deep_40
+40 409
+40 410
+23:36:46.515089 Speed changed to 1 =============
+23:36:46.515089 Switching to model 1: deep_40 ------
+23:36:46.516022 Running deep_40
+40 411
+40 412
+40 413
+23:37:01.578798 Speed changed to 3 =============
+23:37:01.578798 Switching to model 3: deep_20 ------
+23:37:01.579719 Running deep_40
+change_inference_rate() ---------yyyyy
+23:37:01.579719 Loading model deep_20
+23:37:01.579719 Loading scaler data for deep_20
+{'count': 148, 'model': 'deep_20', 'speed': 3, 'time': 0.14490985870361328}
+23:37:01.735553 Loaded deep_20
+20 512
+23:37:06.763940 Speed changed to 2 =============
+23:37:06.763940 Switching to model 2: shallow_40 ------
+23:37:06.763940 Running deep_20
+change_inference_rate() ---------yyyyy
+23:37:06.764929 Loading model shallow_40
+23:37:06.764929 Loading scaler data for shallow_40
+{'count': 149, 'model': 'shallow_40', 'speed': 2, 'time': 0.047783851623535156}
+23:37:06.813705 Loaded shallow_40
+40 414
+23:37:11.827678 Speed changed to 4 =============
+23:37:11.827678 Switching to model 4: shallow_20 ------
+23:37:11.827678 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:37:11.827678 Loading model shallow_20
+23:37:11.828635 Loading scaler data for shallow_20
+{'count': 150, 'model': 'shallow_20', 'speed': 4, 'time': 0.04059123992919922}
+23:37:11.869227 Loaded shallow_20
+20 513
+20 514
+20 515
+20 516
+23:37:31.922477 Speed changed to 1 =============
+23:37:31.922477 Switching to model 1: deep_40 ------
+23:37:31.922477 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:37:31.922477 Loading model deep_40
+23:37:31.923464 Loading scaler data for deep_40
+{'count': 151, 'model': 'deep_40', 'speed': 1, 'time': 0.15662217140197754}
+23:37:32.081029 Loaded deep_40
+40 415
+40 416
+40 417
+40 418
+23:37:52.174534 Speed changed to 1 =============
+23:37:52.174534 Switching to model 1: deep_40 ------
+23:37:52.174534 Running deep_40
+40 419
+40 420
+40 421
+40 422
+40 423
+40 424
+40 425
+40 426
+40 427
+40 428
+40 429
+23:38:47.424914 Speed changed to 2 =============
+23:38:47.424914 Switching to model 2: shallow_40 ------
+23:38:47.424914 Running deep_40
+change_inference_rate() ---------yyyyy
+23:38:47.425859 Loading model shallow_40
+23:38:47.425859 Skipping scalar data 40
+{'count': 152, 'model': 'shallow_40', 'speed': 2, 'time': 0.05885672569274902}
+23:38:47.484715 Loaded shallow_40
+40 430
+40 431
+40 432
+40 433
+40 434
+40 435
+40 436
+40 437
+40 438
+40 439
+40 440
+40 441
+40 442
+40 443
+40 444
+40 445
+40 446
+40 447
+40 448
+40 449
+40 450
+23:40:32.784940 Speed changed to 1 =============
+23:40:32.784940 Switching to model 1: deep_40 ------
+23:40:32.785867 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:40:32.785867 Loading model deep_40
+23:40:32.785867 Skipping scalar data 40
+{'count': 153, 'model': 'deep_40', 'speed': 1, 'time': 0.1417543888092041}
+23:40:32.928639 Loaded deep_40
+40 451
+23:40:37.932748 Speed changed to 4 =============
+23:40:37.932748 Switching to model 4: shallow_20 ------
+23:40:37.932748 Running deep_40
+change_inference_rate() ---------yyyyy
+23:40:37.933707 Loading model shallow_20
+23:40:37.933707 Loading scaler data for shallow_20
+{'count': 154, 'model': 'shallow_20', 'speed': 4, 'time': 0.05319499969482422}
+23:40:37.987906 Loaded shallow_20
+20 517
+20 518
+20 519
+20 520
+20 521
+20 522
+20 523
+23:41:13.123380 Speed changed to 4 =============
+23:41:13.123380 Switching to model 4: shallow_20 ------
+23:41:13.124308 Running shallow_20
+20 524
+20 525
+20 526
+20 527
+20 528
+20 529
+20 530
+23:41:48.255199 Speed changed to 1 =============
+23:41:48.255199 Switching to model 1: deep_40 ------
+23:41:48.255199 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:41:48.256156 Loading model deep_40
+23:41:48.256156 Loading scaler data for deep_40
+{'count': 155, 'model': 'deep_40', 'speed': 1, 'time': 0.14139294624328613}
+23:41:48.398580 Loaded deep_40
+40 452
+40 453
+23:41:58.413713 Speed changed to 3 =============
+23:41:58.413713 Switching to model 3: deep_20 ------
+23:41:58.414655 Running deep_40
+change_inference_rate() ---------yyyyy
+23:41:58.414655 Loading model deep_20
+23:41:58.414655 Loading scaler data for deep_20
+{'count': 156, 'model': 'deep_20', 'speed': 3, 'time': 0.16155290603637695}
+23:41:58.576208 Loaded deep_20
+20 531
+20 532
+20 533
+20 534
+20 535
+23:42:23.659481 Speed changed to 4 =============
+23:42:23.659481 Switching to model 4: shallow_20 ------
+23:42:23.660412 Running deep_20
+change_inference_rate() ---------yyyyy
+23:42:23.660412 Loading model shallow_20
+23:42:23.660412 Skipping scalar data 20
+{'count': 157, 'model': 'shallow_20', 'speed': 4, 'time': 0.06779026985168457}
+23:42:23.728202 Loaded shallow_20
+20 536
+20 537
+23:42:33.779930 Speed changed to 1 =============
+23:42:33.779930 Switching to model 1: deep_40 ------
+23:42:33.780907 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:42:33.780907 Loading model deep_40
+23:42:33.780907 Loading scaler data for deep_40
+{'count': 158, 'model': 'deep_40', 'speed': 1, 'time': 0.13719606399536133}
+23:42:33.918103 Loaded deep_40
+40 454
+40 455
+40 456
+40 457
+40 458
+40 459
+40 460
+40 461
+40 462
+40 463
+40 464
+40 465
+40 466
+40 467
+40 468
+23:43:49.206027 Speed changed to 3 =============
+23:43:49.206027 Switching to model 3: deep_20 ------
+23:43:49.206960 Running deep_40
+change_inference_rate() ---------yyyyy
+23:43:49.206960 Loading model deep_20
+23:43:49.206960 Loading scaler data for deep_20
+{'count': 159, 'model': 'deep_20', 'speed': 3, 'time': 0.14057421684265137}
+23:43:49.347534 Loaded deep_20
+20 538
+20 539
+20 540
+20 541
+23:44:09.410705 Speed changed to 4 =============
+23:44:09.410705 Switching to model 4: shallow_20 ------
+23:44:09.411643 Running deep_20
+change_inference_rate() ---------yyyyy
+23:44:09.411643 Loading model shallow_20
+23:44:09.411643 Skipping scalar data 20
+{'count': 160, 'model': 'shallow_20', 'speed': 4, 'time': 0.04384660720825195}
+23:44:09.455489 Loaded shallow_20
+20 542
+23:44:14.474362 Speed changed to 3 =============
+23:44:14.474362 Switching to model 3: deep_20 ------
+23:44:14.474362 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:44:14.475358 Loading model deep_20
+23:44:14.475358 Skipping scalar data 20
+{'count': 161, 'model': 'deep_20', 'speed': 3, 'time': 0.13959479331970215}
+23:44:14.615896 Loaded deep_20
+20 543
+20 544
+20 545
+23:44:29.656502 Speed changed to 4 =============
+23:44:29.656502 Switching to model 4: shallow_20 ------
+23:44:29.657431 Running deep_20
+change_inference_rate() ---------yyyyy
+23:44:29.657431 Loading model shallow_20
+23:44:29.657431 Skipping scalar data 20
+{'count': 162, 'model': 'shallow_20', 'speed': 4, 'time': 0.04290318489074707}
+23:44:29.701289 Loaded shallow_20
+20 546
+20 547
+20 548
+20 549
+23:44:49.792123 Speed changed to 3 =============
+23:44:49.792123 Switching to model 3: deep_20 ------
+23:44:49.793055 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:44:49.793055 Loading model deep_20
+23:44:49.793055 Skipping scalar data 20
+{'count': 163, 'model': 'deep_20', 'speed': 3, 'time': 0.1522808074951172}
+23:44:49.946326 Loaded deep_20
+20 550
+20 551
+20 552
+20 553
+20 554
+20 555
+23:45:20.046381 Speed changed to 1 =============
+23:45:20.046381 Switching to model 1: deep_40 ------
+23:45:20.047311 Running deep_20
+change_inference_rate() ---------yyyyy
+23:45:20.047311 Loading model deep_40
+23:45:20.047311 Loading scaler data for deep_40
+{'count': 164, 'model': 'deep_40', 'speed': 1, 'time': 0.14557504653930664}
+23:45:20.193828 Loaded deep_40
+40 469
+23:45:25.191300 Speed changed to 4 =============
+23:45:25.191300 Switching to model 4: shallow_20 ------
+23:45:25.192263 Running deep_40
+change_inference_rate() ---------yyyyy
+23:45:25.192263 Loading model shallow_20
+23:45:25.192263 Loading scaler data for shallow_20
+{'count': 165, 'model': 'shallow_20', 'speed': 4, 'time': 0.046837568283081055}
+23:45:25.239100 Loaded shallow_20
+20 556
+20 557
+20 558
+23:45:40.281836 Speed changed to 1 =============
+23:45:40.281836 Switching to model 1: deep_40 ------
+23:45:40.281836 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:45:40.282824 Loading model deep_40
+23:45:40.282824 Loading scaler data for deep_40
+{'count': 166, 'model': 'deep_40', 'speed': 1, 'time': 0.1415266990661621}
+23:45:40.424351 Loaded deep_40
+40 470
+40 471
+40 472
+40 473
+40 474
+40 475
+40 476
+40 477
+40 478
+40 479
+23:46:30.655265 Speed changed to 3 =============
+23:46:30.655265 Switching to model 3: deep_20 ------
+23:46:30.656230 Running deep_40
+change_inference_rate() ---------yyyyy
+23:46:30.656230 Loading model deep_20
+23:46:30.656230 Loading scaler data for deep_20
+{'count': 167, 'model': 'deep_20', 'speed': 3, 'time': 0.1455082893371582}
+23:46:30.801739 Loaded deep_20
+20 559
+20 560
+23:46:40.842879 Speed changed to 3 =============
+23:46:40.842879 Switching to model 3: deep_20 ------
+23:46:40.843798 Running deep_20
+20 561
+20 562
+20 563
+20 564
+20 565
+20 566
+20 567
+20 568
+20 569
+20 570
+20 571
+20 572
+20 573
+20 574
+23:47:51.139888 Speed changed to 3 =============
+23:47:51.139888 Switching to model 3: deep_20 ------
+23:47:51.140892 Running deep_20
+20 575
+20 576
+23:48:01.207373 Speed changed to 2 =============
+23:48:01.207373 Switching to model 2: shallow_40 ------
+23:48:01.208361 Running deep_20
+change_inference_rate() ---------yyyyy
+23:48:01.208361 Loading model shallow_40
+23:48:01.208361 Loading scaler data for shallow_40
+{'count': 168, 'model': 'shallow_40', 'speed': 2, 'time': 0.04024100303649902}
+23:48:01.248602 Loaded shallow_40
+40 480
+40 481
+40 482
+40 483
+23:48:21.318784 Speed changed to 4 =============
+23:48:21.318784 Switching to model 4: shallow_20 ------
+23:48:21.319705 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:48:21.319705 Loading model shallow_20
+23:48:21.319705 Loading scaler data for shallow_20
+{'count': 169, 'model': 'shallow_20', 'speed': 4, 'time': 0.0518794059753418}
+23:48:21.372576 Loaded shallow_20
+20 577
+20 578
+20 579
+20 580
+20 581
+20 582
+23:48:51.470818 Speed changed to 3 =============
+23:48:51.470818 Switching to model 3: deep_20 ------
+23:48:51.470818 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:48:51.471773 Loading model deep_20
+23:48:51.471773 Skipping scalar data 20
+{'count': 170, 'model': 'deep_20', 'speed': 3, 'time': 0.13261961936950684}
+23:48:51.604393 Loaded deep_20
+20 583
+20 584
+20 585
+20 586
+23:49:11.682512 Speed changed to 3 =============
+23:49:11.682512 Switching to model 3: deep_20 ------
+23:49:11.682512 Running deep_20
+20 587
+23:49:16.704055 Speed changed to 4 =============
+23:49:16.704055 Switching to model 4: shallow_20 ------
+23:49:16.704978 Running deep_20
+change_inference_rate() ---------yyyyy
+23:49:16.704978 Loading model shallow_20
+23:49:16.704978 Skipping scalar data 20
+{'count': 171, 'model': 'shallow_20', 'speed': 4, 'time': 0.06482744216918945}
+23:49:16.770796 Loaded shallow_20
+20 588
+20 589
+20 590
+20 591
+23:49:36.826338 Speed changed to 1 =============
+23:49:36.826338 Switching to model 1: deep_40 ------
+23:49:36.827248 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:49:36.827248 Loading model deep_40
+23:49:36.827248 Loading scaler data for deep_40
+{'count': 172, 'model': 'deep_40', 'speed': 1, 'time': 0.13218331336975098}
+23:49:36.960427 Loaded deep_40
+40 484
+40 485
+23:49:46.984139 Speed changed to 4 =============
+23:49:46.984139 Switching to model 4: shallow_20 ------
+23:49:46.985109 Running deep_40
+change_inference_rate() ---------yyyyy
+23:49:46.985109 Loading model shallow_20
+23:49:46.985109 Loading scaler data for shallow_20
+{'count': 173, 'model': 'shallow_20', 'speed': 4, 'time': 0.052489519119262695}
+23:49:47.037599 Loaded shallow_20
+20 592
+20 593
+20 594
+20 595
+20 596
+20 597
+20 598
+20 599
+20 600
+20 601
+20 602
+20 603
+23:50:47.253668 Speed changed to 1 =============
+23:50:47.253668 Switching to model 1: deep_40 ------
+23:50:47.254619 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:50:47.254619 Loading model deep_40
+23:50:47.254619 Loading scaler data for deep_40
+{'count': 174, 'model': 'deep_40', 'speed': 1, 'time': 0.15785908699035645}
+23:50:47.412478 Loaded deep_40
+40 486
+40 487
+40 488
+40 489
+23:51:07.477696 Speed changed to 1 =============
+23:51:07.477696 Switching to model 1: deep_40 ------
+23:51:07.477696 Running deep_40
+40 490
+40 491
+40 492
+40 493
+40 494
+40 495
+40 496
+40 497
+23:51:47.598757 Speed changed to 4 =============
+23:51:47.598757 Switching to model 4: shallow_20 ------
+23:51:47.598757 Running deep_40
+change_inference_rate() ---------yyyyy
+23:51:47.599755 Loading model shallow_20
+23:51:47.599755 Loading scaler data for shallow_20
+{'count': 175, 'model': 'shallow_20', 'speed': 4, 'time': 0.04285788536071777}
+23:51:47.643609 Loaded shallow_20
+20 604
+23:51:52.666055 Speed changed to 3 =============
+23:51:52.666055 Switching to model 3: deep_20 ------
+23:51:52.666983 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:51:52.666983 Loading model deep_20
+23:51:52.666983 Skipping scalar data 20
+{'count': 176, 'model': 'deep_20', 'speed': 3, 'time': 0.1354966163635254}
+23:51:52.803478 Loaded deep_20
+20 605
+20 606
+23:52:02.828992 Speed changed to 4 =============
+23:52:02.828992 Switching to model 4: shallow_20 ------
+23:52:02.829926 Running deep_20
+change_inference_rate() ---------yyyyy
+23:52:02.829926 Loading model shallow_20
+23:52:02.829926 Skipping scalar data 20
+{'count': 177, 'model': 'shallow_20', 'speed': 4, 'time': 0.050832271575927734}
+23:52:02.881758 Loaded shallow_20
+20 607
+23:52:07.891218 Speed changed to 1 =============
+23:52:07.891218 Switching to model 1: deep_40 ------
+23:52:07.891218 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:52:07.891218 Loading model deep_40
+23:52:07.891218 Loading scaler data for deep_40
+{'count': 178, 'model': 'deep_40', 'speed': 1, 'time': 0.1351609230041504}
+23:52:08.027352 Loaded deep_40
+40 498
+40 499
+40 500
+40 501
+40 502
+40 503
+40 504
+23:52:43.123929 Speed changed to 3 =============
+23:52:43.123929 Switching to model 3: deep_20 ------
+23:52:43.124859 Running deep_40
+change_inference_rate() ---------yyyyy
+23:52:43.124859 Loading model deep_20
+23:52:43.124859 Loading scaler data for deep_20
+{'count': 179, 'model': 'deep_20', 'speed': 3, 'time': 0.15149545669555664}
+23:52:43.276354 Loaded deep_20
+20 608
+20 609
+20 610
+20 611
+20 612
+20 613
+20 614
+20 615
+20 616
+20 617
+23:53:33.450618 Speed changed to 1 =============
+23:53:33.450618 Switching to model 1: deep_40 ------
+23:53:33.450618 Running deep_20
+change_inference_rate() ---------yyyyy
+23:53:33.451580 Loading model deep_40
+23:53:33.451580 Loading scaler data for deep_40
+{'count': 180, 'model': 'deep_40', 'speed': 1, 'time': 0.14750957489013672}
+23:53:33.599089 Loaded deep_40
+40 505
+23:53:38.617380 Speed changed to 3 =============
+23:53:38.617380 Switching to model 3: deep_20 ------
+23:53:38.617380 Running deep_40
+change_inference_rate() ---------yyyyy
+23:53:38.617380 Loading model deep_20
+23:53:38.618377 Loading scaler data for deep_20
+{'count': 181, 'model': 'deep_20', 'speed': 3, 'time': 0.15753698348999023}
+23:53:38.775914 Loaded deep_20
+20 618
+20 619
+20 620
+20 621
+20 622
+20 623
+23:54:08.857017 Speed changed to 1 =============
+23:54:08.857017 Switching to model 1: deep_40 ------
+23:54:08.857017 Running deep_20
+change_inference_rate() ---------yyyyy
+23:54:08.857017 Loading model deep_40
+23:54:08.857946 Loading scaler data for deep_40
+{'count': 182, 'model': 'deep_40', 'speed': 1, 'time': 0.14408445358276367}
+23:54:09.003037 Loaded deep_40
+40 506
+23:54:14.019247 Speed changed to 4 =============
+23:54:14.019247 Switching to model 4: shallow_20 ------
+23:54:14.019247 Running deep_40
+change_inference_rate() ---------yyyyy
+23:54:14.020240 Loading model shallow_20
+23:54:14.020240 Loading scaler data for shallow_20
+{'count': 183, 'model': 'shallow_20', 'speed': 4, 'time': 0.04683494567871094}
+23:54:14.068018 Loaded shallow_20
+20 624
+23:54:19.088829 Speed changed to 1 =============
+23:54:19.088829 Switching to model 1: deep_40 ------
+23:54:19.089761 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:54:19.089761 Loading model deep_40
+23:54:19.089761 Loading scaler data for deep_40
+{'count': 184, 'model': 'deep_40', 'speed': 1, 'time': 0.14058375358581543}
+23:54:19.231330 Loaded deep_40
+40 507
+40 508
+40 509
+40 510
+40 511
+23:54:44.353225 Speed changed to 3 =============
+23:54:44.353225 Switching to model 3: deep_20 ------
+23:54:44.354154 Running deep_40
+change_inference_rate() ---------yyyyy
+23:54:44.354154 Loading model deep_20
+23:54:44.354154 Loading scaler data for deep_20
+{'count': 185, 'model': 'deep_20', 'speed': 3, 'time': 0.1455674171447754}
+23:54:44.499721 Loaded deep_20
+20 625
+20 626
+20 627
+20 628
+20 629
+20 630
+20 631
+20 632
+20 633
+23:55:29.658957 Speed changed to 4 =============
+23:55:29.658957 Switching to model 4: shallow_20 ------
+23:55:29.659889 Running deep_20
+change_inference_rate() ---------yyyyy
+23:55:29.659889 Loading model shallow_20
+23:55:29.659889 Skipping scalar data 20
+{'count': 186, 'model': 'shallow_20', 'speed': 4, 'time': 0.052819013595581055}
+23:55:29.713724 Loaded shallow_20
+20 634
+23:55:34.724220 Speed changed to 3 =============
+23:55:34.724220 Switching to model 3: deep_20 ------
+23:55:34.725189 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:55:34.725189 Loading model deep_20
+23:55:34.725189 Skipping scalar data 20
+{'count': 187, 'model': 'deep_20', 'speed': 3, 'time': 0.1761763095855713}
+23:55:34.902317 Loaded deep_20
+20 635
+20 636
+20 637
+20 638
+20 639
+23:55:59.995369 Speed changed to 2 =============
+23:55:59.995369 Switching to model 2: shallow_40 ------
+23:55:59.996306 Running deep_20
+change_inference_rate() ---------yyyyy
+23:55:59.996306 Loading model shallow_40
+23:55:59.996306 Loading scaler data for shallow_40
+{'count': 188, 'model': 'shallow_40', 'speed': 2, 'time': 0.04497194290161133}
+23:56:00.041278 Loaded shallow_40
+40 512
+40 513
+40 514
+40 515
+40 516
+40 517
+40 518
+40 519
+23:56:40.228485 Speed changed to 4 =============
+23:56:40.228485 Switching to model 4: shallow_20 ------
+23:56:40.229392 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:56:40.229392 Loading model shallow_20
+23:56:40.229392 Loading scaler data for shallow_20
+{'count': 189, 'model': 'shallow_20', 'speed': 4, 'time': 0.0578458309173584}
+23:56:40.288244 Loaded shallow_20
+20 640
+23:56:45.308800 Speed changed to 1 =============
+23:56:45.308800 Switching to model 1: deep_40 ------
+23:56:45.308800 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:56:45.308800 Loading model deep_40
+23:56:45.309752 Loading scaler data for deep_40
+{'count': 190, 'model': 'deep_40', 'speed': 1, 'time': 0.28110408782958984}
+23:56:45.591853 Loaded deep_40
+40 520
+40 521
+40 522
+40 523
+40 524
+23:57:10.619789 Speed changed to 1 =============
+23:57:10.619789 Switching to model 1: deep_40 ------
+23:57:10.620769 Running deep_40
+40 525
+40 526
+40 527
+40 528
+40 529
+40 530
+40 531
+23:57:45.749553 Speed changed to 1 =============
+23:57:45.749553 Switching to model 1: deep_40 ------
+23:57:45.750541 Running deep_40
+40 532
+40 533
+40 534
+40 535
+40 536
+40 537
+40 538
+40 539
+40 540
+40 541
+40 542
+23:58:40.950765 Speed changed to 2 =============
+23:58:40.950765 Switching to model 2: shallow_40 ------
+23:58:40.951687 Running deep_40
+change_inference_rate() ---------yyyyy
+23:58:40.951687 Loading model shallow_40
+23:58:40.951687 Skipping scalar data 40
+{'count': 191, 'model': 'shallow_40', 'speed': 2, 'time': 0.04694032669067383}
+23:58:40.998627 Loaded shallow_40
+40 543
+23:58:46.018048 Speed changed to 1 =============
+23:58:46.018048 Switching to model 1: deep_40 ------
+23:58:46.018968 Running shallow_40
+change_inference_rate() ---------yyyyy
+23:58:46.018968 Loading model deep_40
+23:58:46.019969 Skipping scalar data 40
+{'count': 192, 'model': 'deep_40', 'speed': 1, 'time': 0.15552067756652832}
+23:58:46.176487 Loaded deep_40
+40 544
+40 545
+40 546
+23:59:01.212140 Speed changed to 4 =============
+23:59:01.212140 Switching to model 4: shallow_20 ------
+23:59:01.213067 Running deep_40
+change_inference_rate() ---------yyyyy
+23:59:01.213067 Loading model shallow_20
+23:59:01.213067 Loading scaler data for shallow_20
+{'count': 193, 'model': 'shallow_20', 'speed': 4, 'time': 0.04146170616149902}
+23:59:01.255525 Loaded shallow_20
+20 641
+23:59:06.276864 Speed changed to 3 =============
+23:59:06.276864 Switching to model 3: deep_20 ------
+23:59:06.277766 Running shallow_20
+change_inference_rate() ---------yyyyy
+23:59:06.277766 Loading model deep_20
+23:59:06.277766 Skipping scalar data 20
+{'count': 194, 'model': 'deep_20', 'speed': 3, 'time': 0.15248680114746094}
+23:59:06.431250 Loaded deep_20
+20 642
+23:59:11.464409 Speed changed to 1 =============
+23:59:11.464409 Switching to model 1: deep_40 ------
+23:59:11.464409 Running deep_20
+change_inference_rate() ---------yyyyy
+23:59:11.465363 Loading model deep_40
+23:59:11.465363 Loading scaler data for deep_40
+{'count': 195, 'model': 'deep_40', 'speed': 1, 'time': 0.15648818016052246}
+23:59:11.622867 Loaded deep_40
+40 547
+40 548
+23:59:21.669931 Speed changed to 1 =============
+23:59:21.669931 Switching to model 1: deep_40 ------
+23:59:21.670848 Running deep_40
+40 549
+40 550
+23:59:31.692799 Speed changed to 3 =============
+23:59:31.692799 Switching to model 3: deep_20 ------
+23:59:31.693730 Running deep_40
+change_inference_rate() ---------yyyyy
+23:59:31.693730 Loading model deep_20
+23:59:31.693730 Loading scaler data for deep_20
+{'count': 196, 'model': 'deep_20', 'speed': 3, 'time': 0.13082218170166016}
+23:59:31.825537 Loaded deep_20
+20 643
+20 644
+20 645
+20 646
+20 647
+20 648
+20 649
+20 650
+00:00:11.993792 Speed changed to 2 =============
+00:00:11.993792 Switching to model 2: shallow_40 ------
+00:00:11.994719 Running deep_20
+change_inference_rate() ---------yyyyy
+00:00:11.994719 Loading model shallow_40
+00:00:11.994719 Loading scaler data for shallow_40
+{'count': 197, 'model': 'shallow_40', 'speed': 2, 'time': 0.06004142761230469}
+00:00:12.056744 Loaded shallow_40
+40 551
+40 552
+00:00:22.082032 Speed changed to 1 =============
+00:00:22.082032 Switching to model 1: deep_40 ------
+00:00:22.082966 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:00:22.082966 Loading model deep_40
+00:00:22.082966 Skipping scalar data 40
+{'count': 198, 'model': 'deep_40', 'speed': 1, 'time': 0.14656281471252441}
+00:00:22.229529 Loaded deep_40
+40 553
+40 554
+40 555
+40 556
+40 557
+40 558
+40 559
+00:00:57.351089 Speed changed to 1 =============
+00:00:57.351089 Switching to model 1: deep_40 ------
+00:00:57.351089 Running deep_40
+40 560
+40 561
+40 562
+00:01:12.402196 Speed changed to 3 =============
+00:01:12.402196 Switching to model 3: deep_20 ------
+00:01:12.402196 Running deep_40
+change_inference_rate() ---------yyyyy
+00:01:12.403127 Loading model deep_20
+00:01:12.403127 Loading scaler data for deep_20
+{'count': 199, 'model': 'deep_20', 'speed': 3, 'time': 0.15055298805236816}
+00:01:12.553680 Loaded deep_20
+20 651
+20 652
+20 653
+20 654
+20 655
+20 656
+20 657
+20 658
+20 659
+20 660
+20 661
+20 662
+20 663
+20 664
+20 665
+20 666
+00:02:32.804552 Speed changed to 2 =============
+00:02:32.804552 Switching to model 2: shallow_40 ------
+00:02:32.805487 Running deep_20
+change_inference_rate() ---------yyyyy
+00:02:32.805487 Loading model shallow_40
+00:02:32.805487 Loading scaler data for shallow_40
+{'count': 200, 'model': 'shallow_40', 'speed': 2, 'time': 0.06682229042053223}
+00:02:32.872309 Loaded shallow_40
+40 563
+00:02:37.896721 Speed changed to 4 =============
+00:02:37.896721 Switching to model 4: shallow_20 ------
+00:02:37.896721 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:02:37.896721 Loading model shallow_20
+00:02:37.896721 Loading scaler data for shallow_20
+{'count': 201, 'model': 'shallow_20', 'speed': 4, 'time': 0.05110049247741699}
+00:02:37.948771 Loaded shallow_20
+20 667
+20 668
+00:02:47.979061 Speed changed to 4 =============
+00:02:47.979061 Switching to model 4: shallow_20 ------
+00:02:47.979061 Running shallow_20
+20 669
+20 670
+20 671
+20 672
+20 673
+20 674
+20 675
+20 676
+20 677
+20 678
+20 679
+20 680
+20 681
+00:03:53.215338 Speed changed to 4 =============
+00:03:53.215338 Switching to model 4: shallow_20 ------
+00:03:53.216274 Running shallow_20
+20 682
+20 683
+00:04:03.277847 Speed changed to 1 =============
+00:04:03.277847 Switching to model 1: deep_40 ------
+00:04:03.277847 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:04:03.278816 Loading model deep_40
+00:04:03.278816 Loading scaler data for deep_40
+{'count': 202, 'model': 'deep_40', 'speed': 1, 'time': 0.14051532745361328}
+00:04:03.419331 Loaded deep_40
+40 564
+40 565
+40 566
+40 567
+40 568
+40 569
+40 570
+40 571
+40 572
+40 573
+00:04:53.620127 Speed changed to 1 =============
+00:04:53.620127 Switching to model 1: deep_40 ------
+00:04:53.621048 Running deep_40
+40 574
+40 575
+40 576
+40 577
+00:05:13.687982 Speed changed to 1 =============
+00:05:13.687982 Switching to model 1: deep_40 ------
+00:05:13.688910 Running deep_40
+40 578
+40 579
+40 580
+40 581
+00:05:33.765512 Speed changed to 2 =============
+00:05:33.765512 Switching to model 2: shallow_40 ------
+00:05:33.766439 Running deep_40
+change_inference_rate() ---------yyyyy
+00:05:33.766439 Loading model shallow_40
+00:05:33.766439 Skipping scalar data 40
+{'count': 203, 'model': 'shallow_40', 'speed': 2, 'time': 0.059116363525390625}
+00:05:33.825556 Loaded shallow_40
+40 582
+40 583
+40 584
+40 585
+40 586
+40 587
+40 588
+40 589
+40 590
+40 591
+40 592
+40 593
+40 594
+40 595
+40 596
+40 597
+40 598
+40 599
+40 600
+40 601
+40 602
+40 603
+40 604
+00:07:29.268927 Speed changed to 2 =============
+00:07:29.268927 Switching to model 2: shallow_40 ------
+00:07:29.268927 Running shallow_40
+40 605
+40 606
+40 607
+40 608
+40 609
+00:07:54.330838 Speed changed to 1 =============
+00:07:54.330838 Switching to model 1: deep_40 ------
+00:07:54.330838 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:07:54.330838 Loading model deep_40
+00:07:54.331794 Skipping scalar data 40
+{'count': 204, 'model': 'deep_40', 'speed': 1, 'time': 0.14556217193603516}
+00:07:54.477356 Loaded deep_40
+40 610
+00:07:59.505327 Speed changed to 2 =============
+00:07:59.505327 Switching to model 2: shallow_40 ------
+00:07:59.506262 Running deep_40
+change_inference_rate() ---------yyyyy
+00:07:59.506262 Loading model shallow_40
+00:07:59.506262 Skipping scalar data 40
+{'count': 205, 'model': 'shallow_40', 'speed': 2, 'time': 0.044857025146484375}
+00:07:59.552145 Loaded shallow_40
+40 611
+40 612
+40 613
+40 614
+40 615
+00:08:24.653397 Speed changed to 3 =============
+00:08:24.653397 Switching to model 3: deep_20 ------
+00:08:24.654411 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:08:24.654411 Loading model deep_20
+00:08:24.654411 Loading scaler data for deep_20
+{'count': 206, 'model': 'deep_20', 'speed': 3, 'time': 0.14655423164367676}
+00:08:24.801963 Loaded deep_20
+20 684
+20 685
+20 686
+20 687
+20 688
+20 689
+20 690
+20 691
+20 692
+20 693
+20 694
+20 695
+00:09:24.932132 Speed changed to 4 =============
+00:09:24.932132 Switching to model 4: shallow_20 ------
+00:09:24.933065 Running deep_20
+change_inference_rate() ---------yyyyy
+00:09:24.933065 Loading model shallow_20
+00:09:24.933065 Skipping scalar data 20
+{'count': 207, 'model': 'shallow_20', 'speed': 4, 'time': 0.0684969425201416}
+00:09:25.001562 Loaded shallow_20
+20 696
+20 697
+20 698
+20 699
+00:09:45.090198 Speed changed to 4 =============
+00:09:45.090198 Switching to model 4: shallow_20 ------
+00:09:45.091180 Running shallow_20
+20 700
+20 701
+20 702
+00:10:00.120777 Speed changed to 2 =============
+00:10:00.120777 Switching to model 2: shallow_40 ------
+00:10:00.121712 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:10:00.121712 Loading model shallow_40
+00:10:00.121712 Loading scaler data for shallow_40
+{'count': 208, 'model': 'shallow_40', 'speed': 2, 'time': 0.04539132118225098}
+00:10:00.168075 Loaded shallow_40
+40 616
+40 617
+40 618
+40 619
+40 620
+00:10:25.258046 Speed changed to 1 =============
+00:10:25.258046 Switching to model 1: deep_40 ------
+00:10:25.258046 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:10:25.258046 Loading model deep_40
+00:10:25.259043 Skipping scalar data 40
+{'count': 209, 'model': 'deep_40', 'speed': 1, 'time': 0.1534900665283203}
+00:10:25.412532 Loaded deep_40
+40 621
+00:10:30.435018 Speed changed to 1 =============
+00:10:30.435018 Switching to model 1: deep_40 ------
+00:10:30.435955 Running deep_40
+40 622
+00:10:35.437897 Speed changed to 3 =============
+00:10:35.437897 Switching to model 3: deep_20 ------
+00:10:35.437897 Running deep_40
+change_inference_rate() ---------yyyyy
+00:10:35.438846 Loading model deep_20
+00:10:35.438846 Loading scaler data for deep_20
+{'count': 210, 'model': 'deep_20', 'speed': 3, 'time': 0.14349746704101562}
+00:10:35.582343 Loaded deep_20
+20 703
+20 704
+00:10:45.621872 Speed changed to 2 =============
+00:10:45.621872 Switching to model 2: shallow_40 ------
+00:10:45.622800 Running deep_20
+change_inference_rate() ---------yyyyy
+00:10:45.622800 Loading model shallow_40
+00:10:45.622800 Loading scaler data for shallow_40
+{'count': 211, 'model': 'shallow_40', 'speed': 2, 'time': 0.05186724662780762}
+00:10:45.674667 Loaded shallow_40
+40 623
+40 624
+40 625
+40 626
+40 627
+40 628
+40 629
+40 630
+40 631
+40 632
+00:11:35.845308 Speed changed to 2 =============
+00:11:35.845308 Switching to model 2: shallow_40 ------
+00:11:35.846232 Running shallow_40
+40 633
+40 634
+40 635
+40 636
+40 637
+40 638
+00:12:05.964490 Speed changed to 3 =============
+00:12:05.964490 Switching to model 3: deep_20 ------
+00:12:05.965467 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:12:05.965467 Loading model deep_20
+00:12:05.965467 Loading scaler data for deep_20
+{'count': 212, 'model': 'deep_20', 'speed': 3, 'time': 0.18925952911376953}
+00:12:06.154727 Loaded deep_20
+20 705
+20 706
+20 707
+20 708
+20 709
+00:12:31.255389 Speed changed to 3 =============
+00:12:31.255389 Switching to model 3: deep_20 ------
+00:12:31.256349 Running deep_20
+20 710
+20 711
+20 712
+20 713
+00:12:51.351525 Speed changed to 3 =============
+00:12:51.351525 Switching to model 3: deep_20 ------
+00:12:51.352455 Running deep_20
+20 714
+20 715
+20 716
+20 717
+20 718
+20 719
+20 720
+20 721
+20 722
+20 723
+20 724
+00:13:46.555308 Speed changed to 3 =============
+00:13:46.555308 Switching to model 3: deep_20 ------
+00:13:46.556222 Running deep_20
+20 725
+20 726
+20 727
+20 728
+20 729
+20 730
+20 731
+20 732
+20 733
+20 734
+20 735
+20 736
+00:14:46.762519 Speed changed to 1 =============
+00:14:46.762519 Switching to model 1: deep_40 ------
+00:14:46.763443 Running deep_20
+change_inference_rate() ---------yyyyy
+00:14:46.763443 Loading model deep_40
+00:14:46.763443 Loading scaler data for deep_40
+{'count': 213, 'model': 'deep_40', 'speed': 1, 'time': 0.1475071907043457}
+00:14:46.911949 Loaded deep_40
+40 639
+40 640
+00:14:56.952099 Speed changed to 3 =============
+00:14:56.952099 Switching to model 3: deep_20 ------
+00:14:56.953018 Running deep_40
+change_inference_rate() ---------yyyyy
+00:14:56.953018 Loading model deep_20
+00:14:56.953018 Loading scaler data for deep_20
+{'count': 214, 'model': 'deep_20', 'speed': 3, 'time': 0.16111111640930176}
+00:14:57.115112 Loaded deep_20
+20 737
+20 738
+00:15:07.151488 Speed changed to 3 =============
+00:15:07.151488 Switching to model 3: deep_20 ------
+00:15:07.152451 Running deep_20
+20 739
+20 740
+20 741
+20 742
+20 743
+20 744
+20 745
+20 746
+20 747
+20 748
+20 749
+20 750
+20 751
+20 752
+20 753
+20 754
+20 755
+20 756
+20 757
+20 758
+20 759
+00:16:52.605020 Speed changed to 2 =============
+00:16:52.605020 Switching to model 2: shallow_40 ------
+00:16:52.605957 Running deep_20
+change_inference_rate() ---------yyyyy
+00:16:52.605957 Loading model shallow_40
+00:16:52.605957 Loading scaler data for shallow_40
+{'count': 215, 'model': 'shallow_40', 'speed': 2, 'time': 0.05283927917480469}
+00:16:52.658796 Loaded shallow_40
+40 641
+40 642
+40 643
+40 644
+00:17:12.678977 Speed changed to 3 =============
+00:17:12.678977 Switching to model 3: deep_20 ------
+00:17:12.679885 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:17:12.679885 Loading model deep_20
+00:17:12.679885 Loading scaler data for deep_20
+{'count': 216, 'model': 'deep_20', 'speed': 3, 'time': 0.14556002616882324}
+00:17:12.826401 Loaded deep_20
+20 760
+00:17:17.837495 Speed changed to 2 =============
+00:17:17.837495 Switching to model 2: shallow_40 ------
+00:17:17.837495 Running deep_20
+change_inference_rate() ---------yyyyy
+00:17:17.837495 Loading model shallow_40
+00:17:17.837495 Loading scaler data for shallow_40
+{'count': 217, 'model': 'shallow_40', 'speed': 2, 'time': 0.03787636756896973}
+00:17:17.876365 Loaded shallow_40
+40 645
+40 646
+40 647
+40 648
+40 649
+40 650
+00:17:47.985346 Speed changed to 1 =============
+00:17:47.985346 Switching to model 1: deep_40 ------
+00:17:47.985346 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:17:47.985346 Loading model deep_40
+00:17:47.986346 Skipping scalar data 40
+{'count': 218, 'model': 'deep_40', 'speed': 1, 'time': 0.12712812423706055}
+00:17:48.113474 Loaded deep_40
+40 651
+00:17:53.140444 Speed changed to 4 =============
+00:17:53.140444 Switching to model 4: shallow_20 ------
+00:17:53.141374 Running deep_40
+change_inference_rate() ---------yyyyy
+00:17:53.141374 Loading model shallow_20
+00:17:53.141374 Loading scaler data for shallow_20
+{'count': 219, 'model': 'shallow_20', 'speed': 4, 'time': 0.05381298065185547}
+00:17:53.196183 Loaded shallow_20
+20 761
+20 762
+00:18:03.238745 Speed changed to 2 =============
+00:18:03.238745 Switching to model 2: shallow_40 ------
+00:18:03.239705 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:18:03.239705 Loading model shallow_40
+00:18:03.239705 Loading scaler data for shallow_40
+{'count': 220, 'model': 'shallow_40', 'speed': 2, 'time': 0.06177234649658203}
+00:18:03.301477 Loaded shallow_40
+40 652
+40 653
+40 654
+40 655
+00:18:23.337669 Speed changed to 3 =============
+00:18:23.337669 Switching to model 3: deep_20 ------
+00:18:23.338573 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:18:23.338573 Loading model deep_20
+00:18:23.338573 Loading scaler data for deep_20
+{'count': 221, 'model': 'deep_20', 'speed': 3, 'time': 0.13658714294433594}
+00:18:23.476119 Loaded deep_20
+20 763
+20 764
+00:18:33.482284 Speed changed to 3 =============
+00:18:33.482284 Switching to model 3: deep_20 ------
+00:18:33.483212 Running deep_20
+20 765
+20 766
+00:18:43.514722 Speed changed to 1 =============
+00:18:43.514722 Switching to model 1: deep_40 ------
+00:18:43.514722 Running deep_20
+change_inference_rate() ---------yyyyy
+00:18:43.515711 Loading model deep_40
+00:18:43.515711 Loading scaler data for deep_40
+{'count': 222, 'model': 'deep_40', 'speed': 1, 'time': 0.16144752502441406}
+00:18:43.677158 Loaded deep_40
+40 656
+40 657
+40 658
+40 659
+40 660
+00:19:08.754109 Speed changed to 4 =============
+00:19:08.754109 Switching to model 4: shallow_20 ------
+00:19:08.754109 Running deep_40
+change_inference_rate() ---------yyyyy
+00:19:08.754109 Loading model shallow_20
+00:19:08.754109 Loading scaler data for shallow_20
+{'count': 223, 'model': 'shallow_20', 'speed': 4, 'time': 0.04185676574707031}
+00:19:08.796922 Loaded shallow_20
+20 767
+20 768
+20 769
+00:19:23.838537 Speed changed to 4 =============
+00:19:23.838537 Switching to model 4: shallow_20 ------
+00:19:23.839472 Running shallow_20
+20 770
+20 771
+20 772
+20 773
+20 774
+20 775
+20 776
+20 777
+20 778
+20 779
+20 780
+20 781
+20 782
+00:20:29.116269 Speed changed to 3 =============
+00:20:29.116269 Switching to model 3: deep_20 ------
+00:20:29.117199 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:20:29.117199 Loading model deep_20
+00:20:29.117199 Skipping scalar data 20
+{'count': 224, 'model': 'deep_20', 'speed': 3, 'time': 0.15647530555725098}
+00:20:29.273675 Loaded deep_20
+20 783
+00:20:34.284679 Speed changed to 4 =============
+00:20:34.284679 Switching to model 4: shallow_20 ------
+00:20:34.284679 Running deep_20
+change_inference_rate() ---------yyyyy
+00:20:34.285664 Loading model shallow_20
+00:20:34.285664 Skipping scalar data 20
+{'count': 225, 'model': 'shallow_20', 'speed': 4, 'time': 0.054816246032714844}
+00:20:34.341505 Loaded shallow_20
+20 784
+20 785
+20 786
+20 787
+20 788
+20 789
+20 790
+00:21:09.451312 Speed changed to 3 =============
+00:21:09.451312 Switching to model 3: deep_20 ------
+00:21:09.452307 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:21:09.452307 Loading model deep_20
+00:21:09.452307 Skipping scalar data 20
+{'count': 226, 'model': 'deep_20', 'speed': 3, 'time': 0.15253877639770508}
+00:21:09.605838 Loaded deep_20
+20 791
+20 792
+20 793
+00:21:24.638016 Speed changed to 4 =============
+00:21:24.638016 Switching to model 4: shallow_20 ------
+00:21:24.638925 Running deep_20
+change_inference_rate() ---------yyyyy
+00:21:24.638925 Loading model shallow_20
+00:21:24.638925 Skipping scalar data 20
+{'count': 227, 'model': 'shallow_20', 'speed': 4, 'time': 0.0533449649810791}
+00:21:24.692270 Loaded shallow_20
+20 794
+20 795
+20 796
+00:21:39.740006 Speed changed to 1 =============
+00:21:39.740006 Switching to model 1: deep_40 ------
+00:21:39.740006 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:21:39.741053 Loading model deep_40
+00:21:39.741053 Loading scaler data for deep_40
+{'count': 228, 'model': 'deep_40', 'speed': 1, 'time': 0.14461469650268555}
+00:21:39.886664 Loaded deep_40
+40 661
+00:21:44.907802 Speed changed to 2 =============
+00:21:44.907802 Switching to model 2: shallow_40 ------
+00:21:44.908781 Running deep_40
+change_inference_rate() ---------yyyyy
+00:21:44.908781 Loading model shallow_40
+00:21:44.908781 Skipping scalar data 40
+{'count': 229, 'model': 'shallow_40', 'speed': 2, 'time': 0.04720950126647949}
+00:21:44.958002 Loaded shallow_40
+40 662
+40 663
+40 664
+40 665
+40 666
+40 667
+40 668
+00:22:20.079952 Speed changed to 4 =============
+00:22:20.079952 Switching to model 4: shallow_20 ------
+00:22:20.080928 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:22:20.080928 Loading model shallow_20
+00:22:20.080928 Loading scaler data for shallow_20
+{'count': 230, 'model': 'shallow_20', 'speed': 4, 'time': 0.054813385009765625}
+00:22:20.135742 Loaded shallow_20
+20 797
+20 798
+20 799
+00:22:35.183810 Speed changed to 4 =============
+00:22:35.183810 Switching to model 4: shallow_20 ------
+00:22:35.184729 Running shallow_20
+20 800
+20 801
+00:22:45.205600 Speed changed to 4 =============
+00:22:45.205600 Switching to model 4: shallow_20 ------
+00:22:45.206519 Running shallow_20
+20 802
+00:22:50.213279 Speed changed to 2 =============
+00:22:50.213279 Switching to model 2: shallow_40 ------
+00:22:50.214223 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:22:50.214223 Loading model shallow_40
+00:22:50.214223 Loading scaler data for shallow_40
+{'count': 231, 'model': 'shallow_40', 'speed': 2, 'time': 0.044881582260131836}
+00:22:50.260100 Loaded shallow_40
+40 669
+40 670
+40 671
+40 672
+40 673
+40 674
+00:23:20.371199 Speed changed to 4 =============
+00:23:20.371199 Switching to model 4: shallow_20 ------
+00:23:20.372126 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:23:20.372126 Loading model shallow_20
+00:23:20.372126 Loading scaler data for shallow_20
+{'count': 232, 'model': 'shallow_20', 'speed': 4, 'time': 0.043889522552490234}
+00:23:20.417029 Loaded shallow_20
+20 803
+20 804
+00:23:30.433612 Speed changed to 2 =============
+00:23:30.433612 Switching to model 2: shallow_40 ------
+00:23:30.433612 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:23:30.434608 Loading model shallow_40
+00:23:30.434608 Loading scaler data for shallow_40
+{'count': 233, 'model': 'shallow_40', 'speed': 2, 'time': 0.0418550968170166}
+00:23:30.477414 Loaded shallow_40
+40 675
+40 676
+00:23:40.527105 Speed changed to 3 =============
+00:23:40.527105 Switching to model 3: deep_20 ------
+00:23:40.528034 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:23:40.528034 Loading model deep_20
+00:23:40.528034 Loading scaler data for deep_20
+{'count': 234, 'model': 'deep_20', 'speed': 3, 'time': 0.15453338623046875}
+00:23:40.682567 Loaded deep_20
+20 805
+20 806
+20 807
+20 808
+00:24:00.747214 Speed changed to 2 =============
+00:24:00.747214 Switching to model 2: shallow_40 ------
+00:24:00.748154 Running deep_20
+change_inference_rate() ---------yyyyy
+00:24:00.748154 Loading model shallow_40
+00:24:00.748154 Loading scaler data for shallow_40
+{'count': 235, 'model': 'shallow_40', 'speed': 2, 'time': 0.06424832344055176}
+00:24:00.812402 Loaded shallow_40
+40 677
+00:24:05.826889 Speed changed to 3 =============
+00:24:05.826889 Switching to model 3: deep_20 ------
+00:24:05.827821 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:24:05.827821 Loading model deep_20
+00:24:05.827821 Loading scaler data for deep_20
+{'count': 236, 'model': 'deep_20', 'speed': 3, 'time': 0.1513981819152832}
+00:24:05.980150 Loaded deep_20
+20 809
+20 810
+20 811
+20 812
+20 813
+20 814
+20 815
+20 816
+00:24:46.068772 Speed changed to 3 =============
+00:24:46.068772 Switching to model 3: deep_20 ------
+00:24:46.069716 Running deep_20
+20 817
+20 818
+20 819
+20 820
+20 821
+20 822
+00:25:16.161196 Speed changed to 4 =============
+00:25:16.161196 Switching to model 4: shallow_20 ------
+00:25:16.162132 Running deep_20
+change_inference_rate() ---------yyyyy
+00:25:16.162132 Loading model shallow_20
+00:25:16.162132 Skipping scalar data 20
+{'count': 237, 'model': 'shallow_20', 'speed': 4, 'time': 0.04588055610656738}
+00:25:16.208993 Loaded shallow_20
+20 823
+20 824
+20 825
+20 826
+00:25:36.257352 Speed changed to 3 =============
+00:25:36.257352 Switching to model 3: deep_20 ------
+00:25:36.257352 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:25:36.258312 Loading model deep_20
+00:25:36.258312 Skipping scalar data 20
+{'count': 238, 'model': 'deep_20', 'speed': 3, 'time': 0.13863611221313477}
+00:25:36.396948 Loaded deep_20
+20 827
+20 828
+00:25:46.435137 Speed changed to 4 =============
+00:25:46.435137 Switching to model 4: shallow_20 ------
+00:25:46.436068 Running deep_20
+change_inference_rate() ---------yyyyy
+00:25:46.436068 Loading model shallow_20
+00:25:46.436068 Skipping scalar data 20
+{'count': 239, 'model': 'shallow_20', 'speed': 4, 'time': 0.05282282829284668}
+00:25:46.488891 Loaded shallow_20
+20 829
+20 830
+20 831
+20 832
+20 833
+00:26:11.571773 Speed changed to 2 =============
+00:26:11.571773 Switching to model 2: shallow_40 ------
+00:26:11.572669 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:26:11.572669 Loading model shallow_40
+00:26:11.572669 Loading scaler data for shallow_40
+{'count': 240, 'model': 'shallow_40', 'speed': 2, 'time': 0.04484701156616211}
+00:26:11.617516 Loaded shallow_40
+40 678
+40 679
+00:26:21.644083 Speed changed to 3 =============
+00:26:21.644083 Switching to model 3: deep_20 ------
+00:26:21.645066 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:26:21.645066 Loading model deep_20
+00:26:21.645066 Loading scaler data for deep_20
+{'count': 241, 'model': 'deep_20', 'speed': 3, 'time': 0.15753769874572754}
+00:26:21.804159 Loaded deep_20
+20 834
+20 835
+20 836
+20 837
+00:26:41.819704 Speed changed to 4 =============
+00:26:41.819704 Switching to model 4: shallow_20 ------
+00:26:41.820631 Running deep_20
+change_inference_rate() ---------yyyyy
+00:26:41.820631 Loading model shallow_20
+00:26:41.820631 Skipping scalar data 20
+{'count': 242, 'model': 'shallow_20', 'speed': 4, 'time': 0.046892642974853516}
+00:26:41.868506 Loaded shallow_20
+20 838
+20 839
+20 840
+00:26:56.898268 Speed changed to 1 =============
+00:26:56.898268 Switching to model 1: deep_40 ------
+00:26:56.898268 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:26:56.899243 Loading model deep_40
+00:26:56.899243 Loading scaler data for deep_40
+{'count': 243, 'model': 'deep_40', 'speed': 1, 'time': 0.14369559288024902}
+00:26:57.043946 Loaded deep_40
+40 680
+00:27:02.059919 Speed changed to 3 =============
+00:27:02.059919 Switching to model 3: deep_20 ------
+00:27:02.060825 Running deep_40
+change_inference_rate() ---------yyyyy
+00:27:02.060825 Loading model deep_20
+00:27:02.060825 Loading scaler data for deep_20
+{'count': 244, 'model': 'deep_20', 'speed': 3, 'time': 0.14656567573547363}
+00:27:02.208376 Loaded deep_20
+20 841
+20 842
+20 843
+20 844
+20 845
+20 846
+20 847
+00:27:37.363816 Speed changed to 3 =============
+00:27:37.363816 Switching to model 3: deep_20 ------
+00:27:37.363816 Running deep_20
+20 848
+20 849
+20 850
+20 851
+20 852
+20 853
+20 854
+20 855
+20 856
+20 857
+20 858
+20 859
+20 860
+20 861
+20 862
+20 863
+20 864
+00:29:02.712716 Speed changed to 1 =============
+00:29:02.712716 Switching to model 1: deep_40 ------
+00:29:02.713640 Running deep_20
+change_inference_rate() ---------yyyyy
+00:29:02.713640 Loading model deep_40
+00:29:02.713640 Loading scaler data for deep_40
+{'count': 245, 'model': 'deep_40', 'speed': 1, 'time': 0.14954066276550293}
+00:29:02.863181 Loaded deep_40
+40 681
+40 682
+40 683
+00:29:17.919948 Speed changed to 2 =============
+00:29:17.919948 Switching to model 2: shallow_40 ------
+00:29:17.919948 Running deep_40
+change_inference_rate() ---------yyyyy
+00:29:17.920902 Loading model shallow_40
+00:29:17.920902 Skipping scalar data 40
+{'count': 246, 'model': 'shallow_40', 'speed': 2, 'time': 0.052120208740234375}
+00:29:17.973023 Loaded shallow_40
+40 684
+40 685
+40 686
+00:29:33.057266 Speed changed to 3 =============
+00:29:33.057266 Switching to model 3: deep_20 ------
+00:29:33.058234 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:29:33.058234 Loading model deep_20
+00:29:33.058234 Loading scaler data for deep_20
+{'count': 247, 'model': 'deep_20', 'speed': 3, 'time': 0.13854098320007324}
+00:29:33.197749 Loaded deep_20
+20 865
+00:29:38.213411 Speed changed to 1 =============
+00:29:38.213411 Switching to model 1: deep_40 ------
+00:29:38.214392 Running deep_20
+change_inference_rate() ---------yyyyy
+00:29:38.214392 Loading model deep_40
+00:29:38.214392 Loading scaler data for deep_40
+{'count': 248, 'model': 'deep_40', 'speed': 1, 'time': 0.14393401145935059}
+00:29:38.359293 Loaded deep_40
+40 687
+40 688
+40 689
+00:29:53.407199 Speed changed to 3 =============
+00:29:53.407199 Switching to model 3: deep_20 ------
+00:29:53.408127 Running deep_40
+change_inference_rate() ---------yyyyy
+00:29:53.408127 Loading model deep_20
+00:29:53.408127 Loading scaler data for deep_20
+{'count': 249, 'model': 'deep_20', 'speed': 3, 'time': 0.13559675216674805}
+00:29:53.544682 Loaded deep_20
+20 866
+20 867
+20 868
+20 869
+20 870
+00:30:18.655251 Speed changed to 1 =============
+00:30:18.655251 Switching to model 1: deep_40 ------
+00:30:18.655251 Running deep_20
+change_inference_rate() ---------yyyyy
+00:30:18.656242 Loading model deep_40
+00:30:18.656242 Loading scaler data for deep_40
+{'count': 250, 'model': 'deep_40', 'speed': 1, 'time': 0.15255045890808105}
+00:30:18.808793 Loaded deep_40
+40 690
+40 691
+00:30:28.839884 Speed changed to 1 =============
+00:30:28.839884 Switching to model 1: deep_40 ------
+00:30:28.839884 Running deep_40
+40 692
+40 693
+40 694
+00:30:43.880685 Speed changed to 3 =============
+00:30:43.880685 Switching to model 3: deep_20 ------
+00:30:43.880685 Running deep_40
+change_inference_rate() ---------yyyyy
+00:30:43.881604 Loading model deep_20
+00:30:43.881604 Loading scaler data for deep_20
+{'count': 251, 'model': 'deep_20', 'speed': 3, 'time': 0.14134693145751953}
+00:30:44.023947 Loaded deep_20
+20 871
+20 872
+20 873
+20 874
+00:31:04.095482 Speed changed to 4 =============
+00:31:04.095482 Switching to model 4: shallow_20 ------
+00:31:04.095482 Running deep_20
+change_inference_rate() ---------yyyyy
+00:31:04.096470 Loading model shallow_20
+00:31:04.096470 Skipping scalar data 20
+{'count': 252, 'model': 'shallow_20', 'speed': 4, 'time': 0.03987526893615723}
+00:31:04.137323 Loaded shallow_20
+20 875
+20 876
+20 877
+20 878
+20 879
+20 880
+20 881
+20 882
+20 883
+20 884
+20 885
+20 886
+20 887
+20 888
+20 889
+20 890
+20 891
+20 892
+00:32:34.400948 Speed changed to 2 =============
+00:32:34.400948 Switching to model 2: shallow_40 ------
+00:32:34.401924 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:32:34.401924 Loading model shallow_40
+00:32:34.401924 Loading scaler data for shallow_40
+{'count': 253, 'model': 'shallow_40', 'speed': 2, 'time': 0.06073617935180664}
+00:32:34.463657 Loaded shallow_40
+40 695
+40 696
+40 697
+40 698
+40 699
+00:32:59.511877 Speed changed to 2 =============
+00:32:59.511877 Switching to model 2: shallow_40 ------
+00:32:59.512785 Running shallow_40
+40 700
+40 701
+40 702
+40 703
+40 704
+40 705
+40 706
+40 707
+40 708
+40 709
+40 710
+40 711
+40 712
+40 713
+40 714
+40 715
+40 716
+40 717
+40 718
+00:34:34.753491 Speed changed to 4 =============
+00:34:34.753491 Switching to model 4: shallow_20 ------
+00:34:34.754418 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:34:34.754418 Loading model shallow_20
+00:34:34.754418 Loading scaler data for shallow_20
+{'count': 254, 'model': 'shallow_20', 'speed': 4, 'time': 0.04889273643493652}
+00:34:34.803311 Loaded shallow_20
+20 893
+00:34:39.823654 Speed changed to 4 =============
+00:34:39.823654 Switching to model 4: shallow_20 ------
+00:34:39.823654 Running shallow_20
+20 894
+20 895
+20 896
+20 897
+00:34:59.914432 Speed changed to 1 =============
+00:34:59.914432 Switching to model 1: deep_40 ------
+00:34:59.915362 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:34:59.915362 Loading model deep_40
+00:34:59.915362 Loading scaler data for deep_40
+{'count': 255, 'model': 'deep_40', 'speed': 1, 'time': 0.15387463569641113}
+00:35:00.070234 Loaded deep_40
+40 719
+40 720
+40 721
+40 722
+40 723
+40 724
+40 725
+40 726
+00:35:40.204479 Speed changed to 2 =============
+00:35:40.204479 Switching to model 2: shallow_40 ------
+00:35:40.205403 Running deep_40
+change_inference_rate() ---------yyyyy
+00:35:40.205403 Loading model shallow_40
+00:35:40.205403 Skipping scalar data 40
+{'count': 256, 'model': 'shallow_40', 'speed': 2, 'time': 0.055875301361083984}
+00:35:40.262212 Loaded shallow_40
+40 727
+00:35:45.284633 Speed changed to 2 =============
+00:35:45.284633 Switching to model 2: shallow_40 ------
+00:35:45.285551 Running shallow_40
+40 728
+40 729
+40 730
+40 731
+40 732
+40 733
+00:36:15.418309 Speed changed to 4 =============
+00:36:15.418309 Switching to model 4: shallow_20 ------
+00:36:15.419239 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:36:15.419239 Loading model shallow_20
+00:36:15.419239 Loading scaler data for shallow_20
+{'count': 257, 'model': 'shallow_20', 'speed': 4, 'time': 0.04688763618469238}
+00:36:15.466127 Loaded shallow_20
+20 898
+20 899
+00:36:25.514730 Speed changed to 1 =============
+00:36:25.514730 Switching to model 1: deep_40 ------
+00:36:25.515662 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:36:25.515662 Loading model deep_40
+00:36:25.515662 Loading scaler data for deep_40
+{'count': 258, 'model': 'deep_40', 'speed': 1, 'time': 0.138535737991333}
+00:36:25.655195 Loaded deep_40
+40 734
+00:36:30.667908 Speed changed to 1 =============
+00:36:30.667908 Switching to model 1: deep_40 ------
+00:36:30.668835 Running deep_40
+40 735
+00:36:35.683448 Speed changed to 1 =============
+00:36:35.683448 Switching to model 1: deep_40 ------
+00:36:35.684372 Running deep_40
+40 736
+00:36:40.699908 Speed changed to 2 =============
+00:36:40.699908 Switching to model 2: shallow_40 ------
+00:36:40.700915 Running deep_40
+change_inference_rate() ---------yyyyy
+00:36:40.700915 Loading model shallow_40
+00:36:40.700915 Skipping scalar data 40
+{'count': 259, 'model': 'shallow_40', 'speed': 2, 'time': 0.05680274963378906}
+00:36:40.758706 Loaded shallow_40
+40 737
+00:36:45.766884 Speed changed to 2 =============
+00:36:45.766884 Switching to model 2: shallow_40 ------
+00:36:45.767801 Running shallow_40
+40 738
+00:36:50.774829 Speed changed to 4 =============
+00:36:50.774829 Switching to model 4: shallow_20 ------
+00:36:50.775738 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:36:50.775738 Loading model shallow_20
+00:36:50.775738 Loading scaler data for shallow_20
+{'count': 260, 'model': 'shallow_20', 'speed': 4, 'time': 0.06381678581237793}
+00:36:50.839554 Loaded shallow_20
+20 900
+00:36:55.858836 Speed changed to 1 =============
+00:36:55.858836 Switching to model 1: deep_40 ------
+00:36:55.859821 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:36:55.859821 Loading model deep_40
+00:36:55.859821 Loading scaler data for deep_40
+{'count': 261, 'model': 'deep_40', 'speed': 1, 'time': 0.1765279769897461}
+00:36:56.037351 Loaded deep_40
+40 739
+00:37:01.065162 Speed changed to 1 =============
+00:37:01.065162 Switching to model 1: deep_40 ------
+00:37:01.066083 Running deep_40
+40 740
+40 741
+40 742
+40 743
+40 744
+40 745
+40 746
+40 747
+40 748
+40 749
+40 750
+40 751
+40 752
+00:38:06.211049 Speed changed to 3 =============
+00:38:06.211049 Switching to model 3: deep_20 ------
+00:38:06.211973 Running deep_40
+change_inference_rate() ---------yyyyy
+00:38:06.211973 Loading model deep_20
+00:38:06.211973 Loading scaler data for deep_20
+{'count': 262, 'model': 'deep_20', 'speed': 3, 'time': 0.14351916313171387}
+00:38:06.355492 Loaded deep_20
+20 901
+20 902
+20 903
+20 904
+20 905
+20 906
+20 907
+20 908
+20 909
+20 910
+20 911
+20 912
+20 913
+20 914
+20 915
+20 916
+20 917
+20 918
+20 919
+20 920
+20 921
+20 922
+20 923
+20 924
+20 925
+20 926
+00:40:16.787509 Speed changed to 1 =============
+00:40:16.787509 Switching to model 1: deep_40 ------
+00:40:16.788437 Running deep_20
+change_inference_rate() ---------yyyyy
+00:40:16.788437 Loading model deep_40
+00:40:16.788437 Loading scaler data for deep_40
+{'count': 263, 'model': 'deep_40', 'speed': 1, 'time': 0.1425633430480957}
+00:40:16.931999 Loaded deep_40
+40 753
+40 754
+40 755
+00:40:31.969086 Speed changed to 4 =============
+00:40:31.969086 Switching to model 4: shallow_20 ------
+00:40:31.970017 Running deep_40
+change_inference_rate() ---------yyyyy
+00:40:31.970017 Loading model shallow_20
+00:40:31.970017 Loading scaler data for shallow_20
+{'count': 264, 'model': 'shallow_20', 'speed': 4, 'time': 0.053240060806274414}
+00:40:32.024203 Loaded shallow_20
+20 927
+20 928
+20 929
+20 930
+20 931
+00:40:57.123853 Speed changed to 4 =============
+00:40:57.123853 Switching to model 4: shallow_20 ------
+00:40:57.124832 Running shallow_20
+20 932
+20 933
+20 934
+20 935
+20 936
+20 937
+20 938
+20 939
+20 940
+20 941
+20 942
+00:41:52.291485 Speed changed to 2 =============
+00:41:52.291485 Switching to model 2: shallow_40 ------
+00:41:52.292472 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:41:52.292472 Loading model shallow_40
+00:41:52.292472 Loading scaler data for shallow_40
+{'count': 265, 'model': 'shallow_40', 'speed': 2, 'time': 0.043799400329589844}
+00:41:52.337268 Loaded shallow_40
+40 756
+40 757
+00:42:02.353432 Speed changed to 3 =============
+00:42:02.353432 Switching to model 3: deep_20 ------
+00:42:02.354377 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:42:02.354377 Loading model deep_20
+00:42:02.354377 Loading scaler data for deep_20
+{'count': 266, 'model': 'deep_20', 'speed': 3, 'time': 0.16947150230407715}
+00:42:02.523848 Loaded deep_20
+20 943
+20 944
+20 945
+20 946
+20 947
+20 948
+20 949
+20 950
+20 951
+00:42:47.687738 Speed changed to 2 =============
+00:42:47.687738 Switching to model 2: shallow_40 ------
+00:42:47.687738 Running deep_20
+change_inference_rate() ---------yyyyy
+00:42:47.687738 Loading model shallow_40
+00:42:47.688682 Loading scaler data for shallow_40
+{'count': 267, 'model': 'shallow_40', 'speed': 2, 'time': 0.055869340896606445}
+00:42:47.744551 Loaded shallow_40
+40 758
+40 759
+40 760
+40 761
+40 762
+40 763
+40 764
+40 765
+40 766
+40 767
+40 768
+00:43:42.949922 Speed changed to 3 =============
+00:43:42.949922 Switching to model 3: deep_20 ------
+00:43:42.950850 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:43:42.950850 Loading model deep_20
+00:43:42.950850 Loading scaler data for deep_20
+{'count': 268, 'model': 'deep_20', 'speed': 3, 'time': 0.13961315155029297}
+00:43:43.090463 Loaded deep_20
+20 952
+00:43:48.123020 Speed changed to 2 =============
+00:43:48.123020 Switching to model 2: shallow_40 ------
+00:43:48.123938 Running deep_20
+change_inference_rate() ---------yyyyy
+00:43:48.123938 Loading model shallow_40
+00:43:48.123938 Loading scaler data for shallow_40
+{'count': 269, 'model': 'shallow_40', 'speed': 2, 'time': 0.07279491424560547}
+00:43:48.196733 Loaded shallow_40
+40 769
+40 770
+40 771
+40 772
+40 773
+40 774
+40 775
+40 776
+40 777
+40 778
+40 779
+40 780
+40 781
+40 782
+40 783
+40 784
+00:45:08.434731 Speed changed to 1 =============
+00:45:08.434731 Switching to model 1: deep_40 ------
+00:45:08.435654 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:45:08.435654 Loading model deep_40
+00:45:08.435654 Skipping scalar data 40
+{'count': 270, 'model': 'deep_40', 'speed': 1, 'time': 0.15854334831237793}
+00:45:08.595123 Loaded deep_40
+40 785
+40 786
+40 787
+40 788
+40 789
+40 790
+00:45:38.704835 Speed changed to 4 =============
+00:45:38.704835 Switching to model 4: shallow_20 ------
+00:45:38.705763 Running deep_40
+change_inference_rate() ---------yyyyy
+00:45:38.705763 Loading model shallow_20
+00:45:38.705763 Loading scaler data for shallow_20
+{'count': 271, 'model': 'shallow_20', 'speed': 4, 'time': 0.051824092864990234}
+00:45:38.758584 Loaded shallow_20
+20 953
+20 954
+20 955
+20 956
+20 957
+20 958
+20 959
+20 960
+00:46:18.900633 Speed changed to 1 =============
+00:46:18.900633 Switching to model 1: deep_40 ------
+00:46:18.900633 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:46:18.901547 Loading model deep_40
+00:46:18.901547 Loading scaler data for deep_40
+{'count': 272, 'model': 'deep_40', 'speed': 1, 'time': 0.13092684745788574}
+00:46:19.032474 Loaded deep_40
+40 791
+00:46:24.046434 Speed changed to 3 =============
+00:46:24.046434 Switching to model 3: deep_20 ------
+00:46:24.047409 Running deep_40
+change_inference_rate() ---------yyyyy
+00:46:24.047409 Loading model deep_20
+00:46:24.047409 Loading scaler data for deep_20
+{'count': 273, 'model': 'deep_20', 'speed': 3, 'time': 0.13852834701538086}
+00:46:24.186954 Loaded deep_20
+20 961
+20 962
+20 963
+20 964
+20 965
+20 966
+20 967
+20 968
+00:47:04.334910 Speed changed to 3 =============
+00:47:04.334910 Switching to model 3: deep_20 ------
+00:47:04.335838 Running deep_20
+20 969
+20 970
+20 971
+20 972
+20 973
+20 974
+20 975
+20 976
+20 977
+20 978
+20 979
+00:47:59.544830 Speed changed to 4 =============
+00:47:59.544830 Switching to model 4: shallow_20 ------
+00:47:59.545766 Running deep_20
+change_inference_rate() ---------yyyyy
+00:47:59.545766 Loading model shallow_20
+00:47:59.545766 Skipping scalar data 20
+{'count': 274, 'model': 'shallow_20', 'speed': 4, 'time': 0.05779767036437988}
+00:47:59.603564 Loaded shallow_20
+20 980
+20 981
+20 982
+20 983
+20 984
+20 985
+20 986
+20 987
+20 988
+20 989
+20 990
+20 991
+20 992
+20 993
+20 994
+20 995
+20 996
+20 997
+20 998
+00:49:34.975604 Speed changed to 2 =============
+00:49:34.975604 Switching to model 2: shallow_40 ------
+00:49:34.975604 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:49:34.976662 Loading model shallow_40
+00:49:34.976662 Loading scaler data for shallow_40
+{'count': 275, 'model': 'shallow_40', 'speed': 2, 'time': 0.05806732177734375}
+00:49:35.034730 Loaded shallow_40
+40 792
+40 793
+40 794
+40 795
+40 796
+40 797
+40 798
+40 799
+40 800
+40 801
+00:50:25.265165 Speed changed to 3 =============
+00:50:25.265165 Switching to model 3: deep_20 ------
+00:50:25.266162 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:50:25.266162 Loading model deep_20
+00:50:25.266162 Loading scaler data for deep_20
+{'count': 276, 'model': 'deep_20', 'speed': 3, 'time': 0.17345643043518066}
+00:50:25.439619 Loaded deep_20
+00:50:35.481426 Speed changed to 1 =============
+00:50:35.481426 Switching to model 1: deep_40 ------
+00:50:35.481426 Running deep_20
+change_inference_rate() ---------yyyyy
+00:50:35.482407 Loading model deep_40
+00:50:35.482407 Loading scaler data for deep_40
+{'count': 277, 'model': 'deep_40', 'speed': 1, 'time': 0.13554024696350098}
+00:50:35.618943 Loaded deep_40
+40 802
+40 803
+40 804
+40 805
+40 806
+00:51:00.690892 Speed changed to 3 =============
+00:51:00.690892 Switching to model 3: deep_20 ------
+00:51:00.691881 Running deep_40
+change_inference_rate() ---------yyyyy
+00:51:00.691881 Loading model deep_20
+00:51:00.691881 Loading scaler data for deep_20
+{'count': 278, 'model': 'deep_20', 'speed': 3, 'time': 0.15708351135253906}
+00:51:00.848964 Loaded deep_20
+00:51:35.968670 Speed changed to 4 =============
+00:51:35.968670 Switching to model 4: shallow_20 ------
+00:51:35.969594 Running deep_20
+change_inference_rate() ---------yyyyy
+00:51:35.969594 Loading model shallow_20
+00:51:35.970595 Skipping scalar data 20
+{'count': 279, 'model': 'shallow_20', 'speed': 4, 'time': 0.05336260795593262}
+00:51:36.023957 Loaded shallow_20
+00:52:11.131072 Speed changed to 1 =============
+00:52:11.131072 Switching to model 1: deep_40 ------
+00:52:11.132050 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:52:11.132050 Loading model deep_40
+00:52:11.132050 Loading scaler data for deep_40
+{'count': 280, 'model': 'deep_40', 'speed': 1, 'time': 0.13654446601867676}
+00:52:11.268595 Loaded deep_40
+40 807
+40 808
+00:52:21.319101 Speed changed to 3 =============
+00:52:21.319101 Switching to model 3: deep_20 ------
+00:52:21.320014 Running deep_40
+change_inference_rate() ---------yyyyy
+00:52:21.320014 Loading model deep_20
+00:52:21.320014 Loading scaler data for deep_20
+{'count': 281, 'model': 'deep_20', 'speed': 3, 'time': 0.15651750564575195}
+00:52:21.476531 Loaded deep_20
+00:52:41.559400 Speed changed to 3 =============
+00:52:41.559400 Switching to model 3: deep_20 ------
+00:52:41.560319 Running deep_20
+00:53:11.636367 Speed changed to 3 =============
+00:53:11.636367 Switching to model 3: deep_20 ------
+00:53:11.637307 Running deep_20
+00:53:21.694345 Speed changed to 2 =============
+00:53:21.694345 Switching to model 2: shallow_40 ------
+00:53:21.695259 Running deep_20
+change_inference_rate() ---------yyyyy
+00:53:21.695259 Loading model shallow_40
+00:53:21.695259 Loading scaler data for shallow_40
+{'count': 282, 'model': 'shallow_40', 'speed': 2, 'time': 0.04488682746887207}
+00:53:21.741141 Loaded shallow_40
+40 809
+00:53:26.770957 Speed changed to 4 =============
+00:53:26.770957 Switching to model 4: shallow_20 ------
+00:53:26.771900 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:53:26.771900 Loading model shallow_20
+00:53:26.772889 Loading scaler data for shallow_20
+{'count': 283, 'model': 'shallow_20', 'speed': 4, 'time': 0.058847665786743164}
+00:53:26.832724 Loaded shallow_20
+00:53:31.848482 Speed changed to 4 =============
+00:53:31.848482 Switching to model 4: shallow_20 ------
+00:53:31.849410 Running shallow_20
+00:53:56.945945 Speed changed to 3 =============
+00:53:56.945945 Switching to model 3: deep_20 ------
+00:53:56.946865 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:53:56.946865 Loading model deep_20
+00:53:56.946865 Skipping scalar data 20
+{'count': 284, 'model': 'deep_20', 'speed': 3, 'time': 0.16124916076660156}
+00:53:57.109118 Loaded deep_20
+00:54:02.134538 Speed changed to 4 =============
+00:54:02.134538 Switching to model 4: shallow_20 ------
+00:54:02.135527 Running deep_20
+change_inference_rate() ---------yyyyy
+00:54:02.135527 Loading model shallow_20
+00:54:02.135527 Skipping scalar data 20
+{'count': 285, 'model': 'shallow_20', 'speed': 4, 'time': 0.04181241989135742}
+00:54:02.178366 Loaded shallow_20
+00:54:22.253808 Speed changed to 2 =============
+00:54:22.253808 Switching to model 2: shallow_40 ------
+00:54:22.254754 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:54:22.254754 Loading model shallow_40
+00:54:22.254754 Loading scaler data for shallow_40
+{'count': 286, 'model': 'shallow_40', 'speed': 2, 'time': 0.04986572265625}
+00:54:22.304620 Loaded shallow_40
+40 810
+40 811
+40 812
+40 813
+00:54:42.348318 Speed changed to 4 =============
+00:54:42.348318 Switching to model 4: shallow_20 ------
+00:54:42.349293 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:54:42.349293 Loading model shallow_20
+00:54:42.349293 Loading scaler data for shallow_20
+{'count': 287, 'model': 'shallow_20', 'speed': 4, 'time': 0.04683685302734375}
+00:54:42.397144 Loaded shallow_20
+00:54:47.416523 Speed changed to 4 =============
+00:54:47.416523 Switching to model 4: shallow_20 ------
+00:54:47.416523 Running shallow_20
+00:54:57.453558 Speed changed to 1 =============
+00:54:57.453558 Switching to model 1: deep_40 ------
+00:54:57.453558 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:54:57.453558 Loading model deep_40
+00:54:57.454554 Loading scaler data for deep_40
+{'count': 288, 'model': 'deep_40', 'speed': 1, 'time': 0.14158916473388672}
+00:54:57.596143 Loaded deep_40
+40 814
+40 815
+00:55:07.600272 Speed changed to 3 =============
+00:55:07.600272 Switching to model 3: deep_20 ------
+00:55:07.600272 Running deep_40
+change_inference_rate() ---------yyyyy
+00:55:07.600272 Loading model deep_20
+00:55:07.601272 Loading scaler data for deep_20
+{'count': 289, 'model': 'deep_20', 'speed': 3, 'time': 0.1395866870880127}
+00:55:07.740858 Loaded deep_20
+00:55:32.821637 Speed changed to 1 =============
+00:55:32.821637 Switching to model 1: deep_40 ------
+00:55:32.822629 Running deep_20
+change_inference_rate() ---------yyyyy
+00:55:32.822629 Loading model deep_40
+00:55:32.822629 Loading scaler data for deep_40
+{'count': 290, 'model': 'deep_40', 'speed': 1, 'time': 0.14554643630981445}
+00:55:32.969127 Loaded deep_40
+40 816
+40 817
+00:55:42.995844 Speed changed to 2 =============
+00:55:42.995844 Switching to model 2: shallow_40 ------
+00:55:42.996775 Running deep_40
+change_inference_rate() ---------yyyyy
+00:55:42.996775 Loading model shallow_40
+00:55:42.996775 Skipping scalar data 40
+{'count': 291, 'model': 'shallow_40', 'speed': 2, 'time': 0.056061506271362305}
+00:55:43.053842 Loaded shallow_40
+40 818
+00:55:48.085134 Speed changed to 2 =============
+00:55:48.085134 Switching to model 2: shallow_40 ------
+00:55:48.086059 Running shallow_40
+40 819
+40 820
+00:55:58.129874 Speed changed to 1 =============
+00:55:58.129874 Switching to model 1: deep_40 ------
+00:55:58.130810 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:55:58.130810 Loading model deep_40
+00:55:58.131807 Skipping scalar data 40
+{'count': 292, 'model': 'deep_40', 'speed': 1, 'time': 0.17046809196472168}
+00:55:58.303240 Loaded deep_40
+40 821
+00:56:03.321378 Speed changed to 4 =============
+00:56:03.321378 Switching to model 4: shallow_20 ------
+00:56:03.322300 Running deep_40
+change_inference_rate() ---------yyyyy
+00:56:03.322300 Loading model shallow_20
+00:56:03.322300 Loading scaler data for shallow_20
+{'count': 293, 'model': 'shallow_20', 'speed': 4, 'time': 0.050821781158447266}
+00:56:03.374118 Loaded shallow_20
+00:56:18.413434 Speed changed to 2 =============
+00:56:18.413434 Switching to model 2: shallow_40 ------
+00:56:18.414371 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:56:18.414371 Loading model shallow_40
+00:56:18.415367 Loading scaler data for shallow_40
+{'count': 294, 'model': 'shallow_40', 'speed': 2, 'time': 0.06378507614135742}
+00:56:18.480149 Loaded shallow_40
+40 822
+40 823
+40 824
+40 825
+40 826
+00:56:43.553551 Speed changed to 4 =============
+00:56:43.553551 Switching to model 4: shallow_20 ------
+00:56:43.554482 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:56:43.554482 Loading model shallow_20
+00:56:43.554482 Loading scaler data for shallow_20
+{'count': 295, 'model': 'shallow_20', 'speed': 4, 'time': 0.045885324478149414}
+00:56:43.600368 Loaded shallow_20
+00:57:03.666913 Speed changed to 1 =============
+00:57:03.666913 Switching to model 1: deep_40 ------
+00:57:03.667845 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:57:03.667845 Loading model deep_40
+00:57:03.667845 Loading scaler data for deep_40
+{'count': 296, 'model': 'deep_40', 'speed': 1, 'time': 0.14655447006225586}
+00:57:03.815400 Loaded deep_40
+40 827
+40 828
+40 829
+40 830
+40 831
+40 832
+40 833
+00:57:38.951832 Speed changed to 3 =============
+00:57:38.951832 Switching to model 3: deep_20 ------
+00:57:38.952766 Running deep_40
+change_inference_rate() ---------yyyyy
+00:57:38.952766 Loading model deep_20
+00:57:38.952766 Loading scaler data for deep_20
+{'count': 297, 'model': 'deep_20', 'speed': 3, 'time': 0.15491509437561035}
+00:57:39.108682 Loaded deep_20
+00:58:14.165076 Speed changed to 1 =============
+00:58:14.165076 Switching to model 1: deep_40 ------
+00:58:14.166000 Running deep_20
+change_inference_rate() ---------yyyyy
+00:58:14.166000 Loading model deep_40
+00:58:14.166000 Loading scaler data for deep_40
+{'count': 298, 'model': 'deep_40', 'speed': 1, 'time': 0.194169282913208}
+00:58:14.361141 Loaded deep_40
+40 834
+40 835
+00:58:24.386393 Speed changed to 1 =============
+00:58:24.386393 Switching to model 1: deep_40 ------
+00:58:24.387329 Running deep_40
+40 836
+00:58:29.402357 Speed changed to 4 =============
+00:58:29.402357 Switching to model 4: shallow_20 ------
+00:58:29.403305 Running deep_40
+change_inference_rate() ---------yyyyy
+00:58:29.403305 Loading model shallow_20
+00:58:29.403305 Loading scaler data for shallow_20
+{'count': 299, 'model': 'shallow_20', 'speed': 4, 'time': 0.05485415458679199}
+00:58:29.459115 Loaded shallow_20
+00:58:39.476881 Speed changed to 2 =============
+00:58:39.476881 Switching to model 2: shallow_40 ------
+00:58:39.477811 Running shallow_20
+change_inference_rate() ---------yyyyy
+00:58:39.477811 Loading model shallow_40
+00:58:39.477811 Loading scaler data for shallow_40
+{'count': 300, 'model': 'shallow_40', 'speed': 2, 'time': 0.044907569885253906}
+00:58:39.522718 Loaded shallow_40
+40 837
+40 838
+00:58:49.555561 Speed changed to 1 =============
+00:58:49.555561 Switching to model 1: deep_40 ------
+00:58:49.556490 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:58:49.556490 Loading model deep_40
+00:58:49.556490 Skipping scalar data 40
+{'count': 301, 'model': 'deep_40', 'speed': 1, 'time': 0.14354872703552246}
+00:58:49.701996 Loaded deep_40
+40 839
+40 840
+40 841
+00:59:04.787957 Speed changed to 2 =============
+00:59:04.787957 Switching to model 2: shallow_40 ------
+00:59:04.788893 Running deep_40
+change_inference_rate() ---------yyyyy
+00:59:04.788893 Loading model shallow_40
+00:59:04.788893 Skipping scalar data 40
+{'count': 302, 'model': 'shallow_40', 'speed': 2, 'time': 0.042922019958496094}
+00:59:04.832791 Loaded shallow_40
+40 842
+40 843
+40 844
+40 845
+00:59:24.903793 Speed changed to 4 =============
+00:59:24.903793 Switching to model 4: shallow_20 ------
+00:59:24.904727 Running shallow_40
+change_inference_rate() ---------yyyyy
+00:59:24.904727 Loading model shallow_20
+00:59:24.904727 Loading scaler data for shallow_20
+{'count': 303, 'model': 'shallow_20', 'speed': 4, 'time': 0.05585908889770508}
+00:59:24.961568 Loaded shallow_20
+01:00:05.064157 Speed changed to 1 =============
+01:00:05.064157 Switching to model 1: deep_40 ------
+01:00:05.064157 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:00:05.065154 Loading model deep_40
+01:00:05.065154 Loading scaler data for deep_40
+{'count': 304, 'model': 'deep_40', 'speed': 1, 'time': 0.13758444786071777}
+01:00:05.203701 Loaded deep_40
+40 846
+40 847
+40 848
+40 849
+40 850
+40 851
+40 852
+01:00:40.302235 Speed changed to 3 =============
+01:00:40.302235 Switching to model 3: deep_20 ------
+01:00:40.303166 Running deep_40
+change_inference_rate() ---------yyyyy
+01:00:40.303166 Loading model deep_20
+01:00:40.303166 Loading scaler data for deep_20
+{'count': 305, 'model': 'deep_20', 'speed': 3, 'time': 0.16150569915771484}
+01:00:40.465640 Loaded deep_20
+01:00:45.491079 Speed changed to 4 =============
+01:00:45.491079 Switching to model 4: shallow_20 ------
+01:00:45.492010 Running deep_20
+change_inference_rate() ---------yyyyy
+01:00:45.492010 Loading model shallow_20
+01:00:45.493009 Skipping scalar data 20
+{'count': 306, 'model': 'shallow_20', 'speed': 4, 'time': 0.06582379341125488}
+01:00:45.558833 Loaded shallow_20
+01:01:00.618661 Speed changed to 2 =============
+01:01:00.618661 Switching to model 2: shallow_40 ------
+01:01:00.619596 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:01:00.619596 Loading model shallow_40
+01:01:00.619596 Loading scaler data for shallow_40
+{'count': 307, 'model': 'shallow_40', 'speed': 2, 'time': 0.05010986328125}
+01:01:00.670702 Loaded shallow_40
+40 853
+40 854
+40 855
+40 856
+40 857
+40 858
+40 859
+40 860
+01:01:40.807959 Speed changed to 4 =============
+01:01:40.807959 Switching to model 4: shallow_20 ------
+01:01:40.808897 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:01:40.808897 Loading model shallow_20
+01:01:40.808897 Loading scaler data for shallow_20
+{'count': 308, 'model': 'shallow_20', 'speed': 4, 'time': 0.05187344551086426}
+01:01:40.860770 Loaded shallow_20
+01:03:16.052234 Speed changed to 2 =============
+01:03:16.052234 Switching to model 2: shallow_40 ------
+01:03:16.053141 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:03:16.053141 Loading model shallow_40
+01:03:16.053141 Loading scaler data for shallow_40
+{'count': 309, 'model': 'shallow_40', 'speed': 2, 'time': 0.0528714656829834}
+01:03:16.106961 Loaded shallow_40
+40 861
+40 862
+40 863
+40 864
+40 865
+01:03:41.213992 Speed changed to 2 =============
+01:03:41.213992 Switching to model 2: shallow_40 ------
+01:03:41.213992 Running shallow_40
+40 866
+01:03:46.245218 Speed changed to 2 =============
+01:03:46.245218 Switching to model 2: shallow_40 ------
+01:03:46.246127 Running shallow_40
+40 867
+40 868
+40 869
+40 870
+40 871
+01:04:11.357200 Speed changed to 2 =============
+01:04:11.357200 Switching to model 2: shallow_40 ------
+01:04:11.358134 Running shallow_40
+40 872
+01:04:16.384500 Speed changed to 1 =============
+01:04:16.384500 Switching to model 1: deep_40 ------
+01:04:16.385431 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:04:16.385431 Loading model deep_40
+01:04:16.385431 Skipping scalar data 40
+{'count': 310, 'model': 'deep_40', 'speed': 1, 'time': 0.17846059799194336}
+01:04:16.564884 Loaded deep_40
+40 873
+40 874
+40 875
+40 876
+01:04:36.632182 Speed changed to 3 =============
+01:04:36.632182 Switching to model 3: deep_20 ------
+01:04:36.633116 Running deep_40
+change_inference_rate() ---------yyyyy
+01:04:36.633116 Loading model deep_20
+01:04:36.633116 Loading scaler data for deep_20
+{'count': 311, 'model': 'deep_20', 'speed': 3, 'time': 0.15352821350097656}
+01:04:36.787640 Loaded deep_20
+01:04:51.838256 Speed changed to 2 =============
+01:04:51.838256 Switching to model 2: shallow_40 ------
+01:04:51.838811 Running deep_20
+change_inference_rate() ---------yyyyy
+01:04:51.838811 Loading model shallow_40
+01:04:51.838811 Loading scaler data for shallow_40
+{'count': 312, 'model': 'shallow_40', 'speed': 2, 'time': 0.04684948921203613}
+01:04:51.885661 Loaded shallow_40
+40 877
+40 878
+40 879
+40 880
+40 881
+40 882
+40 883
+40 884
+40 885
+40 886
+40 887
+40 888
+01:05:52.134792 Speed changed to 3 =============
+01:05:52.134792 Switching to model 3: deep_20 ------
+01:05:52.135767 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:05:52.135767 Loading model deep_20
+01:05:52.135767 Loading scaler data for deep_20
+{'count': 313, 'model': 'deep_20', 'speed': 3, 'time': 0.15348052978515625}
+01:05:52.290202 Loaded deep_20
+01:06:07.337472 Speed changed to 1 =============
+01:06:07.337472 Switching to model 1: deep_40 ------
+01:06:07.338455 Running deep_20
+change_inference_rate() ---------yyyyy
+01:06:07.338455 Loading model deep_40
+01:06:07.338455 Loading scaler data for deep_40
+{'count': 314, 'model': 'deep_40', 'speed': 1, 'time': 0.16147971153259277}
+01:06:07.500875 Loaded deep_40
+40 889
+40 890
+01:06:17.538718 Speed changed to 4 =============
+01:06:17.538718 Switching to model 4: shallow_20 ------
+01:06:17.538718 Running deep_40
+change_inference_rate() ---------yyyyy
+01:06:17.538718 Loading model shallow_20
+01:06:17.539715 Loading scaler data for shallow_20
+{'count': 315, 'model': 'shallow_20', 'speed': 4, 'time': 0.04684901237487793}
+01:06:17.586564 Loaded shallow_20
+01:06:52.715514 Speed changed to 4 =============
+01:06:52.715514 Switching to model 4: shallow_20 ------
+01:06:52.716445 Running shallow_20
+01:07:12.795555 Speed changed to 3 =============
+01:07:12.795555 Switching to model 3: deep_20 ------
+01:07:12.796487 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:07:12.796487 Loading model deep_20
+01:07:12.796487 Skipping scalar data 20
+{'count': 316, 'model': 'deep_20', 'speed': 3, 'time': 0.2584228515625}
+01:07:13.055892 Loaded deep_20
+01:08:08.235083 Speed changed to 2 =============
+01:08:08.235083 Switching to model 2: shallow_40 ------
+01:08:08.236002 Running deep_20
+change_inference_rate() ---------yyyyy
+01:08:08.236002 Loading model shallow_40
+01:08:08.236002 Loading scaler data for shallow_40
+{'count': 317, 'model': 'shallow_40', 'speed': 2, 'time': 0.04988718032836914}
+01:08:08.286890 Loaded shallow_40
+40 891
+01:08:13.309679 Speed changed to 1 =============
+01:08:13.309679 Switching to model 1: deep_40 ------
+01:08:13.310610 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:08:13.310610 Loading model deep_40
+01:08:13.310610 Skipping scalar data 40
+{'count': 318, 'model': 'deep_40', 'speed': 1, 'time': 0.1355443000793457}
+01:08:13.447149 Loaded deep_40
+40 892
+40 893
+01:08:23.470409 Speed changed to 2 =============
+01:08:23.470409 Switching to model 2: shallow_40 ------
+01:08:23.470409 Running deep_40
+change_inference_rate() ---------yyyyy
+01:08:23.471370 Loading model shallow_40
+01:08:23.471370 Skipping scalar data 40
+{'count': 319, 'model': 'shallow_40', 'speed': 2, 'time': 0.0389094352722168}
+01:08:23.510280 Loaded shallow_40
+40 894
+01:08:28.525806 Speed changed to 4 =============
+01:08:28.525806 Switching to model 4: shallow_20 ------
+01:08:28.526777 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:08:28.526777 Loading model shallow_20
+01:08:28.526777 Loading scaler data for shallow_20
+{'count': 320, 'model': 'shallow_20', 'speed': 4, 'time': 0.058814287185668945}
+01:08:28.585592 Loaded shallow_20
+01:08:43.590487 Speed changed to 2 =============
+01:08:43.590487 Switching to model 2: shallow_40 ------
+01:08:43.591466 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:08:43.591466 Loading model shallow_40
+01:08:43.591466 Loading scaler data for shallow_40
+{'count': 321, 'model': 'shallow_40', 'speed': 2, 'time': 0.051819562911987305}
+01:08:43.643285 Loaded shallow_40
+40 895
+01:08:48.660638 Speed changed to 1 =============
+01:08:48.660638 Switching to model 1: deep_40 ------
+01:08:48.661635 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:08:48.661635 Loading model deep_40
+01:08:48.661635 Skipping scalar data 40
+{'count': 322, 'model': 'deep_40', 'speed': 1, 'time': 0.14430999755859375}
+01:08:48.806881 Loaded deep_40
+40 896
+40 897
+40 898
+40 899
+40 900
+40 901
+40 902
+40 903
+01:09:28.915253 Speed changed to 2 =============
+01:09:28.915253 Switching to model 2: shallow_40 ------
+01:09:28.916150 Running deep_40
+change_inference_rate() ---------yyyyy
+01:09:28.916150 Loading model shallow_40
+01:09:28.916150 Skipping scalar data 40
+{'count': 323, 'model': 'shallow_40', 'speed': 2, 'time': 0.06591629981994629}
+01:09:28.983034 Loaded shallow_40
+40 904
+40 905
+40 906
+40 907
+40 908
+01:09:54.098643 Speed changed to 4 =============
+01:09:54.098643 Switching to model 4: shallow_20 ------
+01:09:54.099566 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:09:54.099566 Loading model shallow_20
+01:09:54.099566 Loading scaler data for shallow_20
+{'count': 324, 'model': 'shallow_20', 'speed': 4, 'time': 0.06976556777954102}
+01:09:54.169331 Loaded shallow_20
+01:10:14.268803 Speed changed to 2 =============
+01:10:14.268803 Switching to model 2: shallow_40 ------
+01:10:14.268803 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:10:14.269796 Loading model shallow_40
+01:10:14.269796 Loading scaler data for shallow_40
+{'count': 325, 'model': 'shallow_40', 'speed': 2, 'time': 0.04286003112792969}
+01:10:14.313652 Loaded shallow_40
+40 909
+01:10:19.346332 Speed changed to 1 =============
+01:10:19.346332 Switching to model 1: deep_40 ------
+01:10:19.347315 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:10:19.347315 Loading model deep_40
+01:10:19.347315 Skipping scalar data 40
+{'count': 326, 'model': 'deep_40', 'speed': 1, 'time': 0.17340850830078125}
+01:10:19.520723 Loaded deep_40
+40 910
+40 911
+40 912
+01:10:34.573195 Speed changed to 4 =============
+01:10:34.573195 Switching to model 4: shallow_20 ------
+01:10:34.574124 Running deep_40
+change_inference_rate() ---------yyyyy
+01:10:34.574124 Loading model shallow_20
+01:10:34.574124 Loading scaler data for shallow_20
+{'count': 327, 'model': 'shallow_20', 'speed': 4, 'time': 0.05585837364196777}
+01:10:34.630990 Loaded shallow_20
+01:10:54.687854 Speed changed to 4 =============
+01:10:54.687854 Switching to model 4: shallow_20 ------
+01:10:54.688762 Running shallow_20
+01:11:14.730028 Speed changed to 1 =============
+01:11:14.730028 Switching to model 1: deep_40 ------
+01:11:14.730927 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:11:14.730927 Loading model deep_40
+01:11:14.730927 Loading scaler data for deep_40
+{'count': 328, 'model': 'deep_40', 'speed': 1, 'time': 0.16150307655334473}
+01:11:14.892430 Loaded deep_40
+40 913
+40 914
+40 915
+01:11:29.939741 Speed changed to 3 =============
+01:11:29.939741 Switching to model 3: deep_20 ------
+01:11:29.940671 Running deep_40
+change_inference_rate() ---------yyyyy
+01:11:29.940671 Loading model deep_20
+01:11:29.940671 Loading scaler data for deep_20
+{'count': 329, 'model': 'deep_20', 'speed': 3, 'time': 0.14129304885864258}
+01:11:30.082975 Loaded deep_20
+01:11:40.110296 Speed changed to 1 =============
+01:11:40.110296 Switching to model 1: deep_40 ------
+01:11:40.111222 Running deep_20
+change_inference_rate() ---------yyyyy
+01:11:40.111222 Loading model deep_40
+01:11:40.111222 Loading scaler data for deep_40
+{'count': 330, 'model': 'deep_40', 'speed': 1, 'time': 0.16051459312438965}
+01:11:40.272726 Loaded deep_40
+40 916
+40 917
+40 918
+40 919
+40 920
+01:12:05.368401 Speed changed to 3 =============
+01:12:05.368401 Switching to model 3: deep_20 ------
+01:12:05.369330 Running deep_40
+change_inference_rate() ---------yyyyy
+01:12:05.369330 Loading model deep_20
+01:12:05.369330 Loading scaler data for deep_20
+{'count': 331, 'model': 'deep_20', 'speed': 3, 'time': 0.15053987503051758}
+01:12:05.519870 Loaded deep_20
+01:12:15.543245 Speed changed to 1 =============
+01:12:15.543245 Switching to model 1: deep_40 ------
+01:12:15.544168 Running deep_20
+change_inference_rate() ---------yyyyy
+01:12:15.544168 Loading model deep_40
+01:12:15.544168 Loading scaler data for deep_40
+{'count': 332, 'model': 'deep_40', 'speed': 1, 'time': 0.14655828475952148}
+01:12:15.690727 Loaded deep_40
+40 921
+40 922
+40 923
+40 924
+01:12:35.730316 Speed changed to 4 =============
+01:12:35.730316 Switching to model 4: shallow_20 ------
+01:12:35.731238 Running deep_40
+change_inference_rate() ---------yyyyy
+01:12:35.731238 Loading model shallow_20
+01:12:35.731238 Loading scaler data for shallow_20
+{'count': 333, 'model': 'shallow_20', 'speed': 4, 'time': 0.051432132720947266}
+01:12:35.782670 Loaded shallow_20
+01:12:45.826919 Speed changed to 3 =============
+01:12:45.826919 Switching to model 3: deep_20 ------
+01:12:45.827851 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:12:45.827851 Loading model deep_20
+01:12:45.827851 Skipping scalar data 20
+{'count': 334, 'model': 'deep_20', 'speed': 3, 'time': 0.14612364768981934}
+01:12:45.974932 Loaded deep_20
+01:12:56.007672 Speed changed to 3 =============
+01:12:56.007672 Switching to model 3: deep_20 ------
+01:12:56.008232 Running deep_20
+01:13:16.112141 Speed changed to 4 =============
+01:13:16.112141 Switching to model 4: shallow_20 ------
+01:13:16.113047 Running deep_20
+change_inference_rate() ---------yyyyy
+01:13:16.113047 Loading model shallow_20
+01:13:16.113047 Skipping scalar data 20
+{'count': 335, 'model': 'shallow_20', 'speed': 4, 'time': 0.05287671089172363}
+01:13:16.166870 Loaded shallow_20
+01:14:01.326402 Speed changed to 2 =============
+01:14:01.326402 Switching to model 2: shallow_40 ------
+01:14:01.327352 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:14:01.327352 Loading model shallow_40
+01:14:01.327352 Loading scaler data for shallow_40
+{'count': 336, 'model': 'shallow_40', 'speed': 2, 'time': 0.0483245849609375}
+01:14:01.375677 Loaded shallow_40
+40 925
+40 926
+40 927
+40 928
+40 929
+40 930
+40 931
+40 932
+40 933
+40 934
+40 935
+40 936
+01:15:01.529429 Speed changed to 2 =============
+01:15:01.529429 Switching to model 2: shallow_40 ------
+01:15:01.529429 Running shallow_40
+40 937
+40 938
+40 939
+40 940
+40 941
+01:15:26.632121 Speed changed to 3 =============
+01:15:26.632121 Switching to model 3: deep_20 ------
+01:15:26.633104 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:15:26.633104 Loading model deep_20
+01:15:26.633104 Loading scaler data for deep_20
+{'count': 337, 'model': 'deep_20', 'speed': 3, 'time': 0.13951897621154785}
+01:15:26.773625 Loaded deep_20
+01:16:11.922003 Speed changed to 2 =============
+01:16:11.922003 Switching to model 2: shallow_40 ------
+01:16:11.922926 Running deep_20
+change_inference_rate() ---------yyyyy
+01:16:11.922926 Loading model shallow_40
+01:16:11.922926 Loading scaler data for shallow_40
+{'count': 338, 'model': 'shallow_40', 'speed': 2, 'time': 0.05890822410583496}
+01:16:11.982827 Loaded shallow_40
+40 942
+40 943
+40 944
+40 945
+40 946
+01:16:37.015825 Speed changed to 1 =============
+01:16:37.015825 Switching to model 1: deep_40 ------
+01:16:37.015825 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:16:37.016762 Loading model deep_40
+01:16:37.016762 Skipping scalar data 40
+{'count': 339, 'model': 'deep_40', 'speed': 1, 'time': 0.1450955867767334}
+01:16:37.161857 Loaded deep_40
+40 947
+01:16:42.185592 Speed changed to 1 =============
+01:16:42.185592 Switching to model 1: deep_40 ------
+01:16:42.186524 Running deep_40
+40 948
+01:16:47.195085 Speed changed to 1 =============
+01:16:47.195085 Switching to model 1: deep_40 ------
+01:16:47.196007 Running deep_40
+40 949
+40 950
+40 951
+40 952
+40 953
+40 954
+40 955
+01:17:22.273792 Speed changed to 3 =============
+01:17:22.273792 Switching to model 3: deep_20 ------
+01:17:22.273792 Running deep_40
+change_inference_rate() ---------yyyyy
+01:17:22.274724 Loading model deep_20
+01:17:22.274724 Loading scaler data for deep_20
+{'count': 340, 'model': 'deep_20', 'speed': 3, 'time': 0.14056873321533203}
+01:17:22.415293 Loaded deep_20
+01:17:37.461183 Speed changed to 4 =============
+01:17:37.461183 Switching to model 4: shallow_20 ------
+01:17:37.461183 Running deep_20
+change_inference_rate() ---------yyyyy
+01:17:37.461183 Loading model shallow_20
+01:17:37.462131 Skipping scalar data 20
+{'count': 341, 'model': 'shallow_20', 'speed': 4, 'time': 0.04291105270385742}
+01:17:37.505042 Loaded shallow_20
+01:17:47.524271 Speed changed to 4 =============
+01:17:47.524271 Switching to model 4: shallow_20 ------
+01:17:47.524271 Running shallow_20
+01:18:17.613354 Speed changed to 3 =============
+01:18:17.613354 Switching to model 3: deep_20 ------
+01:18:17.613354 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:18:17.614343 Loading model deep_20
+01:18:17.614343 Skipping scalar data 20
+{'count': 342, 'model': 'deep_20', 'speed': 3, 'time': 0.176408052444458}
+01:18:17.791747 Loaded deep_20
+01:18:37.861491 Speed changed to 4 =============
+01:18:37.861491 Switching to model 4: shallow_20 ------
+01:18:37.862444 Running deep_20
+change_inference_rate() ---------yyyyy
+01:18:37.862444 Loading model shallow_20
+01:18:37.862444 Skipping scalar data 20
+{'count': 343, 'model': 'shallow_20', 'speed': 4, 'time': 0.048837900161743164}
+01:18:37.911281 Loaded shallow_20
+01:18:57.987160 Speed changed to 4 =============
+01:18:57.987160 Switching to model 4: shallow_20 ------
+01:18:57.988135 Running shallow_20
+01:19:03.014918 Speed changed to 2 =============
+01:19:03.014918 Switching to model 2: shallow_40 ------
+01:19:03.014918 Running shallow_20
+change_inference_rate() ---------yyyyy
+01:19:03.015935 Loading model shallow_40
+01:19:03.015935 Loading scaler data for shallow_40
+{'count': 344, 'model': 'shallow_40', 'speed': 2, 'time': 0.04190468788146973}
+01:19:03.057840 Loaded shallow_40
+40 956
+40 957
+40 958
+40 959
+40 960
+40 961
+40 962
+40 963
+40 964
+40 965
+40 966
+40 967
+40 968
+40 969
+40 970
+40 971
+40 972
+40 973
+40 974
+40 975
+40 976
+40 977
+40 978
+40 979
+40 980
+01:21:08.438207 Speed changed to 2 =============
+01:21:08.438207 Switching to model 2: shallow_40 ------
+01:21:08.438207 Running shallow_40
+40 981
+40 982
+40 983
+01:21:23.492936 Speed changed to 2 =============
+01:21:23.492936 Switching to model 2: shallow_40 ------
+01:21:23.493872 Running shallow_40
+40 984
+40 985
+40 986
+40 987
+40 988
+40 989
+40 990
+40 991
+01:22:03.606265 Speed changed to 1 =============
+01:22:03.606265 Switching to model 1: deep_40 ------
+01:22:03.607185 Running shallow_40
+change_inference_rate() ---------yyyyy
+01:22:03.607185 Loading model deep_40
+01:22:03.607185 Skipping scalar data 40
+{'count': 345, 'model': 'deep_40', 'speed': 1, 'time': 0.15651178359985352}
+01:22:03.763697 Loaded deep_40
+40 992
+40 993
+40 994
+40 995
+40 996
+40 997
+40 998
+Actual Attack: 964
+Predicted Attack as Attack (TP): 216
+Predicted Attack as Benign (FN): 748
+Actual Benign: 1034
+Predicted Benign as Benign (TN): 94
+Predicted Benign as Attack (FP): 940
+
+Classification Metrics:
+Accuracy: 0.1552
+Precision: 0.1869
+Recall: 0.2241
+F1-score: 0.2038
