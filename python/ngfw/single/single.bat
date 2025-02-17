@@ -1,0 +1,1 @@
+pyinstaller ngfw_single_2_min.spec
