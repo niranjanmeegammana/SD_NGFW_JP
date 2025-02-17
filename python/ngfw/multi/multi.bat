@@ -1,0 +1,1 @@
+pyinstaller ngfw_multi_model_min.spec
