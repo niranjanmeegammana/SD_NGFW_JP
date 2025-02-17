@@ -1,0 +1,83 @@
+(env378) D:\miniconda\UNSW-NB15\ngfw>python memory2.py
+2025-02-16 06:18:16 Loading model deep_40
+2025-02-16 06:18:16.562753: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-16 06:18:16 Loading model shallow_40
+2025-02-16 06:18:16 Loading model deep_20
+2025-02-16 06:18:17 Loading model shallow_20
++------------+----------------------------+--------------------------------------+------------------+
+| Model Name | Memory Before Loading (MB) | Memory After Garbage Collection (MB) | Memory Used (MB) |
++------------+----------------------------+--------------------------------------+------------------+
+|  deep_40   |           254.89           |                272.76                |      17.87       |
+| shallow_40 |           272.77           |                272.79                |       0.02       |
+|  deep_20   |           272.79           |                273.93                |       1.14       |
+| shallow_20 |           273.93           |                273.93                |       0.00       |
++------------+----------------------------+--------------------------------------+------------------+
+
+-------------------------
+Loading all models into memory
+Memory usage after loading all models: 275.98 MB
+Memory usage after unloading models: 275.98 MB
+
+
+(env378) D:\miniconda\UNSW-NB15\ngfw>python memory.py
+2025-02-16 06:14:13 Loading model deep_40
+Memory before loading deep_40: 253.77 MB
+2025-02-16 06:14:13.121677: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Memory after garbage collection: 272.88 MB
+Memory used by deep_40: 19.11 MB
+2025-02-16 06:14:13 Loading model shallow_40
+Memory before loading shallow_40: 272.89 MB
+Memory after garbage collection: 273.04 MB
+Memory used by shallow_40: 0.15 MB
+2025-02-16 06:14:13 Loading model deep_20
+Memory before loading deep_20: 273.04 MB
+Memory after garbage collection: 273.94 MB
+Memory used by deep_20: 0.90 MB
+2025-02-16 06:14:13 Loading model shallow_20
+Memory before loading shallow_20: 273.94 MB
+Memory after garbage collection: 273.94 MB
+Memory used by shallow_20: 0.00 MB
+-------------------------
+2025-02-16 06:14:13 Loading models
+Memory usage after loading all models: 275.72 MB
+TensorFlow session cleared
+Memory usage after unloading models: 275.78 MB
+No GPU detected or not available.
+
+
+The output looks mostly as expected. Here's a breakdown:
+
+1. **Memory Usage for Individual Models**:
+   - The memory usage for each model was calculated before and after loading the model.
+   - It shows that each model uses a relatively small amount of memory once loaded:
+     - `deep_40`: 19.11 MB
+     - `shallow_40`: 0.15 MB
+     - `deep_20`: 0.90 MB
+     - `shallow_20`: 0.00 MB
+   - This suggests that the models are not very large in memory consumption individually.
+
+2. **Memory After Loading All Models**:
+   - The total memory usage after loading all models is reported as **275.72 MB**.
+
+3. **Garbage Collection**:
+   - The `gc.collect()` step is effectively clearing memory before measuring memory after each model load.
+   - It doesn't seem to free up a significant amount of memory in this case, which is normal for a small model like those being used here.
+
+4. **TensorFlow Session Clearing**:
+   - The message "TensorFlow session cleared" indicates that `K.clear_session()` was called to release TensorFlow's internal resources.
+
+5. **Memory After Unloading Models**:
+   - The memory after unloading the models is **275.78 MB**, which is only slightly higher than after loading all models.
+   - This suggests that `K.clear_session()` and garbage collection may not have fully freed all memory in this case. However, with the limited model sizes you're dealing with, the differences are likely small.
+
+6. **No GPU Detected**:
+   - The message "No GPU detected or not available" indicates that the code checked for GPU availability, but no GPU was found or accessible. If you have a GPU on the machine, you may need to ensure TensorFlow is configured to use it properly.
+
+### Suggestions:
+- **Monitor Larger Models**: If the models are significantly larger, you may notice a bigger difference in memory usage between loading and unloading them.
+- **GPU Configuration**: If you intend to run this on a machine with a GPU, you may need to make sure TensorFlow is correctly set up to use the GPU. Running the command `tf.config.list_physical_devices('GPU')` will show you available GPUs, and you might need to install the correct TensorFlow GPU version (`tensorflow-gpu`).
+- **Optimize Garbage Collection**: In case of memory issues with larger models, you can try using `gc.collect()` more aggressively, especially after each model is unloaded or if you're working in a long-running process.
+
+Would you like to dive deeper into any specific part or try loading and unloading more models to test the behavior further?

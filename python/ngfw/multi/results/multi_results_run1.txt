@@ -1,0 +1,203 @@
+(env378) D:\miniconda\UNSW-NB15\ngfw\done\multi>python ngfw_multi_model.py
+04:12:06.754636 Initializing .....
+04:12:07.225448 Running
+initialize() ---------yyyyy
+04:12:07.226446 Loading model deep_40
+04:12:07.226446 Loading scaler data for deep_40
+2025-02-16 04:12:07.239642: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+{'count': 1, 'model': 'deep_40', 'speed': 1, 'time': 0.2850472927093506}
+04:12:07.535429 Loaded deep_40
+40 0 49
+04:12:12.551879 Speed changed to 3 =============
+04:12:12.551879 Switching to model 3: deep_20 ------
+04:12:12.551879 Running deep_40
+change_inference_rate() ---------yyyyy
+04:12:12.551879 Loading model deep_20
+04:12:12.551879 Loading scaler data for deep_20
+{'count': 2, 'model': 'deep_20', 'speed': 3, 'time': 0.2017958164215088}
+04:12:12.753674 Loaded deep_20
+20 0 49
+04:12:17.769965 Speed changed to 3 =============
+04:12:17.769965 Switching to model 3: deep_20 ------
+04:12:17.769965 Running deep_20
+20 50 99
+04:12:22.800340 Speed changed to 1 =============
+04:12:22.800340 Switching to model 1: deep_40 ------
+04:12:22.800340 Running deep_20
+change_inference_rate() ---------yyyyy
+04:12:22.800340 Loading model deep_40
+04:12:22.800340 Loading scaler data for deep_40
+{'count': 3, 'model': 'deep_40', 'speed': 1, 'time': 0.34118080139160156}
+04:12:23.142517 Loaded deep_40
+40 50 99
+04:12:28.159297 Speed changed to 3 =============
+04:12:28.159297 Switching to model 3: deep_20 ------
+04:12:28.159297 Running deep_40
+change_inference_rate() ---------yyyyy
+04:12:28.159297 Loading model deep_20
+04:12:28.159297 Loading scaler data for deep_20
+{'count': 4, 'model': 'deep_20', 'speed': 3, 'time': 0.17480945587158203}
+04:12:28.335089 Loaded deep_20
+20 100 149
+20 150 199
+04:12:38.369600 Speed changed to 2 =============
+04:12:38.369600 Switching to model 2: shallow_40 ------
+04:12:38.369600 Running deep_20
+change_inference_rate() ---------yyyyy
+04:12:38.369600 Loading model shallow_40
+04:12:38.369600 Loading scaler data for shallow_40
+{'count': 5, 'model': 'shallow_40', 'speed': 2, 'time': 0.053856611251831055}
+04:12:38.424453 Loaded shallow_40
+40 100 149
+04:12:43.440132 Speed changed to 3 =============
+04:12:43.440132 Switching to model 3: deep_20 ------
+04:12:43.440132 Running shallow_40
+change_inference_rate() ---------yyyyy
+04:12:43.440132 Loading model deep_20
+04:12:43.440132 Loading scaler data for deep_20
+{'count': 6, 'model': 'deep_20', 'speed': 3, 'time': 0.16099214553833008}
+04:12:43.602120 Loaded deep_20
+20 200 249
+WARNING:tensorflow:5 out of the last 13 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001709425E828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+04:12:48.610565 Speed changed to 1 =============
+04:12:48.610565 Switching to model 1: deep_40 ------
+04:12:48.610565 Running deep_20
+change_inference_rate() ---------yyyyy
+04:12:48.610565 Loading model deep_40
+04:12:48.610565 Loading scaler data for deep_40
+{'count': 7, 'model': 'deep_40', 'speed': 1, 'time': 0.19094276428222656}
+04:12:48.802505 Loaded deep_40
+40 150 199
+WARNING:tensorflow:5 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000170952FB708> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+40 200 249
+04:12:58.812404 Speed changed to 2 =============
+04:12:58.812404 Switching to model 2: shallow_40 ------
+04:12:58.812404 Running deep_40
+change_inference_rate() ---------yyyyy
+04:12:58.813343 Loading model shallow_40
+04:12:58.813343 Skipping scalar data 40
+{'count': 8, 'model': 'shallow_40', 'speed': 2, 'time': 0.038870811462402344}
+04:13:07.062008 Loaded shallow_40
+40 250 299
+40 300 349
+40 350 399
+04:13:22.105822 Speed changed to 2 =============
+04:13:22.105822 Switching to model 2: shallow_40 ------
+04:13:22.106726 Running shallow_40
+40 400 449
+40 450 499
+40 500 549
+40 550 599
+40 600 649
+04:13:47.185901 Speed changed to 1 =============
+04:13:47.185901 Switching to model 1: deep_40 ------
+04:13:47.185901 Running shallow_40
+change_inference_rate() ---------yyyyy
+04:13:47.185901 Loading model deep_40
+04:13:47.185901 Skipping scalar data 40
+{'count': 9, 'model': 'deep_40', 'speed': 1, 'time': 0.2003622055053711}
+04:13:47.386263 Loaded deep_40
+40 650 699
+40 700 749
+04:13:57.420342 Speed changed to 1 =============
+04:13:57.420342 Switching to model 1: deep_40 ------
+04:13:57.420342 Running deep_40
+40 750 799
+04:14:02.444910 Speed changed to 1 =============
+04:14:02.444910 Switching to model 1: deep_40 ------
+04:14:02.445831 Running deep_40
+40 800 849
+04:14:07.456211 Speed changed to 3 =============
+04:14:07.456211 Switching to model 3: deep_20 ------
+04:14:07.456211 Running deep_40
+change_inference_rate() ---------yyyyy
+04:14:07.457168 Loading model deep_20
+04:14:07.457168 Loading scaler data for deep_20
+{'count': 10, 'model': 'deep_20', 'speed': 3, 'time': 0.16145634651184082}
+04:14:07.619622 Loaded deep_20
+20 250 299
+04:14:12.633194 Speed changed to 4 =============
+04:14:12.633194 Switching to model 4: shallow_20 ------
+04:14:12.634128 Running deep_20
+change_inference_rate() ---------yyyyy
+04:14:12.634128 Loading model shallow_20
+04:14:12.634128 Skipping scalar data 20
+{'count': 11, 'model': 'shallow_20', 'speed': 4, 'time': 0.06383109092712402}
+04:14:12.698913 Loaded shallow_20
+20 300 349
+20 350 399
+20 400 449
+20 450 499
+20 500 549
+04:14:37.782350 Speed changed to 1 =============
+04:14:37.782350 Switching to model 1: deep_40 ------
+04:14:37.782350 Running shallow_20
+change_inference_rate() ---------yyyyy
+04:14:37.783281 Loading model deep_40
+04:14:37.783281 Loading scaler data for deep_40
+{'count': 12, 'model': 'deep_40', 'speed': 1, 'time': 0.17075729370117188}
+04:14:37.954038 Loaded deep_40
+40 850 899
+04:14:42.982488 Speed changed to 1 =============
+04:14:42.982488 Switching to model 1: deep_40 ------
+04:14:42.982488 Running deep_40
+40 900 949
+04:14:53.022188 Speed changed to 3 =============
+04:14:53.022188 Switching to model 3: deep_20 ------
+04:14:53.022188 Running deep_40
+change_inference_rate() ---------yyyyy
+04:14:53.023238 Loading model deep_20
+04:14:53.023238 Loading scaler data for deep_20
+{'count': 13, 'model': 'deep_20', 'speed': 3, 'time': 0.16772866249084473}
+04:14:53.190967 Loaded deep_20
+20 550 599
+20 600 649
+04:15:03.212489 Speed changed to 4 =============
+04:15:03.212489 Switching to model 4: shallow_20 ------
+04:15:03.212489 Running deep_20
+change_inference_rate() ---------yyyyy
+04:15:03.213462 Loading model shallow_20
+04:15:03.213462 Skipping scalar data 20
+{'count': 14, 'model': 'shallow_20', 'speed': 4, 'time': 0.046849727630615234}
+04:15:03.261249 Loaded shallow_20
+20 650 699
+20 700 749
+04:15:13.290738 Speed changed to 3 =============
+04:15:13.290738 Switching to model 3: deep_20 ------
+04:15:13.291672 Running shallow_20
+change_inference_rate() ---------yyyyy
+04:15:13.291672 Loading model deep_20
+04:15:13.291672 Skipping scalar data 20
+{'count': 15, 'model': 'deep_20', 'speed': 3, 'time': 0.16877961158752441}
+04:15:13.462400 Loaded deep_20
+20 750 799
+20 800 849
+04:15:23.489555 Speed changed to 4 =============
+04:15:23.489555 Switching to model 4: shallow_20 ------
+04:15:23.489555 Running deep_20
+change_inference_rate() ---------yyyyy
+04:15:23.490543 Loading model shallow_20
+04:15:23.490543 Skipping scalar data 20
+{'count': 16, 'model': 'shallow_20', 'speed': 4, 'time': 0.045844078063964844}
+04:15:23.536387 Loaded shallow_20
+20 850 899
+04:15:28.535648 Speed changed to 4 =============
+04:15:28.535648 Switching to model 4: shallow_20 ------
+04:15:28.535648 Running shallow_20
+20 900 949
+04:15:33.537403 Speed changed to 4 =============
+04:15:33.537403 Switching to model 4: shallow_20 ------
+04:15:33.537403 Running shallow_20
+Actual Attack: 906
+Predicted Attack as Attack (TP): 855
+Predicted Attack as Benign (FN): 51
+Actual Benign: 956
+Predicted Benign as Benign (TN): 926
+Predicted Benign as Attack (FP): 30
+
+Classification Metrics:
+Accuracy: 0.9565
+Precision: 0.9661
+Recall: 0.9437
+F1-score: 0.9548

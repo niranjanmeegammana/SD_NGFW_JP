@@ -1,0 +1,19 @@
+D:\miniconda\UNSW-NB15\ngfw\results>python multi_results2.py
+    unix_time       model  rec_no  speed  testing_time
+0  1739660256     deep_40      49      1      0.187181
+1  1739660261  shallow_40      99      2      0.092217
+2  1739660266  shallow_40     149      2      0.060740
+3  1739660271  shallow_40     199      2      0.055834
+4  1739660276  shallow_40     249      2      0.064782
+
+Summary Statistics:
+          unix_time       rec_no       speed  testing_time
+count  3.700000e+02   370.000000  370.000000    370.000000
+mean   1.739661e+09  4649.000000    2.516216      0.087694
+std    5.441215e+02  2673.821702    1.131470      0.029100
+min    1.739660e+09    49.000000    1.000000      0.049276
+25%    1.739661e+09  2349.000000    2.000000      0.066816
+50%    1.739661e+09  4649.000000    2.500000      0.079862
+75%    1.739662e+09  6949.000000    4.000000      0.102729
+max    1.739662e+09  9249.000000    4.000000      0.226229
+Figures saved as 'smulti_testing_time_distribution.png' and 'multi_testing_time_boxplot.png'
